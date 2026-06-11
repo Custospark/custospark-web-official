@@ -14,23 +14,29 @@ const iconMap: Record<string, React.ReactNode> = {
 
 export function ServicesPage() {
   return (
-    <Section>
-      <div className="text-center max-w-3xl mx-auto mb-16">
-        <h1 className="font-heading text-h1 text-text-primary mb-6">Our Services</h1>
-        <p className="text-text-secondary text-body-lg">
-          We offer a range of services to help your business excel in the digital landscape.
-        </p>
-      </div>
+    <>
+      <section className="py-section bg-gradient-to-br from-primary via-black to-primary text-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="font-heading text-h1 text-white mb-6">Our Services</h1>
+            <p className="text-white/70 text-body-lg">
+              We offer a range of services to help your business excel in the digital landscape.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((service) => (
-          <Card key={service.title}>
-            <div className="text-accent mb-4">{iconMap[service.icon]}</div>
-            <h3 className="font-heading text-h4 text-text-primary mb-2">{service.title}</h3>
-            <p className="text-text-secondary text-body">{service.description}</p>
-          </Card>
-        ))}
-      </div>
-    </Section>
+      <Section>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {services.map((service) => (
+            <Card key={service.title}>
+              <div className="text-accent mb-4">{iconMap[service.icon]}</div>
+              <h3 className="font-heading text-h4 text-text-primary mb-2">{service.title}</h3>
+              <p className="text-text-secondary text-body">{service.description}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+    </>
   );
 }

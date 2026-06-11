@@ -5,6 +5,12 @@ import { AboutPage } from "@/pages/AboutPage";
 import { ServicesPage } from "@/pages/ServicesPage";
 import { ProductsPage } from "@/pages/ProductsPage";
 import { ContactPage } from "@/pages/ContactPage";
+import { CareersPage } from "@/pages/CareersPage";
+import { InvestorsPage } from "@/pages/InvestorsPage";
+import { TermsPage } from "@/pages/TermsPage";
+import { PrivacyPage } from "@/pages/PrivacyPage";
+import { PartnersPage } from "@/pages/PartnersPage";
+import { HelpPage } from "@/pages/HelpPage";
 
 export default function App() {
   return (
@@ -16,6 +22,12 @@ export default function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/products" element={<ProductsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/investors" element={<InvestorsPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/partners" element={<PartnersPage />} />
+          <Route path="/help" element={<HelpPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

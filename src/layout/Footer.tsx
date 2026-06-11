@@ -1,96 +1,113 @@
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Building } from "lucide-react";
-
-const quickLinks = [
-  { label: "About Us", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Contact Us", href: "/contact" },
-];
-
-const resources = [
-  { label: "Terms of Service", href: "/terms" },
-  { label: "Privacy Policy", href: "/privacy" },
-  { label: "Careers", href: "/careers" },
-  { label: "Help Center", href: "/help" },
-];
+import { Info, Settings, Mail, FileText, Shield, Briefcase, Users, HelpCircle, Facebook, Twitter, Linkedin, Instagram, Building, MapPin } from "lucide-react";
+import { COMPANY } from "@/lib/constants";
 
 export function Footer() {
   return (
-    <footer className="bg-surface-light/50 border-t border-white/5 py-16">
+    <footer className="bg-gradient-to-b from-primary via-black to-primary text-white py-16">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold">
-                C
-              </div>
-              <span className="font-heading font-bold text-xl text-text-primary">
-                Custospark
-              </span>
-            </div>
-            <p className="text-text-secondary text-body-sm italic">
-              PowerHouse of Innovations.
-            </p>
+
+        {/* Logo and Links Section */}
+        <div className="flex flex-wrap justify-between items-start mb-12">
+
+          {/* Logo and Company Summary */}
+          <div className="mb-8 md:mb-0">
+            <img src="/custospark-logo-footer.png" alt="Custospark Logo" className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mb-4" />
+            <h2 className="text-xl font-semibold">Custospark Company Ltd</h2>
+            <p className="text-sm italic">PowerHouse of Innovations.</p>
           </div>
 
-          <div>
-            <h4 className="font-heading font-semibold text-text-primary mb-4">
-              Quick Links
-            </h4>
+          {/* Quick Links */}
+          <div className="mb-8 md:mb-0">
+            <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-text-secondary text-body-sm hover:text-accent transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link to="/about" className="hover:text-blue-200 no-underline flex items-center gap-2">
+                  <Info size={16} />
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/services" className="hover:text-blue-200 no-underline flex items-center gap-2">
+                  <Settings size={16} />
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-blue-200 no-underline flex items-center gap-2">
+                  <Mail size={16} />
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
 
+          {/* Resources */}
           <div>
-            <h4 className="font-heading font-semibold text-text-primary mb-4">
-              Resources
-            </h4>
+            <h4 className="text-lg font-bold mb-4">Resources</h4>
             <ul className="space-y-2">
-              {resources.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    to={link.href}
-                    className="text-text-secondary text-body-sm hover:text-accent transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
+              <li>
+                <Link to="/terms" className="hover:text-blue-200 no-underline flex items-center gap-2">
+                  <FileText size={16} />
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacy" className="hover:text-blue-200 no-underline flex items-center gap-2">
+                  <Shield size={16} />
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/careers" className="hover:text-blue-200 no-underline flex items-center gap-2">
+                  <Briefcase size={16} />
+                  Careers
+                </Link>
+              </li>
+              <li>
+                <Link to="/partners" className="hover:text-blue-200 no-underline flex items-center gap-2">
+                  <Users size={16} />
+                  Partners
+                </Link>
+              </li>
+              <li>
+                <Link to="/help" className="hover:text-blue-200 no-underline flex items-center gap-2">
+                  <HelpCircle size={16} />
+                  Help Center
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/5 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex flex-col md:flex-row gap-4 text-text-muted text-caption">
-            <span className="flex items-center gap-1">
-              <Building size={14} />
-              Custospark Company Ltd
-            </span>
-            <span className="flex items-center gap-1">
-              <MapPin size={14} />
-              Dar es Salaam, Tanzania
-            </span>
-            <a
-              href="mailto:support@custospark.com"
-              className="flex items-center gap-1 hover:text-accent transition-colors"
-            >
-              <Mail size={14} />
-              support@custospark.com
-            </a>
+        {/* Bottom Contact and Social Media */}
+        <div className="flex flex-col md:flex-row justify-between items-center border-t border-blue-400 pt-6">
+
+          {/* Contact Info */}
+          <div className="text-center md:text-left mb-4 md:mb-0">
+            <p className="text-sm flex items-center gap-2 justify-center md:justify-start">
+              <Building size={16} />
+              Company Registration No: {COMPANY.REGISTRATION_NUMBER}
+            </p>
+            <p className="text-sm flex items-center gap-2 justify-center md:justify-start mt-1">
+              <MapPin size={16} />
+              {COMPANY.POSTAL_ADDRESS}
+            </p>
+            <p className="text-sm flex items-center gap-2 justify-center md:justify-start mt-1">
+              <Mail size={16} />
+              <a href={`mailto:${COMPANY.SUPPORT_EMAIL}`} className="hover:text-blue-200 no-underline">{COMPANY.SUPPORT_EMAIL}</a>
+            </p>
           </div>
-          <p className="text-text-muted text-caption">
-            &copy; {new Date().getFullYear()} Custospark. All rights reserved.
-          </p>
+
+          {/* Social Media Icons */}
+          <div className="flex space-x-5">
+            <a href="mailto:support@custospark.com" className="hover:text-blue-200 text-xl" aria-label="Email"><Mail size={24} /></a>
+            <a href="#" className="hover:text-blue-200 text-xl" aria-label="Facebook"><Facebook size={24} /></a>
+            <a href="#" className="hover:text-blue-200 text-xl" aria-label="Twitter"><Twitter size={24} /></a>
+            <a href="#" className="hover:text-blue-200 text-xl" aria-label="LinkedIn"><Linkedin size={24} /></a>
+            <a href="#" className="hover:text-blue-200 text-xl" aria-label="Instagram"><Instagram size={24} /></a>
+          </div>
+
         </div>
       </div>
     </footer>

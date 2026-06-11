@@ -1,11 +1,19 @@
 import type { NavLink, Service, Industry, Testimonial, AppProduct } from "@/types";
 
+export const COMPANY = {
+  SUPPORT_EMAIL: "support@custospark.com",
+  SUPPORT_PHONE: "+256 756 697 871",
+  HQ: "Kampala, Uganda.",
+  REGISTRATION_NUMBER: "80034904092035",
+  POSTAL_ADDRESS: "P.O Box 183068 Kampala GPO, Uganda.",
+};
+
 export const navLinks: NavLink[] = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "Products", href: "/products" },
-  { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+  { label: "Home", href: "/", icon: "Home" },
+  { label: "Services", href: "/services", icon: "Briefcase" },
+  { label: "Products", href: "/products", icon: "Package" },
+  { label: "Contact", href: "/contact", icon: "Mail" },
+  { label: "About", href: "/about", icon: "Info" },
 ];
 
 export const services: Service[] = [
