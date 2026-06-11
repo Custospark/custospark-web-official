@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Info, Settings, Mail, FileText, Shield, Briefcase, Users, HelpCircle, Facebook, Twitter, Linkedin, Instagram, Building, MapPin } from "lucide-react";
+import { Info, Settings, Mail, FileText, Shield, Briefcase, Users, HelpCircle, Building, MapPin } from "lucide-react";
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { COMPANY } from "@/lib/constants";
 
 export function Footer() {
@@ -102,10 +103,10 @@ export function Footer() {
           {/* Social Media Icons */}
           <div className="flex space-x-5">
             <a href="mailto:support@custospark.com" className="hover:text-blue-200 text-xl" aria-label="Email"><Mail size={24} /></a>
-            <a href="#" className="hover:text-blue-200 text-xl" aria-label="Facebook"><Facebook size={24} /></a>
-            <a href="#" className="hover:text-blue-200 text-xl" aria-label="Twitter"><Twitter size={24} /></a>
-            <a href="#" className="hover:text-blue-200 text-xl" aria-label="LinkedIn"><Linkedin size={24} /></a>
-            <a href="#" className="hover:text-blue-200 text-xl" aria-label="Instagram"><Instagram size={24} /></a>
+            <a href="#" className="hover:text-blue-200 text-xl" aria-label="Facebook"><FaFacebook size={24} /></a>
+            <a href="#" className="hover:text-blue-200 text-xl" aria-label="Twitter"><FaTwitter size={24} /></a>
+            <a href="#" className="hover:text-blue-200 text-xl" aria-label="LinkedIn"><FaLinkedin size={24} /></a>
+            <a href="#" className="hover:text-blue-200 text-xl" aria-label="Instagram"><FaInstagram size={24} /></a>
           </div>
 
         </div>

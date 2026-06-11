@@ -52,23 +52,21 @@ const teamData = [
     name: "Alice Mukabera",
     img: "/profiles/alice.jpg",
     role: "Software Engineer",
-    email: "alice@custosell.com",
-    bio: "Alice is a skilled software engineer with a deep understanding of full-stack development. She contributes significantly to Custospark's engineering efforts, helping build scalable products under our Custosell brand.",
+    bio: "Alice is a skilled software engineer with a deep understanding of full-stack development. She contributes significantly to Custospark's engineering efforts, helping build scalable products under our brands.",
   },
   {
     number: "2",
     name: "Ogwal Richard",
     img: "/profiles/richard.jpg",
     role: "Software Engineer",
-    email: "richard@custosell.com",
-    bio: "Richard is a versatile developer who thrives in both frontend and backend. At Custospark, he ensures our Custosell platform remains reliable, clean, and scalable through his deep focus on quality code and efficiency.",
+    bio: "Richard is a versatile developer who thrives in both frontend and backend. At Custospark, he ensures our platforms remain reliable, clean, and scalable through his deep focus on quality code and efficiency.",
   },
   {
     number: "3",
     name: "Oscar Opiyo",
     img: "/profiles/oscar.png",
     role: "Founder, CEO & Software Engineer",
-    email: "oscar@custosell.com",
+    email: "oscar@custospark.com",
     bio: "Oscar is the visionary founder of Custospark and the brains behind Custosell. A tech entrepreneur and software engineer, he's driven by innovation, AI, and solving real-world problems across industries.",
   },
   {
@@ -76,16 +74,14 @@ const teamData = [
     name: "Namatove Christine Maria",
     img: "/profiles/christine.jpg",
     role: "Co-Founder, CTO & Software Engineer",
-    email: "christine@custosell.com",
-    bio: "Christine leads technology at Custospark as CTO. With her system architecture expertise, she ensures Custosell delivers performance, reliability, and cutting-edge user experiences.",
+    bio: "Christine leads technology at Custospark as CTO. With her system architecture expertise, she ensures our products deliver performance, reliability, and cutting-edge user experiences.",
   },
   {
     number: "5",
     name: "Angom Joyce Rita",
     img: "/profiles/joyce.jpeg",
     role: "Software Engineer",
-    email: "joyce@custosell.com",
-    bio: "Joyce is an innovative full-stack developer passionate about scalable design. At Custospark, she contributes to Custosell's growth with clean code and customer-focused solutions.",
+    bio: "Joyce is an innovative full-stack developer passionate about scalable design. At Custospark, she contributes to our growth with clean code and customer-focused solutions.",
   },
 ];
 
@@ -111,7 +107,6 @@ const mobileValuesData = [
 
 export function AboutPage() {
   const desktopRef = useRef<HTMLCanvasElement>(null);
-  const mobileRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -199,7 +194,7 @@ export function AboutPage() {
         <div className="max-w-7xl mx-auto text-center px-4 md:px-8">
           <h2 className="font-heading text-h1 text-white mb-4">Who We Are</h2>
           <p className="text-body-lg text-white/70 max-w-3xl mx-auto">
-            We are a dynamic and innovative company focused on delivering cutting-edge solutions to businesses around the world. Our team is dedicated to driving progress through technology, creativity, and collaboration.
+            Custospark is a portfolio company running multiple software as a service products like Custocare &amp; Custosell and at the same time building enterprise grade software for organisations, companies and individuals.
           </p>
         </div>
       </section>
@@ -313,7 +308,7 @@ export function AboutPage() {
               <img src="/profiles/oscar.png" alt="Oscar Opiyo" className="rounded-full w-48 h-48 object-cover shadow-xl" />
               <p className="text-xl font-semibold text-white">Oscar Opiyo</p>
               <p className="text-lg text-white/70">Founder & CEO of Custospark</p>
-              <a href="mailto:oscar@custosell.com" className="text-blue-300 hover:text-blue-500">oscar@custosell.com</a>
+              <a href="mailto:oscar@custospark.com" className="text-blue-300 hover:text-blue-500">oscar@custospark.com</a>
             </div>
             <div>
               <p className="text-lg text-white/70 leading-relaxed">
@@ -331,7 +326,6 @@ export function AboutPage() {
               <img src="/profiles/christine.jpg" alt="Christine" className="rounded-full w-48 h-48 object-cover shadow-xl" />
               <p className="text-xl font-semibold text-white">Christine</p>
               <p className="text-lg text-white/70">Co-Founder & CTO of Custospark</p>
-              <a href="mailto:christine@custosell.com" className="text-blue-300 hover:text-blue-500">christine@custosell.com</a>
             </div>
             <div>
               <p className="text-lg text-white/70 leading-relaxed">
@@ -348,7 +342,7 @@ export function AboutPage() {
       {/* Team */}
       <section className="py-16 bg-gradient-to-bl from-primary via-black to-primary text-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <h2 className="font-heading text-h1 text-white mb-6 text-center">Our Current Team</h2>
+          <h2 className="font-heading text-h1 text-white mb-6 text-center">Our Current Technical Team</h2>
           <hr className="border-t-2 border-white mb-8" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
@@ -358,7 +352,7 @@ export function AboutPage() {
                   <p className="text-xl font-semibold">{member.number}. {member.name}</p>
                   <img src={member.img} alt={`Photo of ${member.name}`} className="rounded-full w-48 h-48 object-cover shadow-xl" />
                   <p className="text-lg text-white/70">{member.role}</p>
-                  <a href={`mailto:${member.email}`} className="text-blue-300 hover:text-blue-500">{member.email}</a>
+                  {member.email && <a href={`mailto:${member.email}`} className="text-blue-300 hover:text-blue-500">{member.email}</a>}
                 </div>
                 <div className="mt-8 text-white/70 leading-relaxed max-w-2xl mx-auto text-center">
                   {member.bio}
@@ -390,9 +384,6 @@ export function AboutPage() {
 
             {timelineData.map((event, i) => {
               const isLeft = event.side === "left";
-              const Container = isLeft
-                ? "div"
-                : "div";
               return (
                 <div
                   key={i}

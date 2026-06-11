@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from "react";
-import { Briefcase, Info, CheckCircle, ChevronDown } from "lucide-react";
+import { useState } from "react";
+import { Info, ChevronDown } from "lucide-react";
 
 const steps = [
   { step: 1, title: "Submit Your Application", desc: "Click the Apply button and follow the next steps. You'll be required to create an account to track your application status and updates. Upload your resume or portfolio to complete the process." },

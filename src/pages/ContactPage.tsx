@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import {
-  Mail, Send, Phone, MapPin, User, MessageSquare, HelpCircle, Info,
+  Mail, Send, Phone, MapPin, HelpCircle, Info,
   ChevronDown, Globe, Users, Map,
 } from "lucide-react";
 import { COMPANY } from "@/lib/constants";
@@ -26,7 +26,6 @@ const faqs = [
 ];
 
 export function ContactPage() {
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const mapRef = useRef<HTMLDivElement>(null);
 
@@ -58,17 +57,6 @@ export function ContactPage() {
     };
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const { name, email, message } = formData;
-    if (!name.trim()) { alert("Please enter your name."); return; }
-    if (!email.trim()) { alert("Please enter your email."); return; }
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) { alert("Please enter a valid email address."); return; }
-    if (!message.trim()) { alert("Please enter your message."); return; }
-    alert("Message sent successfully!");
-    setFormData({ name: "", email: "", message: "" });
-  };
-
   return (
     <>
       {/* Contact Us Section */}
@@ -85,67 +73,17 @@ export function ContactPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-            {/* Contact Form */}
-            <div>
-              <div className="bg-white/90 backdrop-blur-lg p-8 rounded-2xl shadow-xl">
-                <h3 className="text-xl font-semibold text-blue-800 mb-4">Send Us a Message</h3>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="relative">
-                    <User size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
-                    <input
-                      type="text"
-                      placeholder="Your Name"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full pl-10 pr-4 py-3 rounded-lg bg-white text-black border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none"
-                    />
-                  </div>
-                  <div className="relative">
-                    <Mail size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500" />
-                    <input
-                      type="email"
-                      placeholder="Your Email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full pl-10 pr-4 py-3 rounded-lg bg-white text-black border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none"
-                    />
-                  </div>
-                  <div className="relative">
-                    <MessageSquare size={18} className="absolute left-3 top-4 text-gray-500" />
-                    <textarea
-                      rows={4}
-                      placeholder="Your Message"
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      className="w-full pl-10 pr-4 py-3 rounded-lg bg-white text-black border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 rounded-lg transition duration-300 shadow-md flex items-center justify-center gap-2"
-                  >
-                    <Send size={18} />
-                    Send Message
-                  </button>
-                </form>
-              </div>
-            </div>
-
-            {/* Contact Info */}
-            <div>
-              <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-xl text-white space-y-4">
-                <div className="text-center">
-                  <p className="text-2xl font-semibold mb-2 flex items-center justify-center gap-3">
-                    <Phone size={24} />{COMPANY.SUPPORT_PHONE}
-                  </p>
-                  <div className="space-y-1 text-sm">
-                    <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" />info@custospark.com</p>
-                    <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" />inquiries@custospark.com</p>
-                    <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" />investors@custospark.com</p>
-                    <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" />partners@custospark.com</p>
-                    <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" />teams@custospark.com</p>
-                  </div>
+          <div className="max-w-lg mx-auto">
+            <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl shadow-xl text-white space-y-4">
+              <div className="text-center">
+                <p className="text-2xl font-semibold mb-2 flex items-center justify-center gap-3">
+                  <Phone size={24} />{COMPANY.SUPPORT_PHONE}
+                </p>
+                <div className="space-y-1 text-sm">
+                  <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" />info@custospark.com</p>
+                  <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" />partners@custospark.com</p>
+                  <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" />teams@custospark.com</p>
+                </div>
                   <p className="mt-3 text-sm flex items-center justify-center gap-2">
                     <MapPin size={14} className="text-red-400" />{COMPANY.HQ}
                   </p>
@@ -156,8 +94,7 @@ export function ContactPage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* Location Section */}
       <section id="location" className="py-16 bg-gradient-to-bl from-primary via-black to-primary text-white relative overflow-hidden">
