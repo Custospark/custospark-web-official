@@ -18,13 +18,13 @@ const features = [
     img: dashboardImg,
     icon: LayoutDashboard,
     title: "Real-time Dashboard",
-    desc: "See your entire business at a glance. Track sales, monitor trends, and make data-driven decisions with a live dashboard that updates in real-time. Know exactly how your business is performing, any time of day, from anywhere.",
+    desc: "See your entire business at a glance. Custosell's live dashboard lets you track sales, monitor trends, and make data-driven decisions in real-time. Know exactly how your business is performing, any time of day, from anywhere.",
   },
   {
     img: inventoryImg,
     icon: Package,
     title: "Smart Inventory",
-    desc: "Never run out of stock again. Track inventory in real-time, set low-stock alerts, and manage suppliers all from one place. Know what's moving, what's not, and exactly when to reorder — so you can keep your shelves full and your customers happy.",
+    desc: "Never run out of stock again. Custosell lets you track inventory in real-time, set low-stock alerts, and manage suppliers all from one place. Know what's moving, what's not, and exactly when to reorder — so you can keep your shelves full and your customers happy.",
   },
   {
     img: salesImg,
@@ -36,7 +36,7 @@ const features = [
     img: customersImg,
     icon: Users,
     title: "Customer Insights",
-    desc: "Know your customers beyond their names. Track purchase history, manage loyalty programs, and understand buying patterns to serve them better. Build relationships that keep them coming back.",
+    desc: "Know your customers beyond their names. Custosell helps you track purchase history, manage loyalty programs, and understand buying patterns to serve them better. Build relationships that keep them coming back.",
   },
 ];
 
@@ -45,11 +45,11 @@ export function CustosellProduct() {
     <div>
       <div className="text-center max-w-3xl mx-auto mb-16">
         <div className="flex items-center justify-center gap-6 mb-4">
-          <span className="text-blue-400 text-2xl font-bold tracking-wide">02</span>
+          <span className="text-orange-400 text-2xl font-bold tracking-wide">02</span>
           <img src={custosellLogo} alt="Custosell" className="h-14 w-auto rounded-full" />
           <div className="text-left">
             <h3 className="font-heading text-h1 text-white uppercase tracking-wide">Custosell</h3>
-            <p className="text-blue-400 text-body font-medium">Sell More. Track All. Grow Fast.</p>
+            <p className="text-orange-400/90 text-body font-medium">Sell More. Track All. Grow Fast.</p>
           </div>
         </div>
         <p className="text-white/80 text-body-lg leading-relaxed">

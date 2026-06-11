@@ -15,7 +15,7 @@ export function Footer() {
           <div className="mb-8 md:mb-0">
             <img src="/custospark-logo-footer.png" alt="Custospark Logo" className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover mb-4" />
             <h2 className="text-xl font-semibold">Custospark Company Ltd</h2>
-            <p className="text-sm italic">PowerHouse of Innovations.</p>
+            <p className="text-sm italic">SaaS products and custom software — built by Custospark.</p>
           </div>
 
           {/* Quick Links */}

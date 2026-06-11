@@ -82,11 +82,11 @@ export function Header() {
                   className={cn(
                     "flex items-center gap-2 px-3 py-2 rounded-md transition text-sm",
                     location.pathname === "/careers"
-                      ? "bg-orange-100 font-semibold text-orange-700"
-                      : "hover:bg-orange-100",
+                      ? "bg-yellow-100 font-semibold text-yellow-700"
+                      : "hover:bg-yellow-50",
                   )}
                 >
-                  <Briefcase size={16} className="text-green-500" />
+                  <Briefcase size={16} className="text-yellow-600" />
                   Careers
                 </Link>
                 <Link
@@ -94,11 +94,11 @@ export function Header() {
                   className={cn(
                     "flex items-center gap-2 px-3 py-2 rounded-md transition text-sm",
                     location.pathname === "/investors"
-                      ? "bg-indigo-100 font-semibold text-indigo-700"
-                      : "hover:bg-orange-100",
+                      ? "bg-yellow-100 font-semibold text-yellow-700"
+                      : "hover:bg-yellow-50",
                   )}
                 >
-                  <TrendingUp size={16} className="text-indigo-500" />
+                  <TrendingUp size={16} className="text-yellow-600" />
                   Investors
                 </Link>
               </div>
@@ -189,7 +189,7 @@ export function Header() {
                     location.pathname === "/careers" && "text-yellow-400 font-semibold bg-yellow-400/15",
                   )}
                 >
-                  <Briefcase size={16} className="text-green-300" />
+                  <Briefcase size={16} className="text-yellow-400" />
                   Careers
                 </Link>
                 <Link
@@ -197,10 +197,10 @@ export function Header() {
                   onClick={() => setMobileOpen(false)}
                   className={cn(
                     "flex items-center gap-2 px-4 py-2.5 rounded-md transition-colors text-white/80 hover:bg-white/10 text-sm",
-                    location.pathname === "/investors" && "text-white font-semibold bg-white/10",
+                    location.pathname === "/investors" && "text-yellow-400 font-semibold bg-yellow-400/15",
                   )}
                 >
-                  <TrendingUp size={16} className="text-blue-300" />
+                  <TrendingUp size={16} className="text-yellow-400" />
                   Investors
                 </Link>
               </div>

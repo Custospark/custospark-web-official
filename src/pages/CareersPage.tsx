@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Info, ChevronDown } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 const steps = [
   { step: 1, title: "Submit Your Application", desc: "Click the Apply button and follow the next steps. You'll be required to create an account to track your application status and updates. Upload your resume or portfolio to complete the process." },
@@ -41,30 +41,25 @@ export function CareersPage() {
 
   return (
     <>
-      {/* Jobs Section */}
-      <section id="open-roles" className="relative py-28 bg-gradient-to-bl from-primary via-black to-primary text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.2),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(255,255,255,0.15),transparent_40%)]" style={{ filter: "blur(72px)" }} />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
-          <div className="text-center mb-20">
-            <h2 className="font-heading text-h1 text-white font-extrabold tracking-tight">Join Our Team</h2>
-            <p className="text-lg mt-5 max-w-2xl mx-auto text-white/80 leading-relaxed">
-              Explore current roles and take the next step in your journey. Become part of <span className="text-yellow-300 font-semibold">Custospark</span>'s innovation wave.
+      {/* Hero */}
+      <section className="py-section bg-gradient-to-br from-primary via-black to-primary text-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="text-center max-w-3xl mx-auto">
+            <span className="inline-block bg-accent/20 border border-accent/30 text-accent text-body-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+              Careers
+            </span>
+            <h1 className="font-heading text-h1 text-white mb-4">
+              Join the Team That Builds Custocare and Custosell
+            </h1>
+            <p className="text-white/70 text-body-lg">
+              We're a small, focused team building software that people use every day. If that sounds like your kind of environment, we'd love to hear from you.
             </p>
-            <div className="mt-6">
-              <a href="#application-process" className="inline-block bg-white text-black font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-200 transition duration-300">
-                See How to Apply
-              </a>
-            </div>
-          </div>
-          <div className="text-center text-white/80 text-lg font-medium">
-            <Info size={20} className="inline mr-2" />
-            No open roles available at the moment. Please check back later.
           </div>
         </div>
       </section>
 
       {/* Application Process */}
-      <section id="application-process" className="relative py-28 bg-black text-white overflow-hidden">
+      <section id="application-process" className="relative py-28 bg-gradient-to-bl from-primary via-black to-primary text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(circle_at_10%_10%,rgba(255,255,255,0.2),transparent_40%),radial-gradient(circle_at_90%_90%,rgba(255,255,255,0.15),transparent_40%)]" style={{ filter: "blur(72px)" }} />
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8">
           <div className="text-center mb-20">
@@ -75,7 +70,7 @@ export function CareersPage() {
           </div>
 
           <div className="relative">
-            <div className="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-gradient-to-b from-yellow-400 via-pink-500 to-blue-600 rounded-full shadow-lg z-0 hidden md:block" />
+            <div className="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-gradient-to-b from-accent via-primary to-primary-hover rounded-full shadow-lg z-0 hidden md:block" />
 
             <div className="space-y-24">
               {steps.map((step, i) => {
@@ -85,7 +80,7 @@ export function CareersPage() {
                     <div className={`w-full md:w-1/2 ${isLeft ? "md:pl-12 order-2" : "md:pr-12 order-2 md:order-1"}`}>
                       <div className="bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl p-6 shadow-2xl transition-all duration-500 hover:scale-[1.02]" style={{ perspective: "1000px" }}>
                         <div className="flex items-start gap-4">
-                          <div className="w-12 h-12 flex-shrink-0 bg-gradient-to-br from-yellow-400 via-orange-500 to-pink-500 text-white rounded-full flex items-center justify-center font-bold text-xl shadow-md">
+                          <div className="w-12 h-12 flex-shrink-0 bg-gradient-to-br from-accent via-blue-500 to-primary text-white rounded-full flex items-center justify-center font-bold text-xl shadow-md">
                             {step.step}
                           </div>
                           <div>
@@ -118,12 +113,12 @@ export function CareersPage() {
           <div className="text-center mb-20">
             <h2 className="font-heading text-h1 text-white font-extrabold">Why You'll Love Working Here</h2>
             <p className="text-xl mt-6 max-w-3xl mx-auto text-white/80 leading-relaxed">
-              At <span className="text-yellow-300 font-semibold">Custospark</span>, we're dedicated to supporting our people both professionally and personally. Explore benefits that help you thrive at every stage of life.
+              At <span className="text-accent font-semibold">Custospark</span>, we're dedicated to supporting our people both professionally and personally. Explore benefits that help you thrive at every stage of life.
             </p>
           </div>
 
           <div className="relative">
-            <div className="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-gradient-to-b from-yellow-400 via-pink-500 to-blue-600 rounded-full shadow-lg z-0 hidden md:block" />
+            <div className="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-gradient-to-b from-accent via-primary to-primary-hover rounded-full shadow-lg z-0 hidden md:block" />
             <div className="space-y-24">
               {perks.map((perk, i) => {
                 const isLeft = i % 2 === 0;
@@ -132,7 +127,7 @@ export function CareersPage() {
                     <div className={`w-full md:w-1/2 ${isLeft ? "md:pl-12 order-2" : "md:pr-12 order-2 md:order-1"}`}>
                       <div className="bg-white/10 border border-white/20 backdrop-blur-md rounded-2xl p-6 shadow-2xl transition-all duration-500 hover:scale-[1.02]">
                         <div className="flex items-center gap-6">
-                          <div className="w-16 h-16 bg-gradient-to-b from-yellow-300 to-pink-600 text-white rounded-full flex items-center justify-center text-3xl shadow-xl shrink-0">
+                          <div className="w-16 h-16 bg-gradient-to-b from-accent to-primary text-white rounded-full flex items-center justify-center text-3xl shadow-xl shrink-0">
                             {perk.icon}
                           </div>
                           <div>
@@ -151,7 +146,7 @@ export function CareersPage() {
           </div>
 
           <div className="mt-24 text-center">
-            <a href="#faqs" className="inline-block bg-white text-blue-500 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-black hover:text-blue-500 transition-transform hover:scale-105 shadow-lg">
+            <a href="#faqs" className="inline-block bg-white text-accent px-8 py-4 rounded-xl text-lg font-semibold hover:bg-primary hover:text-white transition-transform hover:scale-105 shadow-lg">
               Explore commonly asked questions →
             </a>
           </div>
@@ -164,7 +159,7 @@ export function CareersPage() {
           <div className="text-center mb-12">
             <h2 className="font-heading text-h1 text-white">Frequently Asked Questions</h2>
             <p className="text-xl text-white/70 mt-6 max-w-3xl mx-auto leading-relaxed">
-              Curious about life at <span className="text-yellow-300 font-semibold">Custospark</span>? We've gathered the answers to the most common questions right here.
+              Curious about life at <span className="text-accent font-semibold">Custospark</span>? We've gathered the answers to the most common questions right here.
             </p>
           </div>
 
@@ -178,7 +173,7 @@ export function CareersPage() {
                   <h3 className="text-lg font-semibold text-white">{faq.question}</h3>
                   <ChevronDown
                     size={20}
-                    className={`text-yellow-300 transition-transform duration-300 shrink-0 ml-4 ${openFaq === i ? "rotate-180" : ""}`}
+                    className={`text-accent transition-transform duration-300 shrink-0 ml-4 ${openFaq === i ? "rotate-180" : ""}`}
                   />
                 </button>
                 <div
@@ -193,8 +188,11 @@ export function CareersPage() {
           </div>
 
           <div className="mt-16 text-center">
-            <a href="#open-roles" className="inline-block bg-black text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-500 transition-transform hover:scale-105 shadow-lg">
-              Alright. Start your application now →
+            <p className="text-white/70 text-body-lg mb-6">
+              Don't see a role but think you'd be a good fit? We'd still love to hear from you.
+            </p>
+            <a href="/contact" className="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-100 transition duration-300">
+              Get in Touch
             </a>
           </div>
         </div>

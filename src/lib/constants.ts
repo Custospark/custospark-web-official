@@ -19,9 +19,10 @@ export const navLinks: NavLink[] = [
 export const services: Service[] = [
   {
     title: "Custom Software",
-    description: "Bespoke solutions designed for your business needs.",
+    description: "Software built specifically for the way you work.",
     icon: "settings",
     href: "/services",
+    featured: true,
   },
   {
     title: "Web Development",
@@ -42,15 +43,15 @@ export const services: Service[] = [
     href: "/services",
   },
   {
-    title: "Consulting",
-    description: "Expert advice to align technology with your strategy.",
-    icon: "users",
-    href: "/services",
-  },
-  {
     title: "AI & Automation",
     description: "Intelligent automation and AI-powered solutions.",
     icon: "bot",
+    href: "/services",
+  },
+  {
+    title: "Consulting",
+    description: "Expert advice to align technology with your strategy.",
+    icon: "users",
     href: "/services",
   },
 ];
@@ -68,27 +69,27 @@ export const industries: Industry[] = [
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Sarah L.",
-    title: "CEO, HealthSync",
-    text: "Thanks to Custospark's innovative tech solutions, we automated processes that once took us weeks, cutting our operational costs by 30%.",
+    name: "Dr. Grace M.",
+    title: "Medical Director, Agape Clinic",
+    text: "Custocare transformed how we run our clinic. Patient records, lab results, and pharmacy are now connected in one system. We went from chasing papers to seeing more patients in half the time.",
     avatar: "https://i.pravatar.cc/100?img=12",
   },
   {
-    name: "James K.",
-    title: "CTO, LogiTrack",
-    text: "Custospark's ability to execute complex visions with unmatched speed has taken our business to the next level. We've seen a 40% increase in efficiency.",
+    name: "John K.",
+    title: "Owner, Metro Retail Store",
+    text: "Custosell saved my business during a network outage that lasted three days. We kept selling, kept tracking inventory, and didn't miss a single transaction. That offline mode is a lifesaver.",
     avatar: "https://i.pravatar.cc/100?img=24",
   },
   {
-    name: "Emily R.",
-    title: "Founder, EduGrowth",
-    text: "Reliable, innovative, and always ahead of the curve. Custospark is helping us disrupt the market.",
+    name: "Dr. Peter O.",
+    title: "Hospital Administrator, St. Mary's",
+    text: "We have three facilities and needed one system to connect them all. Custocare made it possible. Referrals between our clinics now carry full patient context, billing is unified, and our team finally works as one.",
     avatar: "https://i.pravatar.cc/100?img=36",
   },
   {
-    name: "Michael T.",
-    title: "Product Manager, GreenTech",
-    text: "With Custospark's state-of-the-art tools, we've increased our product launch speed by 50%.",
+    name: "Grace A.",
+    title: "Founder, Grace's Boutique",
+    text: "Custosell made inventory management effortless. I know exactly what's in stock, what's selling, and when to reorder — all from my phone. My business has grown 40% since I switched.",
     avatar: "https://i.pravatar.cc/100?img=48",
   },
 ];

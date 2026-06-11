@@ -9,6 +9,7 @@ export interface Service {
   description: string;
   icon: string;
   href: string;
+  featured?: boolean;
 }
 
 export interface Industry {

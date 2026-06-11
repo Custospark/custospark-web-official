@@ -1,28 +1,19 @@
 import { useEffect, useState, useRef } from "react";
 import {
-  Mail, Send, Phone, MapPin, HelpCircle, Info,
+  Mail, Phone, MapPin, HelpCircle, Info,
   ChevronDown, Globe, Users, Map,
 } from "lucide-react";
 import { COMPANY } from "@/lib/constants";
 
 const faqs = [
-  { question: "What is Custospark?", answer: "Custospark is a technology-driven company empowering entrepreneurs with innovative software solutions across industries like education, healthcare, logistics, and finance." },
-  { question: "What is Custosell?", answer: "Custosell is our flagship product—a comprehensive eCommerce platform that enables businesses to manage online stores, sell products, and scale with ease." },
-  { question: "Who can use Custosell?", answer: "Designed for entrepreneurs and business owners in any industry, Custosell is versatile enough for restaurants, retail, healthcare, education, and more." },
-  { question: "How can I get started with Custosell?", answer: "Signing up is simple! Register, create your business profile, add products or services, and start selling. We also offer easy-to-follow tutorials to guide you." },
-  { question: "Do I need technical skills to use Custosell?", answer: "Not at all. Our platform is crafted for simplicity, so even non-technical users can navigate and maximize its features. Plus, our support team is always available." },
-  { question: "Can I manage multiple businesses on Custosell?", answer: "Yes. Custosell lets you seamlessly switch between different business profiles all from one account." },
-  { question: "Is Custosell mobile-friendly?", answer: "Absolutely—our fully responsive design ensures access and functionality on desktops, tablets, or smartphones." },
-  { question: "How secure is my data on Custosell?", answer: "We take your data security seriously, using industry-standard encryption and robust protocols to protect your information every step of the way." },
-  { question: "Can I integrate third-party tools with Custosell?", answer: "Yes, we offer flexible integrations for payments, marketing, analytics, and more, so you can tailor Custosell perfectly to your business." },
-  { question: "Does Custospark provide support?", answer: "Our dedicated support team is committed to your success; we're here to help if you encounter any issues or have questions along the way." },
-  { question: "What is the cost of using Custosell?", answer: "Custosell offers various pricing plans to suit businesses of all sizes. Check out our pricing page for comprehensive information on our basic and premium packages." },
-  { question: "How can I become a partner with Custospark?", answer: "We're excited to collaborate with like-minded innovators and investors. Contact us directly if you're interested in forging a partnership." },
-  { question: "Does Custospark have a mobile app?", answer: "Currently, we are a web-based platform, but we're actively developing mobile app solutions to enhance your experience even further." },
-  { question: "How can I invest in Custospark?", answer: "If investing in Custospark interests you, please reach out to us via our contact page. We're always open to discussing future growth and collaboration." },
-  { question: "Where is Custospark located?", answer: "Headquartered in Kampala, Uganda, Custospark sits at the heart of Africa's burgeoning tech scene. We're proud to operate as a remote-first, global company." },
-  { question: "How do I contact Custospark's support team?", answer: "You can contact our support team via our contact page or directly through the help section on the platform. We're here to assist you!" },
-  { question: "Can I try Custosell before purchasing?", answer: "Yes, we offer a free trial for Custosell so you can explore the features and see how it works for your business before committing to a plan." },
+  { question: "What does Custospark build?", answer: "We build and operate software products like Custosell (retail POS) and Custocare (healthcare platform), and develop custom software for companies, organisations, and individuals." },
+  { question: "How is Custosell different from other POS systems?", answer: "Custosell works offline. When your internet goes down, your business keeps running. Sales, inventory, and customer data all sync automatically when you're back online." },
+  { question: "How is Custocare different from other healthcare platforms?", answer: "Custocare connects the entire patient journey — from registration through clinical care, pharmacy, lab, nursing, and billing — in one system. No more fragmented tools or lost context between departments." },
+  { question: "Can Custospark build custom software for my business?", answer: "Yes. Beyond our own products, we develop custom web, mobile, and cloud solutions for businesses that need software built specifically for how they work." },
+  { question: "How do I get started with Custosell or Custocare?", answer: "Visit the product website to sign up. For Custosell, go to custosell.com. For Custocare, go to custocare.custospark.com." },
+  { question: "Do you offer support for your products?", answer: "Yes. Each product has its own support team. You can also reach us at support@custospark.com and we'll direct you to the right team." },
+  { question: "Can Custospark help if I already have software but need improvements?", answer: "Yes. We take on existing projects too — whether you need new features, a redesign, or help scaling what you already have." },
+  { question: "Where is Custospark based?", answer: "We're headquartered in Kampala, Uganda and operate as a remote-first company with team members across different countries." },
 ];
 
 export function ContactPage() {
@@ -63,13 +54,14 @@ export function ContactPage() {
       <section id="contact" className="py-24 bg-gradient-to-br from-primary via-black to-primary text-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-heading text-h1 text-white flex items-center justify-center gap-4">
-              <Mail size={36} className="text-white/80" />
-              Contact Us
-            </h2>
-            <p className="mt-4 text-lg text-white/70 max-w-2xl mx-auto">
-              <Send size={16} className="inline mr-2" />
-              Whether you're an investor, collaborator, or someone with a bold new idea, we're excited to connect. Reach out and let's create something extraordinary together.
+            <span className="inline-block bg-accent/20 border border-accent/30 text-accent text-body-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+              Get in Touch
+            </span>
+            <h1 className="font-heading text-h1 text-white mb-4">
+              Need Software? Let's Talk.
+            </h1>
+            <p className="text-lg text-white/70 max-w-2xl mx-auto">
+              Whether you're interested in Custosell, Custocare, or custom software for your business — send us a message and we'll point you to the right team.
             </p>
           </div>
 
@@ -79,16 +71,16 @@ export function ContactPage() {
                 <p className="text-2xl font-semibold mb-2 flex items-center justify-center gap-3">
                   <Phone size={24} />{COMPANY.SUPPORT_PHONE}
                 </p>
-                <div className="space-y-1 text-sm">
-                  <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" />info@custospark.com</p>
-                  <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" />partners@custospark.com</p>
-                  <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" />teams@custospark.com</p>
+                <div className="space-y-2 text-sm">
+                  <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" /><span className="text-white/50 mr-1">General:</span>info@custospark.com</p>
+                  <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" /><span className="text-white/50 mr-1">Partners:</span>partners@custospark.com</p>
+                  <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-blue-300" /><span className="text-white/50 mr-1">Teams:</span>teams@custospark.com</p>
                 </div>
                   <p className="mt-3 text-sm flex items-center justify-center gap-2">
                     <MapPin size={14} className="text-red-400" />{COMPANY.HQ}
                   </p>
                   <p className="mt-6 text-xs italic text-gray-300">
-                    We're always available to chat about innovative ideas and partnership opportunities. Your next big breakthrough starts with a conversation.
+                    For Custosell support, visit custosell.com. For Custocare, visit custocare.custospark.com.
                   </p>
                 </div>
               </div>
@@ -126,7 +118,7 @@ export function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-16 bg-gradient-to-bl from-blue-500 via-gray-900 to-blue-500 text-white">
+      <section id="faq" className="py-16 bg-gradient-to-bl from-primary via-black to-primary text-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <h2 className="font-heading text-h1 text-white mb-6 flex justify-center items-center gap-3">
             <HelpCircle size={36} />

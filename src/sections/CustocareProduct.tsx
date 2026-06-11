@@ -20,12 +20,12 @@ const features = [
   {
     img: custocareMedical,
     title: "Comprehensive Patient Records",
-    desc: "Every patient's story starts here. From registration through every visit, treatment, and outcome, Custocare maintains a single, unified record that follows the patient across every department. No more重复 histories, no lost files, no gaps in care. Clinicians get the full picture every time.",
+    desc: "Every patient's story starts here. From registration through every visit, treatment, and outcome, Custocare maintains a single, unified record that follows the patient across every department. No more repeated histories, no lost files, no gaps in care. Clinicians get the full picture every time.",
   },
   {
     img: custocareClinical,
     title: "Clinical Consultations & Care Planning",
-    desc: "Designed for how clinicians actually work. Document consultations, record vitals, capture diagnoses, and build care plans — all within a structured workflow that supports clinical decision-making. SOAP notes, prescriptions, and allergy tracking are built in, so nothing falls through the cracks.",
+    desc: "Designed for how clinicians actually work. Custocare lets you document consultations, record vitals, capture diagnoses, and build care plans — all within a structured workflow that supports clinical decision-making. SOAP notes, prescriptions, and allergy tracking are built in, so nothing falls through the cracks.",
   },
   {
     img: custocareNursing,
@@ -40,7 +40,7 @@ const features = [
   {
     img: custocarePharmacy,
     title: "Medication & Dispensing Management",
-    desc: "Prescribe, dispense, and track medications all within the same patient record. Pharmacists receive prescriptions directly from clinicians, verify against patient history, and dispense with full traceability. Inventory management ensures critical medications are always in stock.",
+    desc: "Prescribe, dispense, and track medications all within the same patient record. With Custocare, pharmacists receive prescriptions directly from clinicians, verify against patient history, and dispense with full traceability. Inventory management ensures critical medications are always in stock.",
   },
   {
     img: custocareReferral,
@@ -65,11 +65,11 @@ export function CustocareProduct() {
       {/* Intro */}
       <div className="text-center max-w-4xl mx-auto mb-16">
             <div className="flex items-center justify-center gap-6 mb-4">
-              <span className="text-accent text-2xl font-bold tracking-wide">01</span>
+              <span className="text-orange-400 text-2xl font-bold tracking-wide">01</span>
               <img src={custocareLogo} alt="Custocare" className="h-14 w-auto rounded-full" />
               <div className="text-left">
                 <h3 className="font-heading text-h1 text-white uppercase tracking-wide">Custocare</h3>
-                <p className="text-accent text-body font-medium">Continuous Care. Unified Operations.</p>
+                <p className="text-orange-400/90 text-body font-medium">Continuous Care. Unified Operations.</p>
               </div>
             </div>
         <p className="text-white/80 text-body-lg leading-relaxed">

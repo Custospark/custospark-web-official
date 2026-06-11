@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { Calendar, Code, AlertTriangle, Award, Users, Rocket, History } from "lucide-react";
 
 const timelineData = [
@@ -9,7 +8,7 @@ const timelineData = [
     delay: "1s",
   },
   {
-    text: "In a cramped university dorm, our founder, <strong>Oscar Opiyo</strong>, harnessed his sheer determination. Armed with a second-hand laptop and countless late-night coding sessions, he laid the bedrock of Custospark—a journey that still welcomes bold partners and collaborators.",
+    text: "In a cramped university dorm at <strong>Makerere University</strong>, our founder, <strong>Oscar Opiyo</strong>, harnessed his sheer determination. Armed with a second-hand laptop and countless late-night coding sessions, he laid the bedrock of Custospark—a journey that still welcomes bold partners and collaborators.",
     icon: Code,
     side: "right" as const,
     delay: "2s",
@@ -21,7 +20,7 @@ const timelineData = [
     delay: "3s",
   },
   {
-    text: "What started as freelance gigs and volunteer projects soon evolved into a disciplined, scalable approach to building software. Our code became not only functional but also intuitively designed—with the end-user firmly in mind.",
+    text: "What started as freelance gigs and volunteer projects at Makerere soon evolved into a disciplined, scalable approach to building software. Our code became not only functional but also intuitively designed—with the end-user firmly in mind.",
     icon: Code,
     side: "right" as const,
     delay: "4s",
@@ -106,93 +105,29 @@ const mobileValuesData = [
 ];
 
 export function AboutPage() {
-  const desktopRef = useRef<HTMLCanvasElement>(null);
-
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js";
-    script.async = true;
-    script.onload = () => {
-      if ((window as any).particlesJS) {
-        (window as any).particlesJS("sparkle-bg-desktop", {
-          particles: {
-            number: { value: 120, density: { enable: true, value_area: 800 } },
-            color: { value: ["#FF5733", "#FFC300", "#28A745", "#17A2B8"] },
-            shape: { type: "circle", stroke: { width: 0, color: "#000" } },
-            opacity: { value: 0.8, random: true },
-            size: { value: 1, random: true },
-            line_linked: { enable: false },
-            move: { enable: true, speed: 10, direction: "none", random: true, straight: false, out_mode: "out" },
-          },
-          interactivity: { detect_on: "canvas", events: { resize: true } },
-          retina_detect: true,
-        });
-        (window as any).particlesJS("sparkle-bg-mobile", {
-          particles: {
-            number: { value: 80, density: { enable: true, value_area: 10000 } },
-            color: { value: ["#FF5733", "#FFC300", "#28A745", "#17A2B8"] },
-            shape: { type: "hexagon", stroke: { width: 0, color: "#000" } },
-            opacity: { value: 0.8, random: true },
-            size: { value: 1, random: true },
-            line_linked: { enable: false },
-            move: { enable: true, speed: 5, direction: "none", random: true, straight: false, out_mode: "out" },
-          },
-          interactivity: { detect_on: "canvas", events: { resize: true } },
-          retina_detect: true,
-        });
-      }
-    };
-    document.body.appendChild(script);
-
-    return () => {
-      if (script.parentNode) script.parentNode.removeChild(script);
-    };
-  }, []);
-
-  useEffect(() => {
-    const canvas = desktopRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-    const stars = Array.from({ length: 80 }, () => ({
-      x: Math.random() * window.innerWidth,
-      y: Math.random() * window.innerHeight,
-      radius: Math.random() * 2.5,
-      alpha: Math.random(),
-      delta: Math.random() * 0.02,
-    }));
-    let animId: number;
-    function animate() {
-      ctx!.clearRect(0, 0, canvas!.width, canvas!.height);
-      stars.forEach((star) => {
-        ctx!.beginPath();
-        ctx!.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx!.fillStyle = `rgba(255,255,255,${star.alpha})`;
-        ctx!.fill();
-        star.alpha += star.delta;
-        if (star.alpha <= 0 || star.alpha >= 1) star.delta *= -1;
-      });
-      animId = requestAnimationFrame(animate);
-    }
-    function resize() {
-      canvas!.width = window.innerWidth;
-      canvas!.height = window.innerHeight;
-    }
-    window.addEventListener("resize", resize);
-    resize();
-    animate();
-    return () => {
-      window.removeEventListener("resize", resize);
-      cancelAnimationFrame(animId);
-    };
-  }, []);
-
   return (
     <>
+      {/* Hero */}
+      <section className="py-section bg-gradient-to-br from-primary via-black to-primary text-white">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="text-center max-w-3xl mx-auto">
+            <span className="inline-block bg-accent/20 border border-accent/30 text-accent text-body-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+              About Custospark
+            </span>
+            <h1 className="font-heading text-h1 text-white mb-4">
+              A Software Company That Builds Products People Rely On
+            </h1>
+            <p className="text-white/70 text-body-lg">
+              From a university dorm room to a portfolio of SaaS products used by businesses across Africa — this is the story of Custospark.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Who We Are */}
       <section className="py-12 bg-gradient-to-br from-primary via-black to-primary text-white">
         <div className="max-w-7xl mx-auto text-center px-4 md:px-8">
-          <h2 className="font-heading text-h1 text-white mb-4">Who We Are</h2>
+          <h2 className="font-heading text-h2 text-white mb-4">Who We Are</h2>
           <p className="text-body-lg text-white/70 max-w-3xl mx-auto">
             Custospark is a portfolio company running multiple software as a service products like Custocare &amp; Custosell and at the same time building enterprise grade software for organisations, companies and individuals.
           </p>
@@ -225,9 +160,7 @@ export function AboutPage() {
 
       {/* Values - Desktop */}
       <section className="hidden lg:block relative py-20 bg-black text-white overflow-hidden">
-        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-          <canvas id="sparkle-bg-desktop" className="w-full h-full opacity-20" />
-        </div>
+        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden bg-[radial-gradient(circle_at_20%_20%,rgba(6,182,212,0.08),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(59,130,246,0.08),transparent_50%)]" />
         <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10" style={{ perspective: "1200px" }}>
           <div className="text-center mb-12">
             <h2 className="font-heading text-h1 text-white tracking-tight">
@@ -266,9 +199,7 @@ export function AboutPage() {
 
       {/* Values - Mobile */}
       <section className="block lg:hidden relative py-12 bg-gradient-to-bl from-blue-700 via-black to-blue-700 text-white overflow-hidden">
-        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
-          <canvas id="sparkle-bg-mobile" className="w-full h-full opacity-20" />
-        </div>
+        <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden bg-[radial-gradient(circle_at_20%_20%,rgba(6,182,212,0.08),transparent_50%),radial-gradient(circle_at_80%_80%,rgba(59,130,246,0.08),transparent_50%)]" />
         <div className="max-w-5xl mx-auto px-4 relative z-10 text-center">
           <div className="mb-10">
             <h2 className="text-3xl font-bold tracking-tight">
@@ -407,6 +338,26 @@ export function AboutPage() {
         </div>
       </section>
 
+      {/* CTA */}
+      <section className="py-16 bg-gradient-to-br from-primary via-black to-primary text-white text-center">
+        <div className="max-w-7xl mx-auto px-4 md:px-8">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="font-heading text-h2 text-white mb-4">Want to See What We Build?</h2>
+            <p className="text-white/70 text-body-lg mb-8">
+              Meet Custocare — our healthcare platform. And Custosell — our retail POS. Both built by the same team that tells this story.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="/products" className="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-blue-100 transition shadow-md">
+                View Our Products
+              </a>
+              <a href="/contact" className="inline-block border border-white/30 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/10 transition">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <style>{`
         .value-number {
           width: 48px;
@@ -449,11 +400,6 @@ export function AboutPage() {
         }
         .animate-random {
           animation: randomMove 5s ease-in-out infinite;
-        }
-        #sparkle-bg-desktop, #sparkle-bg-mobile {
-          transform: rotate(180deg);
-          transform-origin: center;
-          display: block;
         }
       `}</style>
     </>

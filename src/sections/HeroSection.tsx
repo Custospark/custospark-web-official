@@ -43,22 +43,25 @@ export function HeroSection() {
       <div className="relative z-10 mt-10 max-w-5xl mx-auto px-4">
         <div className="mb-8">
           <span className="inline-block bg-accent/20 border border-accent/30 text-accent text-body-sm font-semibold px-4 py-1.5 rounded-full mb-6">
-            A Portfolio Company
+            Software Company
           </span>
           <h1 className="font-heading text-h1 md:text-[56px] font-bold text-white drop-shadow-md leading-tight">
-            Powering Businesses{" "}
+            Custospark builds{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-accent">
-              With Software
+              SaaS products and custom software.
             </span>
           </h1>
           <p className="mt-6 text-body-lg md:text-xl max-w-3xl mx-auto text-white/80 leading-relaxed">
-            Custospark runs multiple SaaS products including <strong className="text-white">Custosell</strong> and <strong className="text-white">Custocare</strong>,{" "}
-            while building enterprise-grade software for companies, organizations, businesses, and individuals.
+            Including{" "}
+            <a href="https://www.custosell.com" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-blue-200 underline underline-offset-2">Custosell</a>{" "}
+            and{" "}
+            <a href="https://custocare.custospark.com" target="_blank" rel="noopener noreferrer" className="text-white font-semibold hover:text-blue-200 underline underline-offset-2">Custocare</a>,{" "}
+            plus custom solutions for companies, organisations, and individuals.
           </p>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/services">
+          <a href="/products">
             <Button variant="primary" size="lg">
               Explore Our Products <ArrowRight size={20} />
             </Button>
