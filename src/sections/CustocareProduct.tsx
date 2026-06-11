@@ -69,7 +69,7 @@ export function CustocareProduct() {
               <img src={custocareLogo} alt="Custocare" className="h-14 w-auto rounded-full" />
               <div className="text-left">
                 <h3 className="font-heading text-h1 text-white uppercase tracking-wide">Custocare</h3>
-                <p className="text-orange-400/90 text-body font-medium">Continuous Care. Unified Operations.</p>
+                <p className="text-orange-400/90 text-body font-medium">Continuous Care. Clinical Excellence.</p>
               </div>
             </div>
         <p className="text-white/80 text-body-lg leading-relaxed">
