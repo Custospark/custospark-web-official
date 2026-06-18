@@ -3,6 +3,8 @@ import {
   Mail, Phone, MapPin, HelpCircle, Info,
   ChevronDown, Globe, Users, Map,
 } from "lucide-react";
+import { FaFacebook, FaYoutube, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaTiktok, FaXTwitter } from "react-icons/fa6";
 import { COMPANY } from "@/lib/constants";
 
 const faqs = [
@@ -29,8 +31,9 @@ export function ContactPage() {
     const script = document.createElement("script");
     script.src = "https://unpkg.com/leaflet/dist/leaflet.js";
     script.onload = () => {
-      if ((window as any).L && mapRef.current) {
-        const L = (window as any).L;
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const L = (window as any).L;
+      if (L && mapRef.current) {
         const map = L.map(mapRef.current).setView([0.3136, 32.5811], 13);
         L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
@@ -82,6 +85,18 @@ export function ContactPage() {
                   <p className="mt-6 text-xs italic text-gray-300">
                     For Custosell support, visit custosell.com. For Custocare, visit custocare.custospark.com.
                   </p>
+
+                  <hr className="my-5 border-white/20" />
+                  <p className="text-sm font-semibold mb-3">Follow Us</p>
+                  <div className="flex justify-center gap-4">
+                    <a href="https://wa.me/256756697871" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 text-2xl" aria-label="WhatsApp"><FaWhatsapp /></a>
+                    <a href="https://www.facebook.com/custospark" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 text-2xl" aria-label="Facebook"><FaFacebook /></a>
+                    <a href="https://www.youtube.com/@Custospark" target="_blank" rel="noopener noreferrer" className="hover:text-red-400 text-2xl" aria-label="YouTube"><FaYoutube /></a>
+                    <a href="https://www.tiktok.com/@Custospark" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400 text-2xl" aria-label="TikTok"><FaTiktok /></a>
+                    <a href="https://www.instagram.com/Custospark" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500 text-2xl" aria-label="Instagram"><FaInstagram /></a>
+                    <a href="https://x.com/Custospark" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 text-2xl" aria-label="X"><FaXTwitter /></a>
+                    <a href="https://www.linkedin.com/company/custospark" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 text-2xl" aria-label="LinkedIn"><FaLinkedin /></a>
+                  </div>
                 </div>
               </div>
             </div>

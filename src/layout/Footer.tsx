@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { Info, Settings, Mail, FileText, Shield, Briefcase, Users, HelpCircle, Building, MapPin } from "lucide-react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { Info, Settings, Mail, Phone, FileText, Shield, Briefcase, Users, HelpCircle, Building, MapPin } from "lucide-react";
+import { FaFacebook, FaYoutube, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaTiktok, FaXTwitter } from "react-icons/fa6";
 import { COMPANY } from "@/lib/constants";
 
 export function Footer() {
@@ -98,15 +99,22 @@ export function Footer() {
               <Mail size={16} />
               <a href={`mailto:${COMPANY.SUPPORT_EMAIL}`} className="hover:text-blue-200 no-underline">{COMPANY.SUPPORT_EMAIL}</a>
             </p>
+            <p className="text-sm flex items-center gap-2 justify-center md:justify-start mt-1">
+              <Phone size={16} />
+              <a href="tel:+256756697871" className="hover:text-blue-200 no-underline">+256 756 697 871</a>
+            </p>
           </div>
 
           {/* Social Media Icons */}
           <div className="flex space-x-5">
             <a href="mailto:support@custospark.com" className="hover:text-blue-200 text-xl" aria-label="Email"><Mail size={24} /></a>
-            <a href="#" className="hover:text-blue-200 text-xl" aria-label="Facebook"><FaFacebook size={24} /></a>
-            <a href="#" className="hover:text-blue-200 text-xl" aria-label="Twitter"><FaTwitter size={24} /></a>
-            <a href="#" className="hover:text-blue-200 text-xl" aria-label="LinkedIn"><FaLinkedin size={24} /></a>
-            <a href="#" className="hover:text-blue-200 text-xl" aria-label="Instagram"><FaInstagram size={24} /></a>
+            <a href="https://wa.me/256756697871" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 text-xl" aria-label="WhatsApp"><FaWhatsapp size={24} /></a>
+            <a href="https://www.facebook.com/custospark" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 text-xl" aria-label="Facebook"><FaFacebook size={24} /></a>
+            <a href="https://www.youtube.com/@Custospark" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 text-xl" aria-label="YouTube"><FaYoutube size={24} /></a>
+            <a href="https://www.tiktok.com/@Custospark" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 text-xl" aria-label="TikTok"><FaTiktok size={24} /></a>
+            <a href="https://www.instagram.com/Custospark" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 text-xl" aria-label="Instagram"><FaInstagram size={24} /></a>
+            <a href="https://x.com/Custospark" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 text-xl" aria-label="X"><FaXTwitter size={24} /></a>
+            <a href="https://www.linkedin.com/company/custospark" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 text-xl" aria-label="LinkedIn"><FaLinkedin size={24} /></a>
           </div>
 
         </div>
