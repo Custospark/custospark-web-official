@@ -106,7 +106,7 @@ export function Footer() {
           </div>
 
           {/* Social Media Icons */}
-          <div className="flex space-x-5">
+          <div className="flex flex-wrap justify-center md:justify-end gap-4 sm:gap-5">
             <a href="mailto:support@custospark.com" className="hover:text-blue-200 text-xl" aria-label="Email"><Mail size={24} /></a>
             <a href="https://wa.me/256756697871" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 text-xl" aria-label="WhatsApp"><FaWhatsapp size={24} /></a>
             <a href="https://www.facebook.com/custospark" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 text-xl" aria-label="Facebook"><FaFacebook size={24} /></a>
