@@ -6,7 +6,7 @@
 
 | Item | Action | Owner |
 |---|---|---|
-| Social media links | Replace `#` in `Footer.tsx` with real profile URLs | Oscar |
+| Social media links | Done — all URLs wired in footer and contact page | Oscar |
 | Custosell screenshots | `expense_tracking.png` and `shift_managment.png` exist in assets but aren't used in the showcase | Optional |
 
 ---
