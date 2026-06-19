@@ -78,7 +78,7 @@ const teamData = [
   {
     number: "5",
     name: "Angom Joyce Rita",
-    img: "/profiles/joyce.jpeg",
+    img: "/profiles/joyce.png",
     role: "Software Engineer",
     bio: "Joyce is an innovative full-stack developer passionate about scalable design. At Custospark, she contributes to our growth with clean code and customer-focused solutions.",
   },
