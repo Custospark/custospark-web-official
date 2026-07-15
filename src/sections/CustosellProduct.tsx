@@ -1,42 +1,94 @@
 import { Button } from "@/components/Button";
-import { ArrowRight, Home, LayoutDashboard, Package, TrendingUp, Users } from "lucide-react";
+import {
+  ArrowRight, LayoutDashboard, ShoppingCart, Compass, Package, Kanban,
+  FileText, BookOpen, LineChart, IdCard, FolderKanban, Files, Users,
+} from "lucide-react";
 import custosellLogo from "../shared/images/custosell/custosell-logo.png";
 import homeImg from "../shared/images/custosell/custosell-home.png";
-import dashboardImg from "../shared/images/custosell/real_time_dashboard.png";
-import inventoryImg from "../shared/images/custosell/smart_inventory.png";
 import salesImg from "../shared/images/custosell/faster_sales.png";
+import storefrontImg from "../shared/images/custosell/storefront.png";
+import inventoryImg from "../shared/images/custosell/smart_inventory.png";
+import pipelineImg from "../shared/images/custosell/pipeline_crm.png";
+import invoicingImg from "../shared/images/custosell/invoicing.png";
+import accountingImg from "../shared/images/custosell/accounting.png";
+import forecastingImg from "../shared/images/custosell/forecasting.png";
+import hrImg from "../shared/images/custosell/hr_payroll.png";
+import projectsImg from "../shared/images/custosell/project_management.png";
+import documentsImg from "../shared/images/custosell/document_management.png";
 import customersImg from "../shared/images/custosell/customer_insights.png";
 
 const features = [
   {
     img: homeImg,
-    icon: Home,
+    icon: LayoutDashboard,
     title: "Your Business, One Screen Away",
     desc: "Sales, inventory, customers, and insights — all waiting the moment you log in. Custosell's home screen puts your daily snapshot front and center so you can sell more, track everything, and grow faster without digging through menus or waiting on reports.",
   },
   {
-    img: dashboardImg,
-    icon: LayoutDashboard,
-    title: "Real-time Dashboard",
-    desc: "See your entire business at a glance. Custosell's live dashboard lets you track sales, monitor trends, and make data-driven decisions in real-time. Know exactly how your business is performing, any time of day, from anywhere.",
+    img: salesImg,
+    icon: ShoppingCart,
+    title: "Point of Sale",
+    desc: "Process transactions in seconds — online or offline. Scan items, split bills, take multiple payment methods, and print receipts. Your shift data syncs automatically when you reconnect.",
+  },
+  {
+    img: storefrontImg,
+    icon: Compass,
+    title: "E-commerce Storefront",
+    desc: "Share a public shop link so customers browse your catalog, save wishlists, and place order requests — all while stock stays tied to your real-time inventory. Turn your physical store into an online storefront instantly.",
   },
   {
     img: inventoryImg,
     icon: Package,
-    title: "Smart Inventory",
-    desc: "Never run out of stock again. Custosell lets you track inventory in real-time, set low-stock alerts, and manage suppliers all from one place. Know what's moving, what's not, and exactly when to reorder — so you can keep your shelves full and your customers happy.",
+    title: "Inventory & Supply Chain",
+    desc: "Track stock in real time, set low-stock alerts, manage suppliers, create purchase orders, and source from other businesses through the built-in marketplace. Never run out of stock again.",
   },
   {
-    img: salesImg,
-    icon: TrendingUp,
-    title: "Fast Sales",
-    desc: "Process transactions in seconds, not minutes. Whether you're online or offline, Custosell's point-of-sale is built for speed. Scan items, take payments, and print receipts — all while your data syncs seamlessly in the background when you're back online.",
+    img: pipelineImg,
+    icon: Kanban,
+    title: "Sales Pipeline (CRM)",
+    desc: "Move leads across visual boards, assign tasks, track deals, and never let an opportunity slip. Built for sales teams that need to close more — from first contact to signed deal.",
+  },
+  {
+    img: invoicingImg,
+    icon: FileText,
+    title: "Invoicing & Payments",
+    desc: "Create invoices, email them as PDFs, record payments, and track what customers owe you. Works for both sales invoices and supplier bills — everything in one place.",
+  },
+  {
+    img: accountingImg,
+    icon: BookOpen,
+    title: "Accounting",
+    desc: "Financial statements, chart of accounts, journal entries, fixed assets — books you can trust, ready when you need them. No accounting degree required.",
+  },
+  {
+    img: forecastingImg,
+    icon: LineChart,
+    title: "Financial Forecasting",
+    desc: "Cash flow outlook, budget planning, KPI tracking, and scenario modelling. Plan ahead with confidence before you commit to that next big decision.",
+  },
+  {
+    img: hrImg,
+    icon: IdCard,
+    title: "HR & Payroll",
+    desc: "Track attendance, leave, payroll, and performance. Manage people, departments, company assets, and control who has access to what — all without spreadsheet stress.",
+  },
+  {
+    img: projectsImg,
+    icon: FolderKanban,
+    title: "Project Management",
+    desc: "Quote, deliver, and get paid. Run estimates and projects from first ask to done — with boards, tasks, and team collaboration that keeps everyone aligned.",
+  },
+  {
+    img: documentsImg,
+    icon: Files,
+    title: "Document Management",
+    desc: "Keep contracts, invoices, and records organised. Find any file fast with cabinets, tags, and team access controls — no more digging through email attachments.",
   },
   {
     img: customersImg,
     icon: Users,
     title: "Customer Insights",
-    desc: "Know your customers beyond their names. Custosell helps you track purchase history, manage loyalty programs, and understand buying patterns to serve them better. Build relationships that keep them coming back.",
+    desc: "Know your customers beyond their names. Track purchase history, manage loyalty programs, and understand buying patterns to serve them better. Build relationships that keep them coming back.",
   },
 ];
 
@@ -53,7 +105,10 @@ export function CustosellProduct() {
           </div>
         </div>
         <p className="text-white/80 text-body-lg leading-relaxed">
-          Custosell is a point-of-sale and business management platform built for retail businesses that need to keep selling — even when the internet goes down. Sales, inventory, customers, and insights all work offline and sync when you are back online. No lost transactions. No missed data. No stopping.
+          Custosell is your business operating system — not just a POS. Point of Sale, E-commerce Storefront,
+          Inventory & Supply Chain, Accounting, HR & Payroll, Invoicing, Expenses, Project Management,
+          Sales Pipeline (CRM), Financial Forecasting, and Document Management — all in one connected system
+          that works with or without the internet. No more juggling separate apps.
         </p>
       </div>
 

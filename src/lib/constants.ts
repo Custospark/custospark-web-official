@@ -97,8 +97,8 @@ export const testimonials: Testimonial[] = [
 export const products: AppProduct[] = [
   {
     name: "Custosell",
-    tagline: "Offline-first POS that never stops selling.",
-    description: "A powerful point-of-sale system designed for retail businesses with offline-first capabilities.",
+    tagline: "Your Business Operating System.",
+    description: "Point of Sale, E-commerce Storefront, Inventory & Supply Chain, Accounting, HR & Payroll, Invoicing, Expenses, Project Management, Sales Pipeline (CRM), Financial Forecasting, and Document Management — all in one connected system that works with or without the internet.",
     slug: "custosell",
   },
   {
