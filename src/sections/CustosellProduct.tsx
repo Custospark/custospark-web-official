@@ -101,7 +101,7 @@ export function CustosellProduct() {
           <img src={custosellLogo} alt="Custosell" className="h-14 w-auto rounded-full" />
           <div className="text-left">
             <h3 className="font-heading text-h1 text-white uppercase tracking-wide">Custosell</h3>
-            <p className="text-orange-400/90 text-body font-medium">Sell More. Track All. Grow Fast.</p>
+            <p className="text-orange-400/90 text-body font-medium">Your Business Operating System — Sell More. Track All. Grow Fast.</p>
           </div>
         </div>
         <p className="text-white/80 text-body-lg leading-relaxed">
