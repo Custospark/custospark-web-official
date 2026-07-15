@@ -101,11 +101,11 @@ export function CustosellProduct() {
           <img src={custosellLogo} alt="Custosell" className="h-14 w-auto rounded-full" />
           <div className="text-left">
             <h3 className="font-heading text-h1 text-white uppercase tracking-wide">Custosell</h3>
-            <p className="text-orange-400/90 text-body font-medium">Your Business Operating System — Sell More. Track All. Grow Fast.</p>
+            <p className="text-orange-400/90 text-body font-medium">Your Business Operating System</p>
           </div>
         </div>
         <p className="text-white/80 text-body-lg leading-relaxed">
-          Custosell is your business operating system — not just a POS. Point of Sale, E-commerce Storefront,
+          Custosell is your business operating system. Point of Sale, E-commerce Storefront,
           Inventory & Supply Chain, Accounting, HR & Payroll, Invoicing, Expenses, Project Management,
           Sales Pipeline (CRM), Financial Forecasting, and Document Management — all in one connected system
           that works with or without the internet. No more juggling separate apps.
