@@ -5,6 +5,7 @@ import { HomePage } from "@/pages/HomePage";
 import { AboutPage } from "@/pages/AboutPage";
 import { ServicesPage } from "@/pages/ServicesPage";
 import { ProductsPage } from "@/pages/ProductsPage";
+import { AcademyPage } from "@/pages/AcademyPage";
 import { ContactPage } from "@/pages/ContactPage";
 import { CareersPage } from "@/pages/CareersPage";
 import { InvestorsPage } from "@/pages/InvestorsPage";
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/products" element={<ProductsPage />} />
+          <Route path="/academy" element={<AcademyPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/careers" element={<CareersPage />} />
           <Route path="/investors" element={<InvestorsPage />} />

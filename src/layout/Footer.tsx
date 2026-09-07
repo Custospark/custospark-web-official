@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Info, Settings, Mail, Phone, FileText, Shield, Briefcase, Users, HelpCircle, Building, MapPin } from "lucide-react";
+import { Info, Settings, Mail, Phone, FileText, Shield, Briefcase, Users, HelpCircle, Building, MapPin, GraduationCap } from "lucide-react";
 import { FaFacebook, FaYoutube, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaTiktok, FaXTwitter } from "react-icons/fa6";
 import { COMPANY } from "@/lib/constants";
@@ -33,6 +33,12 @@ export function Footer() {
                 <Link to="/services" className="hover:text-blue-200 no-underline flex items-center gap-2">
                   <Settings size={16} />
                   Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/academy" className="hover:text-blue-200 no-underline flex items-center gap-2">
+                  <GraduationCap size={16} />
+                  Academy
                 </Link>
               </li>
               <li>

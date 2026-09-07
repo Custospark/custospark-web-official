@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Home, Briefcase, Package, Mail, Info, Users, TrendingUp, ChevronDown } from "lucide-react";
+import { Menu, X, Home, Briefcase, Package, Mail, Info, Users, TrendingUp, ChevronDown, GraduationCap } from "lucide-react";
 import { cn } from "@/lib/cn";
 import { navLinks } from "@/lib/constants";
 import { Link, useLocation } from "react-router-dom";
@@ -7,7 +7,7 @@ import { LogoImage } from "@/components/LogoImage";
 import type { LucideIcon } from "lucide-react";
 
 const iconMap: Record<string, LucideIcon> = {
-  Home, Briefcase, Package, Mail, Info,
+  Home, Briefcase, Package, Mail, Info, GraduationCap,
 };
 
 export function Header() {
