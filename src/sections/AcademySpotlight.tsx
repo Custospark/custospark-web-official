@@ -5,7 +5,6 @@ import {
 } from "lucide-react";
 
 export const ACADEMY_URL = "https://academy.custospark.com";
-export const ACADEMY_CATALOG_URL = "https://academy.custospark.com/catalog";
 export const ACADEMY_REGISTER_URL = "https://academy.custospark.com/register";
 
 const journey = [
@@ -19,7 +18,7 @@ const journey = [
   {
     icon: Wallet,
     title: "Enroll in Minutes",
-    desc: "Apply online in minutes — no credit card required to start. Pay application, tuition and certificate fees with MTN, Airtel and more, with an instant receipt for every payment.",
+    desc: "Apply online in minutes - no credit card required to start. Pay application, tuition and certificate fees with MTN, Airtel and more, with an instant receipt for every payment.",
     medallion: "from-emerald-400 via-teal-500 to-primary",
     glow: "bg-emerald-500/10",
   },
@@ -33,7 +32,7 @@ const journey = [
   {
     icon: CalendarDays,
     title: "Join Live Sessions",
-    desc: "Live session schedules, assessment open/close windows and enrollment deadlines — always visible, always enforced fairly, so nobody is caught off guard.",
+    desc: "Live session schedules, assessment open/close windows and enrollment deadlines - always visible, always enforced fairly, so nobody is caught off guard.",
     medallion: "from-amber-400 via-orange-500 to-primary",
     glow: "bg-amber-500/10",
   },
@@ -54,14 +53,14 @@ const journey = [
   {
     icon: Bell,
     title: "Stay in the Loop",
-    desc: "Instructors reach learners by status with announcements and meeting links. Welcome back emails, deadline reminders — continue your learning journey without missing a beat.",
+    desc: "Instructors reach learners by status with announcements and meeting links. Welcome back emails, deadline reminders - continue your learning journey without missing a beat.",
     medallion: "from-cyan-400 via-sky-500 to-primary",
     glow: "bg-cyan-500/10",
   },
   {
     icon: Award,
     title: "Launch with Proof",
-    desc: "Earn a recognised, QR-coded certificate on completion that anyone can verify online in seconds. Go from learner to builder to founder — with proof.",
+    desc: "Earn a recognised, QR-coded certificate on completion that anyone can verify online in seconds. Go from learner to builder to founder - with proof.",
     medallion: "from-yellow-400 via-accent to-primary",
     glow: "bg-yellow-500/10",
   },
@@ -72,7 +71,6 @@ export function AcademySpotlight() {
     <>
       <div className="text-center max-w-3xl mx-auto mb-20">
         <div className="flex items-center justify-center gap-6 mb-4">
-          <span className="text-accent text-2xl font-bold tracking-wide">03</span>
           <div className="w-14 h-14 rounded-full bg-accent/20 border border-accent/30 flex items-center justify-center">
             <GraduationCap size={28} className="text-accent" />
           </div>
@@ -83,7 +81,7 @@ export function AcademySpotlight() {
         </div>
         <h2 className="font-heading text-h1 text-white font-extrabold">Your Path from Learner to Founder</h2>
         <p className="text-xl mt-6 max-w-3xl mx-auto text-white/80 leading-relaxed">
-          Eight steps, one journey — here&apos;s exactly how enrollment, learning, assessment and certification work.
+          Eight steps, one journey - here&apos;s exactly how enrollment, learning, assessment and certification work.
         </p>
       </div>
 
@@ -127,9 +125,9 @@ export function AcademySpotlight() {
       </div>
 
       <div className="mt-20 rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-950 via-slate-950 to-black p-10 text-center shadow-2xl">
-        <h3 className="font-heading text-h2 text-white">Welcome back — or start today.</h3>
+        <h3 className="font-heading text-h2 text-white">Welcome back - or start today.</h3>
         <p className="mt-3 text-white/70 text-body-lg max-w-2xl mx-auto">
-          Continue your learning journey, or create your account and start learning in minutes — no credit card required.
+          Continue your learning journey, or create your account and start learning in minutes - no credit card required.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a href={ACADEMY_REGISTER_URL} target="_blank" rel="noopener noreferrer">
@@ -137,11 +135,11 @@ export function AcademySpotlight() {
               Start learning <ArrowRight size={20} />
             </Button>
           </a>
-          <a href={ACADEMY_CATALOG_URL} target="_blank" rel="noopener noreferrer">
-            <Button variant="outline" size="lg">
-              Explore courses
-            </Button>
-          </a>
+        <a href={ACADEMY_URL} target="_blank" rel="noopener noreferrer">
+          <Button variant="outline" size="lg">
+            Explore courses
+          </Button>
+        </a>
         </div>
       </div>
     </>

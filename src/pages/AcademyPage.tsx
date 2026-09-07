@@ -49,7 +49,7 @@ export function AcademyPage() {
           <Sparkles size={28} className="mx-auto text-accent mb-4" />
           <h2 className="font-heading text-h2 text-white">An institution of Custospark Company Ltd</h2>
           <p className="mt-4 text-white/70 text-body-lg">
-            The same standard behind Custocare and Custosell — now for your skills. Verified certificates, fair assessments, real outcomes.
+            The same standard behind Custocare and Custosell - now for your skills. Verified certificates, fair assessments, real outcomes.
           </p>
         </div>
       </section>
