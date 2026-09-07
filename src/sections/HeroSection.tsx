@@ -1,20 +1,51 @@
+import { useEffect, useState } from "react";
 import { Button } from "@/components/Button";
 import { ArrowRight } from "lucide-react";
-import heroVideo from "../shared/videos/Collaboration1.mp4";
+import custocareHome from "../shared/images/custocare/custocare-home.png";
+import custosellHome from "../shared/images/custosell/custosell-home.png";
+import storefrontImg from "../shared/images/custosell/storefront.png";
+import pharmacyImg from "../shared/images/custocare/pharmacy.png";
+
+const SLIDES = [custocareHome, custosellHome, storefrontImg, pharmacyImg];
+const SLIDE_INTERVAL_MS = 3000;
 
 export function HeroSection() {
+  const [slide, setSlide] = useState(0);
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setSlide((current) => (current + 1) % SLIDES.length);
+    }, SLIDE_INTERVAL_MS);
+    return () => clearInterval(timer);
+  }, []);
+
+  function handleImageLoad(index: number) {
+    setLoadedImages((current) => {
+      const next = new Set(current);
+      next.add(index);
+      return next;
+    });
+  }
+
   return (
     <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center overflow-hidden text-white">
-      {/* Video Background */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src={heroVideo} type="video/mp4" />
-      </video>
+      {/* Sliding product screenshots (Academy home-style crossfade) */}
+      {SLIDES.map((src, index) => (
+        <div
+          key={src}
+          className={`absolute inset-0 transition-opacity duration-1000 ${slide === index && loadedImages.has(index) ? "opacity-100" : "opacity-0"}`}
+        >
+          <img
+            src={src}
+            alt=""
+            loading={index === 0 ? "eager" : "lazy"}
+            onLoad={() => handleImageLoad(index)}
+            onError={() => handleImageLoad(index)}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      ))}
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/60" />
