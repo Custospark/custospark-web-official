@@ -78,23 +78,13 @@ export function AcademySpotlight() {
           </div>
           <div className="text-left">
             <h3 className="font-heading text-h1 text-white uppercase tracking-wide">Academy</h3>
-            <p className="text-accent/90 text-body font-medium">Learn. Build. Launch.</p>
+            <p className="text-accent/90 text-body font-medium">An institution of Custospark Company Ltd</p>
           </div>
         </div>
         <h2 className="font-heading text-h1 text-white font-extrabold">Your Path from Learner to Founder</h2>
         <p className="text-xl mt-6 max-w-3xl mx-auto text-white/80 leading-relaxed">
-          Custospark Academy is open for enrollment. Hands-on projects, live sessions and recognised certificates — here&apos;s how you go from curious to certified.
+          Eight steps, one journey — here&apos;s exactly how enrollment, learning, assessment and certification work.
         </p>
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-          {["Hands-on projects", "Live sessions", "Recognised certificates"].map((pill) => (
-            <span
-              key={pill}
-              className="rounded-full border border-white/20 bg-white/5 px-4 py-1.5 text-xs font-medium text-white/70"
-            >
-              {pill}
-            </span>
-          ))}
-        </div>
       </div>
 
       <div className="relative">
