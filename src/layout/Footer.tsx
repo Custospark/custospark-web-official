@@ -36,10 +36,10 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/academy" className="hover:text-blue-200 no-underline flex items-center gap-2">
+                <a href="https://academy.custospark.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-200 no-underline flex items-center gap-2">
                   <GraduationCap size={16} />
                   Academy
-                </Link>
+                </a>
               </li>
               <li>
                 <Link to="/contact" className="hover:text-blue-200 no-underline flex items-center gap-2">

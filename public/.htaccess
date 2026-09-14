@@ -1,0 +1,101 @@
+# .htaccess for the Custospark main site SPA (custospark.com docroot).
+# Frontend-only repo: `npm run build` copies public/.htaccess -> dist/.htaccess,
+# then the dist CONTENTS are uploaded directly to public_html (surgical, never rm -rf root).
+#
+# Rules:
+#   - /academy* on the main domain 301-redirects to the Academy subdomain.
+#     (The Academy app lives in public_html/academy = academy.custospark.com.
+#     Its absolute /assets paths only resolve on the subdomain, so serving it
+#     via custospark.com/academy returns index.html as JS -> text/html MIME block.)
+#   - Real files/dirs are served as-is with correct MIME types.
+#   - Non-file routes fall back to index.html (SPA routing).
+#   - Hashed JS/CSS are immutable; index.html is never cached.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Academy lives on the subdomain - never serve the subfolder via main domain
+  RewriteCond %{HTTP_HOST} ^(www\.)?custospark\.com$ [NC]
+  RewriteRule ^academy(/.*)?$ https://academy.custospark.com$1 [R=301,L]
+
+  # Catch any path that includes /assets/ at any depth and serve from root assets
+  RewriteRule ^.+/assets/(.*)$ /assets/$1 [L]
+
+  # Don't rewrite files or directories that exist
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Redirect all other requests to index.html (for SPA routing)
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Enable compression for better performance
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# Cache static assets for better performance
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/x-javascript "access plus 1 month"
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+
+  <FilesMatch "\.(jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot)$">
+    Header set Access-Control-Allow-Origin "*"
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  <FilesMatch "\.(js|mjs|css)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  <FilesMatch "index\.html$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+  </FilesMatch>
+</IfModule>
+
+# Prevent access to sensitive files
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|sql|json|lock)$">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+<IfModule mod_headers.c>
+  Header set Connection keep-alive
+</IfModule>

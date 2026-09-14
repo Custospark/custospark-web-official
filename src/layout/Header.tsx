@@ -44,6 +44,23 @@ export function Header() {
           <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => {
               const Icon = iconMap[link.icon];
+              if (link.external) {
+                return (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={cn(
+                      "px-3 py-2 text-body-sm rounded-md transition-all duration-200 flex items-center gap-1.5",
+                      "text-white/80 hover:text-white hover:bg-white/10",
+                    )}
+                  >
+                    {Icon && <Icon size={16} />}
+                    {link.label}
+                  </a>
+                );
+              }
               const isActive = location.pathname === link.href;
               return (
                 <Link
@@ -137,6 +154,24 @@ export function Header() {
         <nav className="p-4 space-y-2">
           {navLinks.map((link) => {
             const Icon = iconMap[link.icon];
+            if (link.external) {
+              return (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileOpen(false)}
+                  className={cn(
+                    "flex items-center gap-2 px-4 py-3 rounded-md transition-all duration-200 text-white font-medium",
+                    "text-white/90 hover:bg-white/10",
+                  )}
+                >
+                  {Icon && <Icon size={18} />}
+                  {link.label}
+                </a>
+              );
+            }
             const isActive = location.pathname === link.href;
             return (
               <Link
