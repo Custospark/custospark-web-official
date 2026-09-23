@@ -75,12 +75,9 @@ export function AboutPage() {
  <span className="inline-block bg-primary-soft border border-primary-border text-primary text-body-sm font-semibold px-4 py-1.5 rounded-full mb-4">
  About Custospark
  </span>
- <h1 className="font-heading text-h1 text-white mb-4">
- A Software Company That Builds Products People Rely On
- </h1>
- <p className="text-white/70 text-body-lg">
- From a university dorm room to a portfolio of SaaS products used by businesses across Africa - this is the story of Custospark.
- </p>
+  <h1 className="font-heading text-h1 text-white mb-4">
+  A Software Company That Builds Products People Rely On
+  </h1>
  </div>
  </div>
  </section>
