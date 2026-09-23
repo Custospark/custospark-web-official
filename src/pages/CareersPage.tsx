@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import {
+  ChevronDown, House, Clock3, BookOpen, Heart, Plane, Zap, Gem, Banknote, HeartPulse, Globe, Users,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
 const steps = [
  { step: 1, title: "Submit Your Application", desc: "Click the Apply button and follow the next steps. You'll be required to create an account to track your application status and updates. Upload your resume or portfolio to complete the process." },
@@ -10,17 +13,17 @@ const steps = [
  { step: 6, title: "Offer & Onboarding", desc: "If it's a match, we'll send you an offer and kickstart your journey at Custospark!" },
 ];
 
-const perks = [
- { icon: "🏠", title: "Remote Work", desc: "Work from wherever you're most productive - home, café, or beach." },
- { icon: "🕐", title: "Flexible Hours", desc: "We focus on outcomes, not hours. Design your own schedule." },
- { icon: "📚", title: "Learning Budget", desc: "We support growth with a dedicated budget for courses, books & tools." },
- { icon: "❤️", title: "Paid Time Off", desc: "Rest matters. Enjoy generous vacation and personal time off." },
- { icon: "✈️", title: "Team Retreats", desc: "Join us in beautiful destinations to connect, recharge, and plan." },
- { icon: "⚡", title: "Mentorship & Growth", desc: "Work closely with industry pros and grow faster than ever." },
- { icon: "💎", title: "Equity Opportunities", desc: "Be a part-owner of what you help build - we grow together." },
- { icon: "💰", title: "Competitive Pay", desc: "We offer industry-leading compensation and regular performance reviews." },
- { icon: "💪", title: "Health & Wellness", desc: "Enjoy access to health insurance, fitness stipends, and wellness programs." },
- { icon: "🌍", title: "Diversity & Inclusion", desc: "Be part of a diverse team that celebrates individuality and collaboration." },
+const perks: { icon: LucideIcon; title: string; desc: string }[] = [
+  { icon: House, title: "Remote Work", desc: "Work from wherever you're most productive - home, café, or beach." },
+  { icon: Clock3, title: "Flexible Hours", desc: "We focus on outcomes, not hours. Design your own schedule." },
+  { icon: BookOpen, title: "Learning Budget", desc: "We support growth with a dedicated budget for courses, books & tools." },
+  { icon: Heart, title: "Paid Time Off", desc: "Rest matters. Enjoy generous vacation and personal time off." },
+  { icon: Plane, title: "Team Retreats", desc: "Join us in beautiful destinations to connect, recharge, and plan." },
+  { icon: Zap, title: "Mentorship & Growth", desc: "Work closely with industry pros and grow faster than ever." },
+  { icon: Gem, title: "Equity Opportunities", desc: "Be a part-owner of what you help build - we grow together." },
+  { icon: Banknote, title: "Competitive Pay", desc: "We offer industry-leading compensation and regular performance reviews." },
+  { icon: HeartPulse, title: "Health & Wellness", desc: "Enjoy access to health insurance, fitness stipends, and wellness programs." },
+  { icon: Globe, title: "Diversity & Inclusion", desc: "Be part of a diverse team that celebrates individuality and collaboration." },
 ];
 
 const careersFaqs = [
@@ -119,14 +122,15 @@ export function CareersPage() {
  <div className="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-border rounded-full shadow-lg z-0 hidden md:block" />
   <div className="space-y-8">
   {perks.map((perk, i) => {
+  const Icon = perk.icon;
   const isLeft = i % 2 === 0;
   return (
   <div key={perk.title} className="flex flex-col md:flex-row items-center md:items-start relative group">
   <div className={`w-full md:w-1/2 ${isLeft ? "md:pl-8 order-2" : "md:pr-8 order-2 md:order-1"}`}>
   <div className="bg-white border border-border rounded-lg p-6 shadow-card">
   <div className="flex items-center gap-4">
-  <div className="w-10 h-10 bg-primary-soft border border-primary-border text-primary rounded-md flex items-center justify-center text-xl shrink-0">
-  {perk.icon}
+  <div className="w-10 h-10 bg-primary-soft border border-primary-border text-primary rounded-md flex items-center justify-center shrink-0">
+  <Icon size={20} />
   </div>
   <div>
   <h3 className="text-lg font-semibold text-ink">{perk.title}</h3>
