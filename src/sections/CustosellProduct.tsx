@@ -97,7 +97,7 @@ export function CustosellProduct() {
  <div>
  <div className="text-center max-w-3xl mx-auto mb-12">
  <div className="flex items-center justify-center gap-4 mb-4">
- <span className="text-caption font-semibold tracking-[0.12em] uppercase text-primary">02</span>
+          <span className="text-caption font-semibold tracking-[0.12em] uppercase text-primary">03</span>
  <img src={custosellLogo} alt="Custosell" className="h-12 w-auto rounded-md border border-border" />
  <div className="text-left">
  <h3 className="font-heading text-h3 text-ink tracking-tight">Custosell</h3>

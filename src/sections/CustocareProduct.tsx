@@ -64,8 +64,8 @@ export function CustocareProduct() {
  <div className="mb-16">
  {/* Intro */}
  <div className="text-center max-w-4xl mx-auto mb-12">
- <div className="flex items-center justify-center gap-4 mb-4">
- <span className="text-caption font-semibold tracking-[0.12em] uppercase text-primary">01</span>
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <span className="text-caption font-semibold tracking-[0.12em] uppercase text-primary">02</span>
  <img src={custocareLogo} alt="Custocare" className="h-12 w-auto rounded-md border border-border" />
  <div className="text-left">
  <h3 className="font-heading text-h3 text-ink tracking-tight">Custocare</h3>

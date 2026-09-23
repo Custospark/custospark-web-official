@@ -182,9 +182,9 @@ export function HeroSection() {
   <div className="order-1 lg:order-2 flex-1 lg:max-w-xl text-center lg:pt-8">
   <p className="text-body md:text-body-lg text-white/70 leading-relaxed">
   Including{" "}
+  <a href="/products#smqss" className="text-white font-semibold underline underline-offset-4 decoration-white/30 hover:decoration-white">SMQSS</a>,{" "}
   <a href="https://www.custosell.com" target="_blank" rel="noopener noreferrer" className="text-white font-semibold underline underline-offset-4 decoration-white/30 hover:decoration-white">Custosell</a>,{" "}
-  <a href="https://custocare.custospark.com" target="_blank" rel="noopener noreferrer" className="text-white font-semibold underline underline-offset-4 decoration-white/30 hover:decoration-white">Custocare</a>,{" "}
-  <a href="/products#smqss" className="text-white font-semibold underline underline-offset-4 decoration-white/30 hover:decoration-white">SMQSS</a>{" "}
+  <a href="https://custocare.custospark.com" target="_blank" rel="noopener noreferrer" className="text-white font-semibold underline underline-offset-4 decoration-white/30 hover:decoration-white">Custocare</a>{" "}
   and <a href="https://academy.custospark.com" target="_blank" rel="noopener noreferrer" className="text-white font-semibold underline underline-offset-4 decoration-white/30 hover:decoration-white">Academy</a>,{" "}
   plus custom solutions for companies, organisations, and individuals.
   </p>

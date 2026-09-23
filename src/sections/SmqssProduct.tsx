@@ -9,13 +9,13 @@ const features = [
     img: smqssGlance,
     icon: LayoutDashboard,
     title: "Service at a Glance",
-    desc: "A complete view of service delivery — queues, counters, waiting areas and service points — in one dashboard. Managers see what's happening now, not after the fact.",
+    desc: "A complete view of service delivery - queues, counters, waiting areas and service points - in one dashboard. Managers see what's happening now, not after the fact.",
   },
   {
     img: smqssSmart,
     icon: Clock,
     title: "Smart Queuing, Not Just Queues",
-    desc: "Beyond ticketing: intelligent routing, priority handling, service-time tracking and accountability by counter and officer — built to cut wait times and keep service fair.",
+    desc: "Beyond ticketing: intelligent routing, priority handling, service-time tracking and accountability by counter and officer - built to cut wait times and keep service fair.",
   },
   {
     img: smqssDeployed,
@@ -30,14 +30,14 @@ export function SmqssProduct() {
     <div id="smqss">
       <div className="text-center max-w-3xl mx-auto mb-12">
         <div className="flex items-center justify-center gap-4 mb-4">
-          <span className="text-caption font-semibold tracking-[0.12em] uppercase text-primary">03</span>
+          <span className="text-caption font-semibold tracking-[0.12em] uppercase text-primary">01</span>
           <div className="text-left">
             <h3 className="font-heading text-h3 text-ink tracking-tight">SMQSS</h3>
             <p className="text-text-secondary text-body-sm font-medium">Service Management & Queuing System</p>
           </div>
         </div>
         <p className="text-text-secondary text-body-lg leading-relaxed">
-          SMQSS is a complete service management platform — not just a queueing tool. Built for institutions and service environments that serve students, customers, community, and the general public, it drives effective service delivery, strengthens accountability, reduces wait times, and gives management clear, real-time visibility into daily operations.
+          SMQSS is a complete service management platform - not just a queueing tool. Built for institutions and service environments that serve students, customers, community, and the general public, it drives effective service delivery, strengthens accountability, reduces wait times, and gives management clear, real-time visibility into daily operations.
         </p>
       </div>
 
@@ -65,7 +65,7 @@ export function SmqssProduct() {
 
       <div className="text-center mt-12">
         <p className="text-text-secondary text-body mb-6 max-w-2xl mx-auto leading-relaxed">
-          For institutions that serve people at scale — SMQSS makes every visit faster, fairer and fully visible.
+          For institutions that serve people at scale - SMQSS makes every visit faster, fairer and fully visible.
         </p>
         <a href="/contact">
           <Button variant="primary" size="lg">
