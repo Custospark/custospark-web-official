@@ -44,8 +44,13 @@ Custospark/Frontend/
 │   ├── main.tsx          # Entry point
 │   └── index.css         # Global styles + Tailwind entry
 ├── public/               # Static assets
+├── docs/
+│   ├── design/
+│   │   └── design.md     # Corporate design system source of truth (v2.0)
+│   ├── design.md         # Alias to design/design.md
+│   └── design-system.md  # Alias to design/design.md
 ├── scripts/              # Vera automation scripts
-├── AGENTS.md
+├── AGENTS.md             # References docs/design/design.md for all design decisions
 ├── vite.config.ts
 ├── tsconfig.json
 └── package.json
@@ -89,7 +94,8 @@ No backend API for the marketing site — static content with interactive UI.
 
 ## Design System
 
-The Custospark design system is defined in Tailwind v4 using `@theme` directive in `src/index.css`. See the file for all design tokens: colors, typography, spacing, shadows, animations.
+> **Single source of truth:** [`docs/design/design.md`](docs/design/design.md) (+ aliases `docs/design.md` / `docs/design-system.md`).
+> The Custospark corporate design system (v2.0) is defined in `docs/design/design.md` and implemented via the Tailwind v4 `@theme` directive in `src/index.css`. **Do not introduce new colors, gradients, shadows or radii without updating `docs/design/design.md` first.** Tokens in `src/index.css` must mirror that file. No gradients, no glass — flat corporate solids only. See `docs/design/design.md` §2–§6 for palette, typography, spacing and component rules.
 
 ## Quality Gate
 
