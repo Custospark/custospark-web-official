@@ -95,6 +95,7 @@ No backend API for the marketing site — static content with interactive UI.
 ## Design System
 
 > **Single source of truth:** [`docs/design/design.md`](docs/design/design.md) (+ aliases `docs/design.md` / `docs/design-system.md`).
+> **Refactor tracker:** [`docs/design/refactor.md`](docs/design/refactor.md) (+ alias `docs/refactor.md`) — living checklist we follow until polish is done. No page ships unless its row is ticked.
 > The Custospark corporate design system (v2.0) is defined in `docs/design/design.md` and implemented via the Tailwind v4 `@theme` directive in `src/index.css`. **Do not introduce new colors, gradients, shadows or radii without updating `docs/design/design.md` first.** Tokens in `src/index.css` must mirror that file. No gradients, no glass — flat corporate solids only. See `docs/design/design.md` §2–§6 for palette, typography, spacing and component rules.
 
 ## Quality Gate
