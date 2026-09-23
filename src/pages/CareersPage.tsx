@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {
-  ChevronDown, House, Clock3, BookOpen, Heart, Plane, Zap, Gem, Banknote, HeartPulse, Globe, Users,
+  ChevronDown, House, Clock3, BookOpen, Heart, Plane, Zap, Gem, Banknote, HeartPulse, Globe,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
