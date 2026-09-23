@@ -59,31 +59,39 @@ const CUSTOCARE_ACADEMY_SLIDES = [
 const SLIDE_INTERVAL_MS = 2000;
 
 function Screen({
- src,
- prevSrc,
- loaded,
- prevLoaded,
- onLoad,
- label,
+  src,
+  prevSrc,
+  loaded,
+  prevLoaded,
+  onLoad,
+  tilt,
+  label,
 }: {
- src: string;
- prevSrc: string | null;
- loaded: boolean;
- prevLoaded: boolean;
- onLoad: (src: string) => void;
- label: string;
+  src: string;
+  prevSrc: string | null;
+  loaded: boolean;
+  prevLoaded: boolean;
+  onLoad: (src: string) => void;
+  tilt: "left" | "right";
+  label: string;
 }) {
- return (
- <div className="w-full">
- <div className="relative rounded-lg border border-border bg-white shadow-card-hover overflow-hidden">
- {/* Browser chrome - flat */}
- <div className="flex items-center gap-1.5 px-4 py-2.5 bg-surface-muted border-b border-border">
- <span className="w-2.5 h-2.5 rounded-full bg-border-strong" />
- <span className="w-2.5 h-2.5 rounded-full bg-border-strong" />
- <span className="w-2.5 h-2.5 rounded-full bg-border-strong" />
- <span className="ml-3 text-caption font-medium tracking-widest uppercase text-text-muted truncate">{label}</span>
- </div>
- <div className="relative aspect-[16/10] bg-white">
+  return (
+  <div className="w-full" style={{ perspective: "1200px" }}>
+  <div
+  className="relative rounded-lg border border-border bg-white shadow-card-hover overflow-hidden transition-transform duration-700"
+  style={{
+  transform: tilt === "left" ? "rotateY(18deg)" : "rotateY(-18deg)",
+  transformStyle: "preserve-3d",
+  }}
+  >
+  {/* Browser chrome - flat corporate */}
+  <div className="flex items-center gap-1.5 px-4 py-2.5 bg-surface-muted border-b border-border">
+  <span className="w-2.5 h-2.5 rounded-full bg-border-strong" />
+  <span className="w-2.5 h-2.5 rounded-full bg-border-strong" />
+  <span className="w-2.5 h-2.5 rounded-full bg-border-strong" />
+  <span className="ml-3 text-caption font-medium tracking-widest uppercase text-text-muted truncate">{label}</span>
+  </div>
+  <div className="relative aspect-[16/10] bg-white">
  {prevSrc && prevSrc !== src && (
  <img
  src={prevSrc}
@@ -160,17 +168,18 @@ export function HeroSection() {
  {/* Screens */}
  <div className="mt-10 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6 lg:gap-8">
  <div className="order-2 lg:order-1 w-full lg:flex-1 lg:max-w-[640px]">
- <Screen
- src={CUSTOSELL_SLIDES[left]}
- prevSrc={leftPrev === null ? null : CUSTOSELL_SLIDES[leftPrev]}
- loaded={loadedLeft.has(left)}
- prevLoaded={leftPrev !== null && loadedLeft.has(leftPrev)}
- onLoad={handleLeftLoad}
- label="Custosell in action"
- />
- </div>
+  <Screen
+  src={CUSTOSELL_SLIDES[left]}
+  prevSrc={leftPrev === null ? null : CUSTOSELL_SLIDES[leftPrev]}
+  loaded={loadedLeft.has(left)}
+  prevLoaded={leftPrev !== null && loadedLeft.has(leftPrev)}
+  onLoad={handleLeftLoad}
+  tilt="left"
+  label="Custosell in action"
+  />
+  </div>
 
- <div className="order-1 lg:order-2 flex-1 lg:max-w-xl text-center lg:pt-8">
+  <div className="order-1 lg:order-2 flex-1 lg:max-w-xl text-center lg:pt-8">
  <p className="text-body md:text-body-lg text-white/70 leading-relaxed">
  Including{" "}
  <a href="https://www.custosell.com" target="_blank" rel="noopener noreferrer" className="text-white font-semibold underline underline-offset-4 decoration-white/30 hover:decoration-white">Custosell</a>,{" "}
@@ -189,14 +198,15 @@ export function HeroSection() {
  </div>
 
  <div className="order-3 w-full lg:flex-1 lg:max-w-[640px]">
- <Screen
- src={CUSTOCARE_ACADEMY_SLIDES[right]}
- prevSrc={rightPrev === null ? null : CUSTOCARE_ACADEMY_SLIDES[rightPrev]}
- loaded={loadedRight.has(right)}
- prevLoaded={rightPrev !== null && loadedRight.has(rightPrev)}
- onLoad={handleRightLoad}
- label="Custocare and Academy in action"
- />
+  <Screen
+  src={CUSTOCARE_ACADEMY_SLIDES[right]}
+  prevSrc={rightPrev === null ? null : CUSTOCARE_ACADEMY_SLIDES[rightPrev]}
+  loaded={loadedRight.has(right)}
+  prevLoaded={rightPrev !== null && loadedRight.has(rightPrev)}
+  onLoad={handleRightLoad}
+  tilt="right"
+  label="Custocare and Academy in action"
+  />
  </div>
  </div>
 
