@@ -55,20 +55,27 @@ const teamData = [
   },
   {
   number: "2",
+  name: "Dr. Odongo Steven Eyobu",
+  img: "/profiles/odongo.jpg",
+  role: "Senior Lecturer, Makerere University | CoCIS",
+  bio: "PhD Electronics Engineering, Kyungpook National University (South Korea) - 15+ years in intelligent computing, communications and localization. Senior Lecturer, Department of Networks, CoCIS; Assistant Director, Geospatial Data & Computational Intelligence Lab. PI MakRIF Smart Health Assistant, Co-PI HOLICARE (EU 500k), 50+ publications, 1241 citations, h-index 13. Supervised 4 PhD and 10 Masters.",
+  },
+  {
+  number: "3",
   name: "Alice Mukabera",
   img: "/profiles/alice.jpg",
   role: "Software Engineer",
   bio: "Full-stack engineer with deep product sense. Alice builds scalable, reliable features across Custospark's portfolio - from APIs and data models to polished interfaces - keeping quality and performance front and centre.",
   },
   {
-  number: "3",
+  number: "4",
   name: "Ogwal Richard",
   img: "/profiles/richard.jpg",
   role: "Software Engineer",
   bio: "Versatile engineer at home in frontend and backend. Richard champions clean code, efficient systems and dependable delivery - ensuring platforms stay fast, maintainable and ready to scale.",
   },
   {
-  number: "4",
+  number: "5",
   name: "Oscar Opiyo",
   img: "/profiles/new_profile.png",
   role: "Founder & CEO | AI & Technology Corporate Strategist",
@@ -76,14 +83,14 @@ const teamData = [
   bio: "Founder of Custospark. AI & Technology Corporate Strategist who helps governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency - turning strategy into shipped software.",
   },
   {
-  number: "5",
+  number: "6",
   name: "Namatove Christine Maria",
   img: "/profiles/christine.jpg",
   role: "Co-Founder & CTO",
   bio: "Leads engineering and product at Custospark. Christine sets the architecture, upholds performance and crafts user experiences that are secure, scalable and genuinely enjoyable to use.",
   },
   {
-  number: "6",
+  number: "7",
   name: "Angom Joyce Rita",
   img: "/profiles/joyce.png",
   role: "Software Engineer",
@@ -130,6 +137,86 @@ export function AboutPage() {
  </div>
  </div>
  </section>
+
+  {/* Founders - Dr Grace as founding advisor for credibility */}
+  <section className="py-16 bg-ink text-white">
+  <div className="max-w-7xl mx-auto px-4 md:px-8">
+  <p className="text-caption font-semibold tracking-[0.12em] uppercase text-white/60 text-center mb-3">Leadership</p>
+  <h2 className="font-heading text-h1 text-white mb-3 text-center">Our Founders</h2>
+  <p className="text-white/60 text-body text-center max-w-2xl mx-auto mb-10">Research-led, product-driven - combining academic rigour with shipping software.</p>
+  <hr className="border-t border-ink-light mb-10" />
+
+  {/* Founder: Dr Grace - lead for credibility */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-12">
+  <div className="flex flex-col items-center text-center space-y-4">
+  <img src="/profiles/grace.jpg" alt="Dr Kamulegeya Grace Bugembe" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
+  <div>
+  <p className="text-lg font-semibold text-white">Dr. Kamulegeya Grace Bugembe</p>
+  <p className="text-sm font-semibold tracking-wide uppercase text-ink bg-white px-3 py-1 rounded-full border border-border">Research Advisor, Makerere University</p>
+  <p className="text-sm text-white/60">PhD Software Engineering | Founding President, ProSEIT</p>
+  </div>
+  </div>
+  <div>
+  <p className="text-body text-white/70 leading-relaxed">
+  PhD Software Engineering, Makerere University - research on software engineering in emerging ecosystems, productization and AI-driven industrial digitalisation. Founding President of ProSEIT, leads the PESIC pipeline and chairs the UMA Technology Sector. Previously PI on Mak-RIF COVID-19, Co-PI on InnoMak, and lead on a World Bank PSFU/GROW grant (~UGX 1B).
+  </p>
+  </div>
+  </div>
+
+  {/* Founder: Dr Odongo - after Dr Grace for credibility */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-12">
+  <div className="flex flex-col items-center text-center space-y-4">
+  <img src="/profiles/odongo.jpg" alt="Dr Odongo Steven Eyobu" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
+  <div>
+  <p className="text-lg font-semibold text-white">Dr. Odongo Steven Eyobu</p>
+  <p className="text-sm font-semibold tracking-wide uppercase text-ink bg-white px-3 py-1 rounded-full border border-border">Senior Lecturer, Makerere University</p>
+  <p className="text-sm text-white/60">PhD Electronics Engineering | CoCIS - Networks</p>
+  </div>
+  </div>
+  <div>
+  <p className="text-body text-white/70 leading-relaxed">
+  PhD Electronics Engineering, Kyungpook National University (South Korea) - 15+ years in intelligent computing, communications and localization. Senior Lecturer, Department of Networks, CoCIS and Assistant Director, Geospatial Data & Computational Intelligence Lab.
+  </p>
+  <p className="text-body-sm text-white/60 leading-relaxed mt-4">
+  Co-PI HOLICARE (EU 500k) and PI Smart Voice Health Assistant (MakRIF 82M). 50+ publications, 1241 citations, h-index 13. Supervised 4 PhD and 10 Masters. Chair, Tender Mercies Foundation.
+  </p>
+  </div>
+  </div>
+
+  {/* Founder 3: Oscar - AI Strategist */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+  <div className="flex flex-col items-center text-center space-y-4">
+  <img src="/profiles/new_profile.png" alt="Oscar Opiyo" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
+  <div>
+  <p className="text-lg font-semibold text-white">Oscar Opiyo</p>
+  <p className="text-sm font-semibold tracking-wide uppercase text-ink bg-white px-3 py-1 rounded-full border border-border">Founder & CEO | AI & Technology Corporate Strategist</p>
+  </div>
+  <a href="mailto:oscar@custospark.com" className="text-sm text-white hover:text-white/80 underline underline-offset-4">oscar@custospark.com</a>
+  </div>
+  <div>
+  <p className="text-body text-white/70 leading-relaxed">
+  Founder of Custospark. AI & Technology Corporate Strategist who helps governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency - turning strategy into shipped software.
+  </p>
+  </div>
+  </div>
+
+  {/* Founder 3: Christine */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-10">
+  <div className="flex flex-col items-center text-center space-y-4">
+  <img src="/profiles/christine.jpg" alt="Christine" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
+  <div>
+  <p className="text-lg font-semibold text-white">Namatove Christine Maria</p>
+  <p className="text-sm font-semibold tracking-wide uppercase text-ink bg-white px-3 py-1 rounded-full border border-border">Co-Founder & CTO</p>
+  </div>
+  </div>
+  <div>
+  <p className="text-body text-white/70 leading-relaxed">
+  Leads engineering and product - setting architecture, upholding performance and crafting user experiences that are secure, scalable and genuinely enjoyable to use. Drives the technical vision from prototype to production.
+  </p>
+  </div>
+  </div>
+  </div>
+  </section>
 
  {/* Who We Are */}
  <section className="py-12 bg-ink text-white">
@@ -232,66 +319,6 @@ export function AboutPage() {
  </div>
  </section>
 
-  {/* Founders - Dr Grace as founding advisor for credibility */}
-  <section className="py-16 bg-ink text-white">
-  <div className="max-w-7xl mx-auto px-4 md:px-8">
-  <p className="text-caption font-semibold tracking-[0.12em] uppercase text-white/60 text-center mb-3">Leadership</p>
-  <h2 className="font-heading text-h1 text-white mb-3 text-center">Our Founders</h2>
-  <p className="text-white/60 text-body text-center max-w-2xl mx-auto mb-10">Research-led, product-driven - combining academic rigour with shipping software.</p>
-  <hr className="border-t border-ink-light mb-10" />
-
-  {/* Founder: Dr Grace - lead for credibility */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-12">
-  <div className="flex flex-col items-center text-center space-y-4">
-  <img src="/profiles/grace.jpg" alt="Dr Kamulegeya Grace Bugembe" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
-  <div>
-  <p className="text-lg font-semibold text-white">Dr. Kamulegeya Grace Bugembe</p>
-  <p className="text-sm font-semibold tracking-wide uppercase text-ink bg-white px-3 py-1 rounded-full border border-border">Research Advisor, Makerere University</p>
-  <p className="text-sm text-white/60">PhD Software Engineering | Founding President, ProSEIT</p>
-  </div>
-  </div>
-  <div>
-  <p className="text-body text-white/70 leading-relaxed">
-  PhD Software Engineering, Makerere University - research on software engineering in emerging ecosystems, productization and AI-driven industrial digitalisation. Founding President of ProSEIT, leads the PESIC pipeline and chairs the UMA Technology Sector. Previously PI on Mak-RIF COVID-19, Co-PI on InnoMak, and lead on a World Bank PSFU/GROW grant (~UGX 1B).
-  </p>
-  </div>
-  </div>
-
-  {/* Founder 2: Oscar - AI Strategist */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-  <div className="flex flex-col items-center text-center space-y-4">
-  <img src="/profiles/new_profile.png" alt="Oscar Opiyo" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
-  <div>
-  <p className="text-lg font-semibold text-white">Oscar Opiyo</p>
-  <p className="text-sm font-semibold tracking-wide uppercase text-ink bg-white px-3 py-1 rounded-full border border-border">Founder & CEO | AI & Technology Corporate Strategist</p>
-  </div>
-  <a href="mailto:oscar@custospark.com" className="text-sm text-white hover:text-white/80 underline underline-offset-4">oscar@custospark.com</a>
-  </div>
-  <div>
-  <p className="text-body text-white/70 leading-relaxed">
-  Founder of Custospark. AI & Technology Corporate Strategist who helps governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency - turning strategy into shipped software.
-  </p>
-  </div>
-  </div>
-
-  {/* Founder 3: Christine */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-10">
-  <div className="flex flex-col items-center text-center space-y-4">
-  <img src="/profiles/christine.jpg" alt="Christine" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
-  <div>
-  <p className="text-lg font-semibold text-white">Namatove Christine Maria</p>
-  <p className="text-sm font-semibold tracking-wide uppercase text-ink bg-white px-3 py-1 rounded-full border border-border">Co-Founder & CTO</p>
-  </div>
-  </div>
-  <div>
-  <p className="text-body text-white/70 leading-relaxed">
-  Leads engineering and product - setting architecture, upholding performance and crafting user experiences that are secure, scalable and genuinely enjoyable to use. Drives the technical vision from prototype to production.
-  </p>
-  </div>
-  </div>
-  </div>
-  </section>
-
   {/* Team - Dr Grace leads for credibility */}
   <section className="py-16 bg-ink text-white">
   <div className="max-w-7xl mx-auto px-4 md:px-8">
@@ -380,7 +407,11 @@ export function AboutPage() {
  {/* CTA */}
  <section className="py-16 bg-ink text-white text-center">
  <div className="max-w-7xl mx-auto px-4 md:px-8">
- <div className="max-w-2xl mx-auto">
+ <div className="m
+
+
+
+ax-w-2xl mx-auto">
  <h2 className="font-heading text-h2 text-white mb-4">Want to See What We Build?</h2>
  <p className="text-white/70 text-body-lg mb-8">
  Meet Custocare - our healthcare platform. And Custosell - our retail POS. Both built by the same team that tells this story.
