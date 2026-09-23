@@ -9,7 +9,7 @@ export function CTASection() {
  Need a Software Solution?
  </h2>
  <p className="text-white/70 text-body-lg mb-8 leading-relaxed">
- Whether you run a company, manage an organisation, own a business, or have an idea as an individual — we build software that works for you. Tell us what you need.
+ Whether you run a company, manage an organisation, own a business, or have an idea as an individual - we build software that works for you. Tell us what you need.
  </p>
  <a href="/contact">
  <Button variant="primary" size="lg">

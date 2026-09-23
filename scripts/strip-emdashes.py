@@ -11,10 +11,7 @@ per-file replacement count; exits 0. Safe to re-run (idempotent).
 import sys
 from pathlib import Path
 
-DEFAULT_TARGETS = [
-    Path("src/pages/AcademyPage.tsx"),
-    Path("src/sections/AcademySpotlight.tsx"),
-]
+DEFAULT_TARGETS: list[Path] | None = None  # None = scan all src/**/*.tsx + src/**/*.ts + src/**/*.md
 
 # Em-dash / en-dash (plus common variants) -> ASCII hyphen-minus.
 REPLACEMENTS = {
@@ -40,8 +37,27 @@ def strip_file(path: Path) -> int:
     return total
 
 
+def collect_targets() -> list[Path]:
+    # All source + docs where copy lives — keeps house style consistent repo-wide.
+    patterns = ["src/**/*.tsx", "src/**/*.ts", "src/**/*.md", "docs/**/*.md", "*.md"]
+    found: list[Path] = []
+    for pat in patterns:
+        found.extend(Path(".").glob(pat))
+    # De-dupe, ignore built output
+    seen = set()
+    out = []
+    for p in found:
+        if p.is_file() and p not in seen and "node_modules" not in p.parts and "dist" not in p.parts:
+            seen.add(p)
+            out.append(p)
+    return sorted(out)
+
+
 def main(argv: list) -> int:
-    targets = [Path(a) for a in argv[1:]] or DEFAULT_TARGETS
+    if len(argv) > 1:
+        targets = [Path(a) for a in argv[1:]]
+    else:
+        targets = collect_targets() if DEFAULT_TARGETS is None else DEFAULT_TARGETS
     grand = 0
     for path in targets:
         if not path.is_file():
@@ -49,7 +65,8 @@ def main(argv: list) -> int:
             continue
         count = strip_file(path)
         grand += count
-        print(f"{path}: {count} dash(es) replaced")
+        if count:
+            print(f"{path}: {count} dash(es) replaced")
     print(f"done: {grand} total")
     return 0
 

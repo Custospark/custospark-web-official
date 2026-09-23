@@ -48,7 +48,7 @@ export function TestimonialsSection() {
  </p>
  <p className="font-heading font-semibold text-ink">
  {t.name}
- <span className="text-text-muted text-body-sm font-normal"> — {t.title}</span>
+ <span className="text-text-muted text-body-sm font-normal"> - {t.title}</span>
  </p>
  </div>
  </div>

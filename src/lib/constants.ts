@@ -90,7 +90,7 @@ export const testimonials: Testimonial[] = [
   {
     name: "Grace A.",
     title: "Founder, Grace's Boutique",
-    text: "Custosell made inventory management effortless. I know exactly what's in stock, what's selling, and when to reorder — all from my phone. My business has grown 40% since I switched.",
+    text: "Custosell made inventory management effortless. I know exactly what's in stock, what's selling, and when to reorder - all from my phone. My business has grown 40% since I switched.",
     avatar: "https://i.pravatar.cc/100?img=48",
   },
 ];
@@ -99,7 +99,7 @@ export const products: AppProduct[] = [
   {
     name: "Custosell",
     tagline: "Your Business Operating System.",
-    description: "Point of Sale, E-commerce Storefront, Inventory & Supply Chain, Accounting, HR & Payroll, Invoicing, Expenses, Project Management, Sales Pipeline (CRM), Financial Forecasting, and Document Management — all in one connected system that works with or without the internet.",
+    description: "Point of Sale, E-commerce Storefront, Inventory & Supply Chain, Accounting, HR & Payroll, Invoicing, Expenses, Project Management, Sales Pipeline (CRM), Financial Forecasting, and Document Management - all in one connected system that works with or without the internet.",
     slug: "custosell",
   },
   {

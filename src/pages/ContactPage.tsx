@@ -10,11 +10,11 @@ import { COMPANY } from "@/lib/constants";
 const faqs = [
  { question: "What does Custospark build?", answer: "We build and operate software products like Custosell (retail POS) and Custocare (healthcare platform), and develop custom software for companies, organisations, and individuals." },
  { question: "How is Custosell different from other POS systems?", answer: "Custosell works offline. When your internet goes down, your business keeps running. Sales, inventory, and customer data all sync automatically when you're back online." },
- { question: "How is Custocare different from other healthcare platforms?", answer: "Custocare connects the entire patient journey — from registration through clinical care, pharmacy, lab, nursing, and billing — in one system. No more fragmented tools or lost context between departments." },
+ { question: "How is Custocare different from other healthcare platforms?", answer: "Custocare connects the entire patient journey - from registration through clinical care, pharmacy, lab, nursing, and billing - in one system. No more fragmented tools or lost context between departments." },
  { question: "Can Custospark build custom software for my business?", answer: "Yes. Beyond our own products, we develop custom web, mobile, and cloud solutions for businesses that need software built specifically for how they work." },
  { question: "How do I get started with Custosell or Custocare?", answer: "Visit the product website to sign up. For Custosell, go to custosell.com. For Custocare, go to custocare.custospark.com." },
  { question: "Do you offer support for your products?", answer: "Yes. Each product has its own support team. You can also reach us at support@custospark.com and we'll direct you to the right team." },
- { question: "Can Custospark help if I already have software but need improvements?", answer: "Yes. We take on existing projects too — whether you need new features, a redesign, or help scaling what you already have." },
+ { question: "Can Custospark help if I already have software but need improvements?", answer: "Yes. We take on existing projects too - whether you need new features, a redesign, or help scaling what you already have." },
  { question: "Where is Custospark based?", answer: "We're headquartered in Kampala, Uganda and operate as a remote-first company with team members across different countries." },
 ];
 
@@ -64,7 +64,7 @@ export function ContactPage() {
  Need Software? Let's Talk.
  </h1>
  <p className="text-lg text-white/70 max-w-2xl mx-auto">
- Whether you're interested in Custosell, Custocare, or custom software for your business — send us a message and we'll point you to the right team.
+ Whether you're interested in Custosell, Custocare, or custom software for your business - send us a message and we'll point you to the right team.
  </p>
  </div>
 
@@ -114,7 +114,7 @@ export function ContactPage() {
   <div className="space-y-4">
   <p className="text-body text-white/70 leading-relaxed border border-ink-light rounded-lg p-4">
   <Map size={16} className="inline mr-2 text-white/50" />
-  We're headquartered in <strong className="text-white">Kampala, Uganda</strong>, at the heart of Africa's burgeoning tech scene. As a strategic hub, we're positioned to tap into the immense growth potential of the African market—one of the most dynamic and untapped regions globally.
+  We're headquartered in <strong className="text-white">Kampala, Uganda</strong>, at the heart of Africa's burgeoning tech scene. As a strategic hub, we're positioned to tap into the immense growth potential of the African market-one of the most dynamic and untapped regions globally.
   </p>
   <p className="text-body text-white/70 leading-relaxed border border-ink-light rounded-lg p-4">
   <Users size={16} className="inline mr-2 text-white/50" />

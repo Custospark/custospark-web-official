@@ -22,7 +22,7 @@ export function ServicesSection() {
  </p>
  <h2 className="font-heading text-h2 text-ink mb-3">Beyond Our Products</h2>
  <p className="text-text-secondary text-body-lg leading-relaxed">
- Custocare and Custosell are our own products, but we also build custom software for clients — from web and mobile apps to cloud infrastructure, AI, and everything in between. Tell us what you need.
+ Custocare and Custosell are our own products, but we also build custom software for clients - from web and mobile apps to cloud infrastructure, AI, and everything in between. Tell us what you need.
  </p>
  </div>
 

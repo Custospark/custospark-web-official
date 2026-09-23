@@ -15,7 +15,7 @@ const features = [
  {
  img: custocareHome,
  title: "A Home Screen Designed for Everyone in Healthcare",
- desc: "Patients, doctors, nurses, pharmacists, lab technicians, health practitioners, and facility owners — every role has a place here. From the moment you land, Custocare's home screen communicates its core promise of Continuous Care and Clinical Excellence, while pointing each user toward the tools and information that matter most to them.",
+ desc: "Patients, doctors, nurses, pharmacists, lab technicians, health practitioners, and facility owners - every role has a place here. From the moment you land, Custocare's home screen communicates its core promise of Continuous Care and Clinical Excellence, while pointing each user toward the tools and information that matter most to them.",
  },
  {
  img: custocareMedical,
@@ -25,17 +25,17 @@ const features = [
  {
  img: custocareClinical,
  title: "Clinical Consultations & Care Planning",
- desc: "Designed for how clinicians actually work. Custocare lets you document consultations, record vitals, capture diagnoses, and build care plans — all within a structured workflow that supports clinical decision-making. SOAP notes, prescriptions, and allergy tracking are built in, so nothing falls through the cracks.",
+ desc: "Designed for how clinicians actually work. Custocare lets you document consultations, record vitals, capture diagnoses, and build care plans - all within a structured workflow that supports clinical decision-making. SOAP notes, prescriptions, and allergy tracking are built in, so nothing falls through the cracks.",
  },
  {
  img: custocareNursing,
  title: "Nursing Operations & Treatment Tracking",
- desc: "Ward management, bed assignments, medication administration, task handovers, and shift changeovers — nursing is the backbone of continuous care. Custocare gives nurses the tools to track every treatment, every handover, and every patient under their care with clarity and accountability.",
+ desc: "Ward management, bed assignments, medication administration, task handovers, and shift changeovers - nursing is the backbone of continuous care. Custocare gives nurses the tools to track every treatment, every handover, and every patient under their care with clarity and accountability.",
  },
  {
  img: custocareLab,
  title: "Laboratory Workflow Management",
- desc: "From request to result, Custocare connects the lab to the rest of the facility. Clinicians place orders directly from the patient record. Lab techs receive, process, and verify results. Results appear automatically in the patient's chart — no phone calls, no chasing papers, no delays.",
+ desc: "From request to result, Custocare connects the lab to the rest of the facility. Clinicians place orders directly from the patient record. Lab techs receive, process, and verify results. Results appear automatically in the patient's chart - no phone calls, no chasing papers, no delays.",
  },
  {
  img: custocarePharmacy,
@@ -55,7 +55,7 @@ const features = [
  {
  img: custocareAdmin,
  title: "Facility Administration & Department Management",
- desc: "Manage facilities, departments, staff roles, and permissions — all from a single administration panel. Configure how your facility operates, define role-based access, and maintain oversight of every aspect of your operations. Custocare's administration tools scale from a single clinic to multi-facility health systems.",
+ desc: "Manage facilities, departments, staff roles, and permissions - all from a single administration panel. Configure how your facility operates, define role-based access, and maintain oversight of every aspect of your operations. Custocare's administration tools scale from a single clinic to multi-facility health systems.",
  },
 ];
 

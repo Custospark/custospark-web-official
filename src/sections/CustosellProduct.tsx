@@ -22,19 +22,19 @@ const features = [
  img: homeImg,
  icon: LayoutDashboard,
  title: "Your Business, One Screen Away",
- desc: "Sales, inventory, customers, and insights — all waiting the moment you log in. Custosell's home screen puts your daily snapshot front and center so you can sell more, track everything, and grow faster without digging through menus or waiting on reports.",
+ desc: "Sales, inventory, customers, and insights - all waiting the moment you log in. Custosell's home screen puts your daily snapshot front and center so you can sell more, track everything, and grow faster without digging through menus or waiting on reports.",
  },
  {
  img: salesImg,
  icon: ShoppingCart,
  title: "Point of Sale",
- desc: "Process transactions in seconds — online or offline. Scan items, split bills, take multiple payment methods, and print receipts. Your shift data syncs automatically when you reconnect.",
+ desc: "Process transactions in seconds - online or offline. Scan items, split bills, take multiple payment methods, and print receipts. Your shift data syncs automatically when you reconnect.",
  },
  {
  img: storefrontImg,
  icon: Compass,
  title: "E-commerce Storefront",
- desc: "Share a public shop link so customers browse your catalog, save wishlists, and place order requests — all while stock stays tied to your real-time inventory. Turn your physical store into an online storefront instantly.",
+ desc: "Share a public shop link so customers browse your catalog, save wishlists, and place order requests - all while stock stays tied to your real-time inventory. Turn your physical store into an online storefront instantly.",
  },
  {
  img: inventoryImg,
@@ -46,19 +46,19 @@ const features = [
  img: pipelineImg,
  icon: Kanban,
  title: "Sales Pipeline (CRM)",
- desc: "Move leads across visual boards, assign tasks, track deals, and never let an opportunity slip. Built for sales teams that need to close more — from first contact to signed deal.",
+ desc: "Move leads across visual boards, assign tasks, track deals, and never let an opportunity slip. Built for sales teams that need to close more - from first contact to signed deal.",
  },
  {
  img: invoicingImg,
  icon: FileText,
  title: "Invoicing & Payments",
- desc: "Create invoices, email them as PDFs, record payments, and track what customers owe you. Works for both sales invoices and supplier bills — everything in one place.",
+ desc: "Create invoices, email them as PDFs, record payments, and track what customers owe you. Works for both sales invoices and supplier bills - everything in one place.",
  },
  {
  img: accountingImg,
  icon: BookOpen,
  title: "Accounting",
- desc: "Financial statements, chart of accounts, journal entries, fixed assets — books you can trust, ready when you need them. No accounting degree required.",
+ desc: "Financial statements, chart of accounts, journal entries, fixed assets - books you can trust, ready when you need them. No accounting degree required.",
  },
  {
  img: forecastingImg,
@@ -70,19 +70,19 @@ const features = [
  img: hrImg,
  icon: IdCard,
  title: "HR & Payroll",
- desc: "Track attendance, leave, payroll, and performance. Manage people, departments, company assets, and control who has access to what — all without spreadsheet stress.",
+ desc: "Track attendance, leave, payroll, and performance. Manage people, departments, company assets, and control who has access to what - all without spreadsheet stress.",
  },
  {
  img: projectsImg,
  icon: FolderKanban,
  title: "Project Management",
- desc: "Quote, deliver, and get paid. Run estimates and projects from first ask to done — with boards, tasks, and team collaboration that keeps everyone aligned.",
+ desc: "Quote, deliver, and get paid. Run estimates and projects from first ask to done - with boards, tasks, and team collaboration that keeps everyone aligned.",
  },
  {
  img: documentsImg,
  icon: Files,
  title: "Document Management",
- desc: "Keep contracts, invoices, and records organised. Find any file fast with cabinets, tags, and team access controls — no more digging through email attachments.",
+ desc: "Keep contracts, invoices, and records organised. Find any file fast with cabinets, tags, and team access controls - no more digging through email attachments.",
  },
  {
  img: customersImg,
@@ -107,7 +107,7 @@ export function CustosellProduct() {
  <p className="text-text-secondary text-body-lg leading-relaxed">
  Custosell is your business operating system. Point of Sale, E-commerce Storefront,
  Inventory & Supply Chain, Accounting, HR & Payroll, Invoicing, Expenses, Project Management,
- Sales Pipeline (CRM), Financial Forecasting, and Document Management — all in one connected system
+ Sales Pipeline (CRM), Financial Forecasting, and Document Management - all in one connected system
  that works with or without the internet. No more juggling separate apps.
  </p>
  </div>

@@ -2,43 +2,43 @@ import { Calendar, Code, AlertTriangle, Award, Users, Rocket, History } from "lu
 
 const timelineData = [
  {
- text: "In <strong>2023</strong>, with an unwavering vision and minimal resources, Custospark was born. In the modest corridors of Makerere University, a single spark was ignited—a spark that would lay the foundation for a revolution in African tech.",
+ text: "In <strong>2023</strong>, with an unwavering vision and minimal resources, Custospark was born. In the modest corridors of Makerere University, a single spark was ignited-a spark that would lay the foundation for a revolution in African tech.",
  icon: Calendar,
  side: "left" as const,
  delay: "1s",
  },
  {
- text: "In a cramped university dorm at <strong>Makerere University</strong>, our founder, <strong>Oscar Opiyo</strong>, harnessed his sheer determination. Armed with a second-hand laptop and countless late-night coding sessions, he laid the bedrock of Custospark—a journey that still welcomes bold partners and collaborators.",
+ text: "In a cramped university dorm at <strong>Makerere University</strong>, our founder, <strong>Oscar Opiyo</strong>, harnessed his sheer determination. Armed with a second-hand laptop and countless late-night coding sessions, he laid the bedrock of Custospark-a journey that still welcomes bold partners and collaborators.",
  icon: Code,
  side: "right" as const,
  delay: "2s",
  },
  {
- text: "There were trying moments—system crashes, server failures, and moments of deep uncertainty. Yet, each challenge only fueled our resolve to create resilient solutions that stand the test of time.",
+ text: "There were trying moments-system crashes, server failures, and moments of deep uncertainty. Yet, each challenge only fueled our resolve to create resilient solutions that stand the test of time.",
  icon: AlertTriangle,
  side: "left" as const,
  delay: "3s",
  },
  {
- text: "What started as freelance gigs and volunteer projects at Makerere soon evolved into a disciplined, scalable approach to building software. Our code became not only functional but also intuitively designed—with the end-user firmly in mind.",
+ text: "What started as freelance gigs and volunteer projects at Makerere soon evolved into a disciplined, scalable approach to building software. Our code became not only functional but also intuitively designed-with the end-user firmly in mind.",
  icon: Code,
  side: "right" as const,
  delay: "4s",
  },
  {
- text: "Rapid early milestones—creating internal platforms that impressed university stakeholders and local entrepreneurs—validated our potential. This critical early feedback set our ambitions soaring.",
+ text: "Rapid early milestones-creating internal platforms that impressed university stakeholders and local entrepreneurs-validated our potential. This critical early feedback set our ambitions soaring.",
  icon: Award,
  side: "left" as const,
  delay: "5s",
  },
  {
- text: "As our vision broadened, so did our network. Custospark grew from a one-man initiative into a vibrant community of innovators—an open invitation for investors and collaborators to join in rewriting the future of tech in Africa.",
+ text: "As our vision broadened, so did our network. Custospark grew from a one-man initiative into a vibrant community of innovators-an open invitation for investors and collaborators to join in rewriting the future of tech in Africa.",
  icon: Users,
  side: "right" as const,
  delay: "6s",
  },
  {
- text: 'Our flagship product, <strong>Custosell</strong>, marks a major leap in empowering entrepreneurs through a robust SaaS platform. Yet, it\'s only the beginning. The Custospark team is actively engaged in developing a suite of powerful, complementary applications—each designed to solve real problems and drive meaningful transformation. This expanding ecosystem reflects our deep commitment to innovation and long-term impact in the digital space.',
+ text: 'Our flagship product, <strong>Custosell</strong>, marks a major leap in empowering entrepreneurs through a robust SaaS platform. Yet, it\'s only the beginning. The Custospark team is actively engaged in developing a suite of powerful, complementary applications-each designed to solve real problems and drive meaningful transformation. This expanding ecosystem reflects our deep commitment to innovation and long-term impact in the digital space.',
  icon: Rocket,
  side: "left" as const,
  delay: "7s",
@@ -118,7 +118,7 @@ export function AboutPage() {
  A Software Company That Builds Products People Rely On
  </h1>
  <p className="text-white/70 text-body-lg">
- From a university dorm room to a portfolio of SaaS products used by businesses across Africa — this is the story of Custospark.
+ From a university dorm room to a portfolio of SaaS products used by businesses across Africa - this is the story of Custospark.
  </p>
  </div>
  </div>
@@ -244,7 +244,7 @@ export function AboutPage() {
  Custospark was founded by Oscar Opiyo, a visionary technologist and entrepreneur with a passion for building impactful digital solutions. With a strong foundation in scalable systems, modern software development, and innovative business strategies, Oscar has dedicated himself to creating technology that addresses real-world challenges and drives meaningful change.
  </p>
  <p className="text-lg text-white/70 leading-relaxed mt-6">
- As the Founder and CEO of Custospark, Oscar leads with clarity, ambition, and a deep commitment to excellence. His mission is to position Custospark at the forefront of inclusive and sustainable digital transformation—developing solutions that empower businesses, communities, and industries. Under his leadership, Custospark is more than a company—it's a movement aimed at shaping a more innovative and connected future. Oscar is actively engaging with partners and stakeholders to expand the company's reach and accelerate its global impact.
+ As the Founder and CEO of Custospark, Oscar leads with clarity, ambition, and a deep commitment to excellence. His mission is to position Custospark at the forefront of inclusive and sustainable digital transformation-developing solutions that empower businesses, communities, and industries. Under his leadership, Custospark is more than a company-it's a movement aimed at shaping a more innovative and connected future. Oscar is actively engaging with partners and stakeholders to expand the company's reach and accelerate its global impact.
  </p>
  </div>
  </div>
@@ -342,7 +342,7 @@ export function AboutPage() {
  <div className="max-w-2xl mx-auto">
  <h2 className="font-heading text-h2 text-white mb-4">Want to See What We Build?</h2>
  <p className="text-white/70 text-body-lg mb-8">
- Meet Custocare — our healthcare platform. And Custosell — our retail POS. Both built by the same team that tells this story.
+ Meet Custocare - our healthcare platform. And Custosell - our retail POS. Both built by the same team that tells this story.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
  <a href="/products" className="inline-block bg-white text-primary font-semibold px-6 py-3 rounded-lg hover:bg-surface-muted transition shadow-md">

@@ -20,7 +20,7 @@ const sections = [
  items: [
  "Please use our Services responsibly and legally.",
  "Don't copy, modify, or resell any part of our Services without written permission.",
- "Keep your login information safe — you're responsible for your account.",
+ "Keep your login information safe - you're responsible for your account.",
  ],
  },
  {
@@ -36,7 +36,7 @@ const sections = [
  title: "Intellectual Property",
  icon: Award,
  items: [
- "Everything you see on our platforms — branding, code, designs — belongs to Custospark Company Ltd.",
+ "Everything you see on our platforms - branding, code, designs - belongs to Custospark Company Ltd.",
  "Please don't use it without permission.",
  ],
  },

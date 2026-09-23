@@ -25,7 +25,7 @@ export function ServicesPage() {
  Beyond Custosell and Custocare
  </h1>
  <p className="text-white/70 text-body-lg">
- Our own products handle retail and healthcare. But we also build custom software for any industry — web apps, mobile apps, cloud infrastructure, AI, and more. Whatever you need, we can build it.
+ Our own products handle retail and healthcare. But we also build custom software for any industry - web apps, mobile apps, cloud infrastructure, AI, and more. Whatever you need, we can build it.
  </p>
  </div>
  </div>

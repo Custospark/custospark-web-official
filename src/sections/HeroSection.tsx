@@ -76,7 +76,7 @@ function Screen({
  return (
  <div className="w-full">
  <div className="relative rounded-lg border border-border bg-white shadow-card-hover overflow-hidden">
- {/* Browser chrome — flat */}
+ {/* Browser chrome - flat */}
  <div className="flex items-center gap-1.5 px-4 py-2.5 bg-surface-muted border-b border-border">
  <span className="w-2.5 h-2.5 rounded-full bg-border-strong" />
  <span className="w-2.5 h-2.5 rounded-full bg-border-strong" />

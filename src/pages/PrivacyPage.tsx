@@ -10,9 +10,9 @@ const sections = [
  title: "Information We Collect",
  icon: User,
  items: [
- "Personal Information: Helps us communicate and verify your identity — includes name, email, and contact details.",
- "Account Information: Enables seamless access and billing — such as login details and subscription choices.",
- "Usage Data: Lets us enhance your experience based on how you use the platform — like your device type, actions, and preferences.",
+ "Personal Information: Helps us communicate and verify your identity - includes name, email, and contact details.",
+ "Account Information: Enables seamless access and billing - such as login details and subscription choices.",
+ "Usage Data: Lets us enhance your experience based on how you use the platform - like your device type, actions, and preferences.",
  "Communication Records: Ensures we offer responsive and tailored support when you contact us.",
  ],
  },
@@ -32,7 +32,7 @@ const sections = [
  icon: Share2,
  items: [
  "We value your trust. That's why we never sell your personal data.",
- "Any information we share with trusted partners is solely to help us serve you better — under strict confidentiality.",
+ "Any information we share with trusted partners is solely to help us serve you better - under strict confidentiality.",
  ],
  },
  {
@@ -50,7 +50,7 @@ const sections = [
  "Review the personal data we have about you.",
  "Correct any information that's outdated or inaccurate.",
  "Request the deletion of your data if no longer necessary.",
- "Control how we communicate with you — including marketing.",
+ "Control how we communicate with you - including marketing.",
  ],
  },
  {
@@ -122,7 +122,7 @@ export function PrivacyPage() {
  </span>
  </h1>
  <p className="text-lg text-text-secondary max-w-3xl mx-auto">
- At Custospark, your privacy isn't just a formality — it's part of the service we're proud to offer.
+ At Custospark, your privacy isn't just a formality - it's part of the service we're proud to offer.
  </p>
  </motion.div>
 

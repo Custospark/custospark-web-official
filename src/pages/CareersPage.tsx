@@ -11,13 +11,13 @@ const steps = [
 ];
 
 const perks = [
- { icon: "🏠", title: "Remote Work", desc: "Work from wherever you're most productive — home, café, or beach." },
+ { icon: "🏠", title: "Remote Work", desc: "Work from wherever you're most productive - home, café, or beach." },
  { icon: "🕐", title: "Flexible Hours", desc: "We focus on outcomes, not hours. Design your own schedule." },
  { icon: "📚", title: "Learning Budget", desc: "We support growth with a dedicated budget for courses, books & tools." },
  { icon: "❤️", title: "Paid Time Off", desc: "Rest matters. Enjoy generous vacation and personal time off." },
  { icon: "✈️", title: "Team Retreats", desc: "Join us in beautiful destinations to connect, recharge, and plan." },
  { icon: "⚡", title: "Mentorship & Growth", desc: "Work closely with industry pros and grow faster than ever." },
- { icon: "💎", title: "Equity Opportunities", desc: "Be a part-owner of what you help build — we grow together." },
+ { icon: "💎", title: "Equity Opportunities", desc: "Be a part-owner of what you help build - we grow together." },
  { icon: "💰", title: "Competitive Pay", desc: "We offer industry-leading compensation and regular performance reviews." },
  { icon: "💪", title: "Health & Wellness", desc: "Enjoy access to health insurance, fitness stipends, and wellness programs." },
  { icon: "🌍", title: "Diversity & Inclusion", desc: "Be part of a diverse team that celebrates individuality and collaboration." },
