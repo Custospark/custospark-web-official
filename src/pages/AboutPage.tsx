@@ -50,8 +50,8 @@ const teamData = [
   number: "1",
   name: "Dr. Kamulegeya Grace Bugembe",
   img: "/profiles/grace.jpg",
-  role: "AI & Technology Corporate Strategist",
-  bio: "PhD Software Engineering, Makerere University - 16+ years in research, teaching and architecture. Helps governments, ministries, companies and institutions leverage AI and technology to cut costs, grow profits and improve efficiency. Founding President, ProSEIT; leads PESIC; chairs UMA Technology Sector.",
+  role: "Research Advisor, Makerere University",
+  bio: "PhD Software Engineering, Makerere University - 16+ years in research, teaching and architecture. Founding President, ProSEIT; leads PESIC; chairs UMA Technology Sector.",
   },
   {
   number: "2",
@@ -71,9 +71,9 @@ const teamData = [
   number: "4",
   name: "Oscar Opiyo",
   img: "/profiles/oscar.png",
-  role: "Founder & CEO",
+  role: "Founder & CEO | AI & Technology Corporate Strategist",
   email: "oscar@custospark.com",
-  bio: "Founder of Custospark and builder of Custosell - focused on practical software that solves real business problems.",
+  bio: "Founder of Custospark and builder of Custosell. AI & Technology Corporate Strategist helping governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency.",
   },
   {
   number: "5",
@@ -246,33 +246,30 @@ export function AboutPage() {
   <img src="/profiles/grace.jpg" alt="Dr Kamulegeya Grace Bugembe" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
   <div>
   <p className="text-lg font-semibold text-white">Dr. Kamulegeya Grace Bugembe</p>
-  <p className="text-sm font-medium tracking-wide uppercase text-primary">AI & Technology Corporate Strategist</p>
-  <p className="text-sm text-white/60">PhD, Makerere University | Research Advisor</p>
+  <p className="text-sm font-medium tracking-wide uppercase text-primary">Research Advisor, Makerere University</p>
+  <p className="text-sm text-white/60">PhD Software Engineering | Founding President, ProSEIT</p>
   </div>
   </div>
   <div>
   <p className="text-body text-white/70 leading-relaxed">
-  PhD Software Engineering, Makerere University - 16+ years in research, teaching and architecture. Helps governments, ministries, companies and institutions leverage AI and technology to cut costs, grow profits and improve efficiency.
-  </p>
-  <p className="text-body-sm text-white/60 leading-relaxed mt-4">
-  Founding President, ProSEIT; leads PESIC university-industry pipeline; chairs UMA Technology Sector. Previously PI Mak-RIF COVID-19, Co-PI InnoMak, and lead on World Bank PSFU/GROW grant (~UGX 1B).
+  PhD Software Engineering, 16+ years in research, teaching and architecture. Leads PESIC university-industry pipeline and chairs UMA Technology Sector. Previously PI Mak-RIF COVID-19, Co-PI InnoMak, and lead on World Bank PSFU/GROW grant (~UGX 1B).
   </p>
   </div>
   </div>
 
-  {/* Founder 2: Oscar */}
+  {/* Founder 2: Oscar - AI Strategist */}
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
   <div className="flex flex-col items-center text-center space-y-4">
   <img src="/profiles/oscar.png" alt="Oscar Opiyo" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
   <div>
   <p className="text-lg font-semibold text-white">Oscar Opiyo</p>
-  <p className="text-sm font-medium tracking-wide uppercase text-primary">Founder & CEO</p>
+  <p className="text-sm font-medium tracking-wide uppercase text-primary">Founder & CEO | AI & Technology Corporate Strategist</p>
   </div>
   <a href="mailto:oscar@custospark.com" className="text-sm text-primary hover:text-white">oscar@custospark.com</a>
   </div>
   <div>
   <p className="text-body text-white/70 leading-relaxed">
-  Builder of Custosell and Custospark - focused on practical software that solves real business problems, from retail to healthcare, online and offline.
+  Founder of Custospark and builder of Custosell. AI & Technology Corporate Strategist helping governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency.
   </p>
   </div>
   </div>
