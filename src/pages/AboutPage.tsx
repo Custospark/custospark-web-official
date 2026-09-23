@@ -68,27 +68,27 @@ const mobileValuesData = [
 export function AboutPage() {
  return (
  <>
- {/* Hero */}
- <section className="py-section bg-ink text-white">
- <div className="max-w-7xl mx-auto px-4 md:px-8">
- <div className="text-center max-w-3xl mx-auto">
- <span className="inline-block bg-primary-soft border border-primary-border text-primary text-body-sm font-semibold px-4 py-1.5 rounded-full mb-4">
- About Custospark
- </span>
-  <h1 className="font-heading text-h1 text-white mb-4">
+  {/* Hero - tight */}
+  <section className="pt-10 pb-8 bg-ink text-white">
+  <div className="max-w-7xl mx-auto px-4 md:px-8">
+  <div className="text-center max-w-3xl mx-auto">
+  <span className="inline-block bg-primary-soft border border-primary-border text-primary text-body-sm font-semibold px-4 py-1.5 rounded-full mb-3">
+  About Custospark
+  </span>
+  <h1 className="font-heading text-h1 text-white">
   A Software Company That Builds Products People Rely On
   </h1>
- </div>
- </div>
- </section>
+  </div>
+  </div>
+  </section>
 
-  {/* Founders - Dr Grace as founding advisor for credibility */}
-  <section className="py-16 bg-ink text-white">
-  <div className="max-w-7xl mx-auto px-4 md:px-8">
-  <p className="text-caption font-semibold tracking-[0.12em] uppercase text-white/60 text-center mb-3">People Behind Custospark</p>
-  <h2 className="font-heading text-h1 text-white mb-3 text-center">Leadership, Research & Team</h2>
-  <p className="text-white text-body-lg font-medium text-center max-w-2xl mx-auto mb-10">Research-led, product-focused - advisors and builders who combine academic rigour with shipping software used every day.</p>
-  <hr className="border-t border-ink-light mb-10" />
+   {/* Founders - Dr Grace as founding advisor for credibility */}
+   <section className="pt-8 pb-16 bg-ink text-white">
+   <div className="max-w-7xl mx-auto px-4 md:px-8">
+   <p className="text-caption font-semibold tracking-[0.12em] uppercase text-white/60 text-center mb-2">People Behind Custospark</p>
+   <h2 className="font-heading text-h1 text-white mb-2 text-center">Leadership, Research & Team</h2>
+   <p className="text-white text-body font-medium text-center max-w-2xl mx-auto mb-6">Research-led, product-focused - advisors and builders who combine academic rigour with shipping software used every day.</p>
+   <hr className="border-t border-ink-light mb-8" />
 
   {/* Founder: Dr Grace - lead for credibility */}
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-12">
