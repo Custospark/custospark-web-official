@@ -179,6 +179,25 @@ export function AboutPage() {
   </div>
   </div>
 
+  {/* Advisor: Weibil Shadrach - after Dorcus */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-10">
+  <div className="flex flex-col items-center text-center space-y-4">
+  <img src="/profiles/shadrach.jpeg" alt="Weibil Shadrach" className="rounded-full w-48 h-48 object-cover object-top shadow-card border border-ink-light" />
+  <div>
+  <p className="text-lg font-semibold text-white">Weibil Shadrach</p>
+  <p className="text-sm font-semibold tracking-wide uppercase text-ink bg-white px-3 py-1 rounded-full border border-border">Strategic Advisor</p>
+  </div>
+  </div>
+  <div>
+  <p className="text-body text-white/70 leading-relaxed">
+  Provides occasional advice on business strategy, expansion, partnerships and positioning - bringing an outside perspective at key moments to help Custospark navigate growth decisions, evaluate new markets and sharpen how the company shows up in the industry.
+  </p>
+  <p className="text-body-sm text-white/60 leading-relaxed mt-3">
+  Steps in when leadership needs a seasoned sounding board - pressure-testing big moves before they happen, so strategy stays grounded and deliberate.
+  </p>
+  </div>
+  </div>
+
   {/* Team members - same founder pattern for visual consistency */}
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-10">
   <div className="flex flex-col items-center text-center space-y-4">
