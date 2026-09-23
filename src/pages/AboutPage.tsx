@@ -51,21 +51,21 @@ const teamData = [
   name: "Dr. Kamulegeya Grace Bugembe",
   img: "/profiles/grace.jpg",
   role: "Research Advisor, Makerere University",
-  bio: "PhD Software Engineering, Makerere University - 16+ years in research, teaching and architecture. Founding President, ProSEIT; leads PESIC; chairs UMA Technology Sector.",
+  bio: "PhD Software Engineering, Makerere University - 16+ years bridging research, teaching and architecture. Research focuses on software engineering in emerging ecosystems, productization and AI-driven industrial digitalisation. Founding President of ProSEIT, leads the PESIC university-industry pipeline and chairs the UMA Technology Sector. Previously PI on Mak-RIF COVID-19, Co-PI on InnoMak, and lead on a World Bank PSFU/GROW grant (~UGX 1B).",
   },
   {
   number: "2",
   name: "Alice Mukabera",
   img: "/profiles/alice.jpg",
   role: "Software Engineer",
-  bio: "Full-stack engineer building scalable products across Custospark's portfolio.",
+  bio: "Full-stack engineer with deep product sense. Alice builds scalable, reliable features across Custospark's portfolio - from APIs and data models to polished interfaces - keeping quality and performance front and centre.",
   },
   {
   number: "3",
   name: "Ogwal Richard",
   img: "/profiles/richard.jpg",
   role: "Software Engineer",
-  bio: "Versatile developer focused on reliable, clean and scalable platforms.",
+  bio: "Versatile engineer at home in frontend and backend. Richard champions clean code, efficient systems and dependable delivery - ensuring platforms stay fast, maintainable and ready to scale.",
   },
   {
   number: "4",
@@ -73,21 +73,21 @@ const teamData = [
   img: "/profiles/oscar.png",
   role: "Founder & CEO | AI & Technology Corporate Strategist",
   email: "oscar@custospark.com",
-  bio: "Founder of Custospark and builder of Custosell. AI & Technology Corporate Strategist helping governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency.",
+  bio: "Founder of Custospark and builder of Custosell. AI & Technology Corporate Strategist who helps governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency - turning strategy into shipped software.",
   },
   {
   number: "5",
   name: "Namatove Christine Maria",
   img: "/profiles/christine.jpg",
   role: "Co-Founder & CTO",
-  bio: "Leads engineering and product - architecture, performance and user experience.",
+  bio: "Leads engineering and product at Custospark. Christine sets the architecture, upholds performance and crafts user experiences that are secure, scalable and genuinely enjoyable to use.",
   },
   {
   number: "6",
   name: "Angom Joyce Rita",
   img: "/profiles/joyce.png",
   role: "Software Engineer",
-  bio: "Full-stack developer - clean code, scalable design, customer-focused solutions.",
+  bio: "Full-stack developer who blends scalable design with customer focus. Joyce delivers clean, maintainable code and thoughtful interfaces that help teams do their best work.",
   },
 ];
 
@@ -252,7 +252,7 @@ export function AboutPage() {
   </div>
   <div>
   <p className="text-body text-white/70 leading-relaxed">
-  PhD Software Engineering, 16+ years in research, teaching and architecture. Leads PESIC university-industry pipeline and chairs UMA Technology Sector. Previously PI Mak-RIF COVID-19, Co-PI InnoMak, and lead on World Bank PSFU/GROW grant (~UGX 1B).
+  PhD Software Engineering, Makerere University - research on software engineering in emerging ecosystems, productization and AI-driven industrial digitalisation. Founding President of ProSEIT, leads the PESIC pipeline and chairs the UMA Technology Sector. Previously PI on Mak-RIF COVID-19, Co-PI on InnoMak, and lead on a World Bank PSFU/GROW grant (~UGX 1B).
   </p>
   </div>
   </div>
@@ -269,7 +269,7 @@ export function AboutPage() {
   </div>
   <div>
   <p className="text-body text-white/70 leading-relaxed">
-  Founder of Custospark and builder of Custosell. AI & Technology Corporate Strategist helping governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency.
+  Founder of Custospark and builder of Custosell. AI & Technology Corporate Strategist who helps governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency - turning strategy into shipped software.
   </p>
   </div>
   </div>
@@ -285,7 +285,7 @@ export function AboutPage() {
   </div>
   <div>
   <p className="text-body text-white/70 leading-relaxed">
-  Leads engineering and product - system architecture, performance and user experience. Ensures products are scalable, secure and a joy to use.
+  Leads engineering and product - setting architecture, upholding performance and crafting user experiences that are secure, scalable and genuinely enjoyable to use. Drives the technical vision from prototype to production.
   </p>
   </div>
   </div>
