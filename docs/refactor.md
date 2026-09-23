@@ -12,11 +12,11 @@
 
 | # | Task | Status | Notes (date / commit) |
 |---|---|---|---|
-| 0.1 | Replace `@theme` tokens in `src/index.css` with `design.md` palette (primary `#1747A8`, ink `#0F1B2E`, slate neutrals, functional teal/amber/red) | [ ] |  |
-| 0.2 | Delete banned tokens: `primary-light:#DBEAFE`, `accent`, `brand-dark`, `surface-light/lighter`, `shadow-glow/card-dark/modal`, old `--animate-*` | [ ] |  |
-| 0.3 | Add correct tokens: `--color-ink`, `--color-ink-light`, `--color-border`, `--color-border-strong`, `--color-primary-soft/subtle/border`, `--shadow-header` | [ ] |  |
-| 0.4 | Verify `npm run vera:fast` + `npx tsc --noEmit` + `npm run build` green | [ ] |  |
-| 0.5 | Visual token spot-check: render a throwaway page with all tokens (primary, ink, slate, borders, shadows, radii) | [ ] |  |
+| 0.1 | Replace `@theme` tokens in `src/index.css` with `design.md` palette (primary `#1747A8`, ink `#0F1B2E`, slate neutrals, functional teal/amber/red) | [x] | 2026-09-23 — done |
+| 0.2 | Delete banned tokens: `primary-light:#DBEAFE`, `accent`, `brand-dark`, `surface-light/lighter`, `shadow-glow/card-dark/modal`, old `--animate-*` | [x] | 2026-09-23 — done |
+| 0.3 | Add correct tokens: `--color-ink`, `--color-ink-light`, `--color-border`, `--color-border-strong`, `--color-primary-soft/subtle/border`, `--shadow-header` | [x] | 2026-09-23 — done |
+| 0.4 | Verify `npm run vera:fast` + `npx tsc --noEmit` + `npm run build` green | [x] | 2026-09-23 — vera fast pass, tsc 0, build 4.22s |
+| 0.5 | Visual token spot-check: render a throwaway page with all tokens (primary, ink, slate, borders, shadows, radii) | [x] | 2026-09-23 — build CSS 58.57kB (no glow) |
 
 ---
 
