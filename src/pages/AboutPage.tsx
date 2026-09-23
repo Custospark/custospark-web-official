@@ -70,10 +70,10 @@ const teamData = [
   {
   number: "4",
   name: "Oscar Opiyo",
-  img: "/profiles/oscar.png",
+  img: "/profiles/new_profile.png",
   role: "Founder & CEO | AI & Technology Corporate Strategist",
   email: "oscar@custospark.com",
-  bio: "Founder of Custospark and builder of Custosell. AI & Technology Corporate Strategist who helps governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency - turning strategy into shipped software.",
+  bio: "Founder of Custospark. AI & Technology Corporate Strategist who helps governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency - turning strategy into shipped software.",
   },
   {
   number: "5",
@@ -260,7 +260,7 @@ export function AboutPage() {
   {/* Founder 2: Oscar - AI Strategist */}
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
   <div className="flex flex-col items-center text-center space-y-4">
-  <img src="/profiles/oscar.png" alt="Oscar Opiyo" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
+  <img src="/profiles/new_profile.png" alt="Oscar Opiyo" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
   <div>
   <p className="text-lg font-semibold text-white">Oscar Opiyo</p>
   <p className="text-sm font-medium tracking-wide uppercase text-primary">Founder & CEO | AI & Technology Corporate Strategist</p>
@@ -269,7 +269,7 @@ export function AboutPage() {
   </div>
   <div>
   <p className="text-body text-white/70 leading-relaxed">
-  Founder of Custospark and builder of Custosell. AI & Technology Corporate Strategist who helps governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency - turning strategy into shipped software.
+  Founder of Custospark. AI & Technology Corporate Strategist who helps governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency - turning strategy into shipped software.
   </p>
   </div>
   </div>
