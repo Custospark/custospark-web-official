@@ -16,26 +16,26 @@ import { HelpPage } from "@/pages/HelpPage";
 import { NotFoundPage } from "@/pages/NotFoundPage";
 
 export default function App() {
-  return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/products" element={<ProductsPage />} />
-          <Route path="/academy/*" element={<AcademyRedirect />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/careers" element={<CareersPage />} />
-          <Route path="/investors" element={<InvestorsPage />} />
-          <Route path="/terms" element={<TermsPage />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
-          <Route path="/partners" element={<PartnersPage />} />
-          <Route path="/help" element={<HelpPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+ return (
+ <BrowserRouter>
+ <ScrollToTop />
+ <Routes>
+ <Route element={<Layout />}>
+ <Route path="/" element={<HomePage />} />
+ <Route path="/about" element={<AboutPage />} />
+ <Route path="/services" element={<ServicesPage />} />
+ <Route path="/products" element={<ProductsPage />} />
+ <Route path="/academy/*" element={<AcademyRedirect />} />
+ <Route path="/contact" element={<ContactPage />} />
+ <Route path="/careers" element={<CareersPage />} />
+ <Route path="/investors" element={<InvestorsPage />} />
+ <Route path="/terms" element={<TermsPage />} />
+ <Route path="/privacy" element={<PrivacyPage />} />
+ <Route path="/partners" element={<PartnersPage />} />
+ <Route path="/help" element={<HelpPage />} />
+ <Route path="*" element={<NotFoundPage />} />
+ </Route>
+ </Routes>
+ </BrowserRouter>
+ );
 }

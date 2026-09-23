@@ -7,15 +7,15 @@ import { TestimonialsSection } from "@/sections/TestimonialsSection";
 import { CTASection } from "@/sections/CTASection";
 
 export function HomePage() {
-  return (
-    <>
-      <HeroSection />
-      <ProductsBridgeSection />
-      <PortfolioSection />
-      <ServicesSection />
-      <IndustriesSection />
-      <TestimonialsSection />
-      <CTASection />
-    </>
-  );
+ return (
+ <>
+ <HeroSection />
+ <ProductsBridgeSection />
+ <PortfolioSection />
+ <ServicesSection />
+ <IndustriesSection />
+ <TestimonialsSection />
+ <CTASection />
+ </>
+ );
 }

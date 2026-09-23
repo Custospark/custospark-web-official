@@ -24,13 +24,13 @@
 
 | # | File | What To Fix | Status | Notes |
 |---|---|---|---|---|
-| 1.1 | `src/layout/Header.tsx` | White solid `bg-white border-b border-border shadow-header` (not `bg-primary`); nav `text-text-secondary` → `text-ink`; active = `bg-primary-soft text-primary`; remove `yellow-400/15`, `border-blue-600`, `backdrop-blur` | [ ] | Decision: white header per guideline §6 |
-| 1.2 | `src/layout/Footer.tsx` | Flat `bg-ink` solid, no `bg-gradient-to-b via-black`; Links `text-white/70→white` (no `blue-200`); `border-[#1E2E4A]`; keep logo, remove glow | [ ] |  |
-| 1.3 | `src/layout/Layout.tsx` | Ensure no gradient wrapper leaks; `bg-surface` page canvas | [ ] |  |
-| 1.4 | `src/components/Button.tsx` | Flat fills: `primary=bg-primary`, `secondary=white + border-border-strong`, `ghost`, `rounded-md` (8px) — remove `rounded-full`, `shadow-glow`, duplicate `accent` | [ ] |  |
-| 1.5 | `src/components/Card.tsx` | White `border-border shadow-card`, `rounded-lg`; hover = `border-border-strong shadow-card-hover`; no `bg-white/20`, no `backdrop-blur`, no `scale-105`, no `border-white/10` | [ ] |  |
-| 1.6 | `src/components/Section.tsx` | `alt` = `bg-surface-muted` (slate-50), `default` = white; no gradients | [ ] |  |
-| 1.7 | `src/index.css` focus ring | Confirm `*:focus-visible { outline: 2px solid var(--color-primary) }` visible on header/footer/buttons | [ ] |  |
+| 1.1 | `src/layout/Header.tsx` | White solid `bg-white border-b border-border shadow-header` (not `bg-primary`); nav `text-text-secondary` → `text-ink`; active = `bg-primary-soft text-primary`; remove `yellow-400/15`, `border-blue-600`, `backdrop-blur` | [x] | 2026-09-23 — done |
+| 1.2 | `src/layout/Footer.tsx` | Flat `bg-ink` solid, no `bg-gradient-to-b via-black`; Links `text-white/70→white` (no `blue-200`); `border-[#1E2E4A]`; keep logo, remove glow | [x] | 2026-09-23 — done |
+| 1.3 | `src/layout/Layout.tsx` | Ensure no gradient wrapper leaks; `bg-surface` page canvas | [x] | 2026-09-23 — no gradients, flex canvas verified |
+| 1.4 | `src/components/Button.tsx` | Flat fills: `primary=bg-primary`, `secondary=white + border-border-strong`, `ghost`, `rounded-md` (8px) — remove `rounded-full`, `shadow-glow`, duplicate `accent` | [x] | 2026-09-23 — done |
+| 1.5 | `src/components/Card.tsx` | White `border-border shadow-card`, `rounded-lg`; hover = `border-border-strong shadow-card-hover`; no `bg-white/20`, no `backdrop-blur`, no `scale-105`, no `border-white/10` | [x] | 2026-09-23 — done |
+| 1.6 | `src/components/Section.tsx` | `alt` = `bg-surface-muted` (slate-50), `default` = white; no gradients | [x] | 2026-09-23 — done |
+| 1.7 | `src/index.css` focus ring | Confirm `*:focus-visible { outline: 2px solid var(--color-primary) }` visible on header/footer/buttons | [x] | 2026-09-23 — fixed in Phase 0 |
 
 ---
 
@@ -38,15 +38,15 @@
 
 | # | File / Section | What To Fix | Status | Notes |
 |---|---|---|---|---|
-| 2.1 | `src/sections/HeroSection.tsx` | Kill `bg-gradient-to-br via-black`, radial blur, `bg-clip-text` gradient headline, `bg-white/10` badges, floating `animate-float`, `rotateY(18deg)` 3D tilt, `border-white/20 bg-black/60`; Replace with flat `bg-ink` (or `bg-surface`) solid; headline `text-white` solid; eyebrow `Caption text-primary`; screens as white cards `border-border shadow-card`; keep slider logic | [ ] | Biggest AI-gradient offender |
-| 2.2 | `src/sections/ProductsBridgeSection.tsx` | Remove `bg-gradient-to-br via-black`; make `bg-surface-muted` or `bg-surface` flat; `text-ink` headings | [ ] |  |
-| 2.3 | `src/sections/CustocareProduct.tsx` + `CustosellProduct.tsx` | White cards, `border-border`, icon well `bg-primary-soft`; no gradients | [ ] |  |
-| 2.4 | `src/sections/PortfolioSection.tsx` | Remove `bg-gradient-to-bl via-black`; wrapper = `bg-surface` flat; inner products already handled in 2.3 | [ ] |  |
-| 2.5 | `src/sections/ServicesSection.tsx` | `bg-surface-muted` flat; cards via new `Card`; icon wells `bg-primary-soft` | [ ] |  |
-| 2.6 | `src/sections/IndustriesSection.tsx` | Remove `bg-gradient-to-br via-black` + `Card variant="dark"` + `text-orange-400`; remake as white cards on `bg-surface-muted`; results as `text-primary` or `text-ink` | [ ] |  |
-| 2.7 | `src/sections/TestimonialsSection.tsx` | Keep `bg-surface` flat; quote `text-primary/20`; avatar ring `border-border`; no accent translucency hacks | [ ] |  |
-| 2.8 | `src/sections/CTASection.tsx` | Remove `bg-gradient-to-br via-black`; flat `bg-ink` with white text + primary CTA; or `bg-primary-soft` with ink text — pick one and keep | [ ] |  |
-| 2.9 | `src/pages/HomePage.tsx` | Verify composition order + spacing (`py-section` = 80/48) after all sections flat | [ ] |  |
+| 2.1 | `src/sections/HeroSection.tsx` | Kill `bg-gradient-to-br via-black`, radial blur, `bg-clip-text` gradient headline, `bg-white/10` badges, floating `animate-float`, `rotateY(18deg)` 3D tilt, `border-white/20 bg-black/60`; Replace with flat `bg-ink` (or `bg-surface`) solid; headline `text-white` solid; eyebrow `Caption text-primary`; screens as white cards `border-border shadow-card`; keep slider logic | [x] | 2026-09-23 — flat ink, white cards |
+| 2.2 | `src/sections/ProductsBridgeSection.tsx` | Remove `bg-gradient-to-br via-black`; make `bg-surface-muted` or `bg-surface` flat; `text-ink` headings | [x] | 2026-09-23 — bg-surface-muted flat |
+| 2.3 | `src/sections/CustocareProduct.tsx` + `CustosellProduct.tsx` | White cards, `border-border`, icon well `bg-primary-soft`; no gradients | [x] | 2026-09-23 — flat cards + icon wells |
+| 2.4 | `src/sections/PortfolioSection.tsx` | Remove `bg-gradient-to-bl via-black`; wrapper = `bg-surface` flat; inner products already handled in 2.3 | [x] | 2026-09-23 — bg-white |
+| 2.5 | `src/sections/ServicesSection.tsx` | `bg-surface-muted` flat; cards via new `Card`; icon wells `bg-primary-soft` | [x] | 2026-09-23 — flat |
+| 2.6 | `src/sections/IndustriesSection.tsx` | Remove `bg-gradient-to-br via-black` + `Card variant="dark"` + `text-orange-400`; remake as white cards on `bg-surface-muted`; results as `text-primary` or `text-ink` | [x] | 2026-09-23 — white cards on muted |
+| 2.7 | `src/sections/TestimonialsSection.tsx` | Keep `bg-surface` flat; quote `text-primary/20`; avatar ring `border-border`; no accent translucency hacks | [x] | 2026-09-23 — flat + border-border |
+| 2.8 | `src/sections/CTASection.tsx` | Remove `bg-gradient-to-br via-black`; flat `bg-ink` with white text + primary CTA; or `bg-primary-soft` with ink text — pick one and keep | [x] | 2026-09-23 — bg-ink |
+| 2.9 | `src/pages/HomePage.tsx` | Verify composition order + spacing (`py-section` = 80/48) after all sections flat | [x] | 2026-09-23 — composition intact |
 
 ---
 
@@ -54,9 +54,9 @@
 
 | # | File | What To Fix | Status | Notes |
 |---|---|---|---|---|
-| 3.1 | `src/pages/ProductsPage.tsx` | Flat sections, white cards, `border-border`; no gradients | [ ] | Check grep: gradients found |
-| 3.2 | `src/pages/ServicesPage.tsx` | Same — flat, remove `via-black` | [ ] | Check grep: gradients found |
-| 3.3 | `src/sections/AcademySpotlight.tsx` | Remove multicolour `from-accent via-blue-500` medallions, `glow` blurs; icon wells = `bg-primary-soft`; cards = white flat; keep journey timeline logic | [ ] | Heaviest gradient file |
+| 3.1 | `src/pages/ProductsPage.tsx` | Flat sections, white cards, `border-border`; no gradients | [x] | 2026-09-23 — bulk flat |
+| 3.2 | `src/pages/ServicesPage.tsx` | Same — flat, remove `via-black` | [x] | 2026-09-23 — bulk flat |
+| 3.3 | `src/sections/AcademySpotlight.tsx` | Remove multicolour `from-accent via-blue-500` medallions, `glow` blurs; icon wells = `bg-primary-soft`; cards = white flat; keep journey timeline logic | [x] | 2026-09-23 — flat timeline, no glows |
 
 ---
 
@@ -64,10 +64,10 @@
 
 | # | File | What To Fix | Status | Notes |
 |---|---|---|---|---|
-| 4.1 | `src/pages/AboutPage.tsx` | Flat, no gradients | [ ] |  |
-| 4.2 | `src/pages/CareersPage.tsx` | Flat, no gradients | [ ] |  |
-| 4.3 | `src/pages/InvestorsPage.tsx` | Flat, no gradients | [ ] |  |
-| 4.4 | `src/pages/PartnersPage.tsx` | Flat, no gradients | [ ] |  |
+| 4.1 | `src/pages/AboutPage.tsx` | Flat, no gradients | [x] | 2026-09-23 — bulk flat |
+| 4.2 | `src/pages/CareersPage.tsx` | Flat, no gradients | [x] | 2026-09-23 — bulk flat |
+| 4.3 | `src/pages/InvestorsPage.tsx` | Flat, no gradients | [x] | 2026-09-23 — bulk flat |
+| 4.4 | `src/pages/PartnersPage.tsx` | Flat, no gradients | [x] | 2026-09-23 — bulk flat |
 
 ---
 
@@ -75,12 +75,12 @@
 
 | # | File | What To Fix | Status | Notes |
 |---|---|---|---|---|
-| 5.1 | `src/pages/ContactPage.tsx` | Flat; form inputs `border-border-strong` + focus `border-primary`; no gradients | [ ] |  |
-| 5.2 | `src/pages/HelpPage.tsx` | Flat, white cards | [ ] |  |
-| 5.3 | `src/pages/TermsPage.tsx` | Prose on `bg-surface`; headings `text-ink`; links `text-primary`; no gradients | [ ] |  |
-| 5.4 | `src/pages/PrivacyPage.tsx` | Same as Terms | [ ] |  |
-| 5.5 | `src/pages/AcademyRedirect.tsx` | Flat `bg-surface-muted` or `bg-ink` + white text; link `text-primary`; keep redirect logic intact | [ ] | Created for subdomain bounce — keep behaviour |
-| 5.6 | `src/pages/NotFoundPage.tsx` | Flat; primary CTA; no gradient | [ ] |  |
+| 5.1 | `src/pages/ContactPage.tsx` | Flat; form inputs `border-border-strong` + focus `border-primary`; no gradients | [x] | 2026-09-23 — bulk flat |
+| 5.2 | `src/pages/HelpPage.tsx` | Flat, white cards | [x] | 2026-09-23 — bulk flat |
+| 5.3 | `src/pages/TermsPage.tsx` | Prose on `bg-surface`; headings `text-ink`; links `text-primary`; no gradients | [x] | 2026-09-23 — bulk flat |
+| 5.4 | `src/pages/PrivacyPage.tsx` | Same as Terms | [x] | 2026-09-23 — bulk flat |
+| 5.5 | `src/pages/AcademyRedirect.tsx` | Flat `bg-surface-muted` or `bg-ink` + white text; link `text-primary`; keep redirect logic intact | [x] | 2026-09-23 — flat + keep redirect |
+| 5.6 | `src/pages/NotFoundPage.tsx` | Flat; primary CTA; no gradient | [x] | 2026-09-23 — bg-ink |
 
 ---
 
