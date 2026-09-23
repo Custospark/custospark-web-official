@@ -11,7 +11,7 @@ export function NotFoundPage() {
  </p>
  <Link
  to="/"
- className="inline-flex items-center gap-2 bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-blue-100 transition shadow-md"
+ className="inline-flex items-center gap-2 bg-white text-primary font-semibold px-6 py-3 rounded-lg hover:bg-surface-muted transition shadow-md"
  >
  <ArrowLeft size={20} />
  Back to Home

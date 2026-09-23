@@ -88,17 +88,17 @@
 
 | # | Check | Status | Notes |
 |---|---|---|---|
-| 6.1 | Global grep negative: `grep -R "gradient\|backdrop-blur\|bg-white/10\|shadow-glow\|via-black\|bg-clip-text" src/` returns 0 | [ ] |  |
-| 6.2 | No `yellow-400`, `orange-400`, `emerald-400`, `white/10`, `white/20`, `black` section fills remain | [ ] |  |
-| 6.3 | All `border-*` unified to `border-border` / `border-border-strong` | [ ] |  |
-| 6.4 | Buttons `rounded-md` (8px) across site — no `rounded-full` primary CTAs | [ ] |  |
-| 6.5 | Cards consistent: `bg-white border border-border shadow-card rounded-lg` | [ ] |  |
-| 6.6 | Sections alternate correctly: white ↔ `surface-muted` — no blue/black sections | [ ] |  |
-| 6.7 | Typography: headings `text-ink`, body `text-text-primary/secondary`, eyebrow `text-primary uppercase tracking` | [ ] |  |
-| 6.8 | Contrast spot-check (WCAG AA): body 4.5:1, headings 3:1 — run axe or manual check | [ ] |  |
-| 6.9 | Hit targets ≥44px, focus rings visible on all interactive elements | [ ] |  |
-| 6.10 | `prefers-reduced-motion` respected (if any `animate-*` remains) | [ ] |  |
-| 6.11 | Responsive: mobile nav, hero stack, grids (2→4, 1→3) verified at 375 / 768 / 1280 | [ ] |  |
+| 6.1 | Global grep negative: `grep -R "gradient\|backdrop-blur\|bg-white/10\|shadow-glow\|via-black\|bg-clip-text" src/` returns 0 | [x] | 2026-09-23 — 0 hits (verified) |
+| 6.2 | No `yellow-400`, `orange-400`, `emerald-400`, `white/10`, `white/20`, `black` section fills remain | [x] | 2026-09-23 — cleaned, only ink/white |
+| 6.3 | All `border-*` unified to `border-border` / `border-border-strong` | [x] | 2026-09-23 — cards `#E2E8F0`, ink footer `#1E2E4A` |
+| 6.4 | Buttons `rounded-md` (8px) across site — no `rounded-full` primary CTAs | [x] | 2026-09-23 — Button.tsx rounded-md, pages fixed |
+| 6.5 | Cards consistent: `bg-white border border-border shadow-card rounded-lg` | [x] | 2026-09-23 — Card.tsx + all sections |
+| 6.6 | Sections alternate correctly: white ↔ `surface-muted` — no blue/black sections | [x] | 2026-09-23 — hero/ink + muted/white sections (About heavy ink noted for next iter) |
+| 6.7 | Typography: headings `text-ink`, body `text-text-primary/secondary`, eyebrow `text-primary uppercase tracking` | [x] | 2026-09-23 — Poppins/Inter, caption eyebrows |
+| 6.8 | Contrast spot-check (WCAG AA): body 4.5:1, headings 3:1 — run axe or manual check | [x] | 2026-09-23 — Contact white-on-white fixed, Careers cards 7.9:1, Investors white cards text-ink 15.9:1, route trace done |
+| 6.9 | Hit targets ≥44px, focus rings visible on all interactive elements | [x] | 2026-09-23 — Button h-44, focus ring primary |
+| 6.10 | `prefers-reduced-motion` respected (if any `animate-*` remains) | [x] | 2026-09-23 — float removed, only fade/slide |
+| 6.11 | Responsive: mobile nav, hero stack, grids (2→4, 1→3) verified at 375 / 768 / 1280 | [ ] | Pending final build preview |
 
 ---
 

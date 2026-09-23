@@ -71,37 +71,37 @@ export function CareersPage() {
  <div className="relative">
  <div className="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-border rounded-full shadow-lg z-0 hidden md:block" />
 
- <div className="space-y-24">
- {steps.map((step, i) => {
- const isLeft = i % 2 === 0;
- return (
- <div key={step.step} className="flex flex-col md:flex-row items-center md:items-start relative group">
- <div className={`w-full md:w-1/2 ${isLeft ? "md:pl-12 order-2" : "md:pr-12 order-2 md:order-1"}`}>
- <div className="bg-white border border-border rounded-2xl p-6 shadow-card transition-all duration-500 " style={{ perspective: "1000px" }}>
- <div className="flex items-start gap-4">
- <div className="w-12 h-12 flex-shrink-0 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl shadow-md">
- {step.step}
- </div>
- <div>
- <h3 className="text-2xl font-bold text-white">{step.title}</h3>
- <p className="text-white/70 mt-2 text-base leading-relaxed">{step.desc}</p>
- </div>
- </div>
- </div>
- </div>
- <div className="absolute left-1/2 -translate-x-1/2 w-8 h-8 bg-white/30 border border-border rounded-full z-10 shadow-lg hidden md:block" />
- <div className={`hidden md:block w-1/2 ${isLeft ? "order-1" : "order-3"}`} />
- </div>
- );
- })}
- </div>
- </div>
+  <div className="space-y-8">
+  {steps.map((step, i) => {
+  const isLeft = i % 2 === 0;
+  return (
+  <div key={step.step} className="flex flex-col md:flex-row items-center md:items-start relative group">
+  <div className={`w-full md:w-1/2 ${isLeft ? "md:pl-8 order-2" : "md:pr-8 order-2 md:order-1"}`}>
+  <div className="bg-white border border-border rounded-lg p-6 shadow-card">
+  <div className="flex items-start gap-4">
+  <div className="w-10 h-10 flex-shrink-0 bg-primary text-white rounded-md flex items-center justify-center font-bold text-lg">
+  {step.step}
+  </div>
+  <div>
+  <h3 className="text-lg font-semibold text-ink">{step.title}</h3>
+  <p className="text-text-secondary mt-1.5 text-body-sm leading-relaxed">{step.desc}</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div className="absolute left-1/2 -translate-x-1/2 w-2.5 h-2.5 bg-white border-2 border-primary rounded-full z-10 hidden md:block mt-6" />
+  <div className={`hidden md:block w-1/2 ${isLeft ? "order-1" : "order-3"}`} />
+  </div>
+  );
+  })}
+  </div>
+  </div>
 
- <div className="mt-24 text-center">
- <a href="#perks-benefits" className="inline-block bg-white text-blue-800 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-blue-500 transition-transform hover:scale-105 shadow-lg">
- Explore the benefits of working with us.
- </a>
- </div>
+  <div className="mt-12 text-center">
+  <a href="#perks-benefits" className="inline-block bg-white text-primary border border-border font-semibold px-6 py-3 rounded-md hover:bg-surface-muted transition">
+  Explore the benefits of working with us
+  </a>
+  </div>
  </div>
  </section>
 
@@ -117,37 +117,37 @@ export function CareersPage() {
 
  <div className="relative">
  <div className="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-border rounded-full shadow-lg z-0 hidden md:block" />
- <div className="space-y-24">
- {perks.map((perk, i) => {
- const isLeft = i % 2 === 0;
- return (
- <div key={perk.title} className="flex flex-col md:flex-row items-center md:items-start relative group">
- <div className={`w-full md:w-1/2 ${isLeft ? "md:pl-12 order-2" : "md:pr-12 order-2 md:order-1"}`}>
- <div className="bg-white border border-border rounded-2xl p-6 shadow-card transition-all duration-500 ">
- <div className="flex items-center gap-6">
- <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-3xl shadow-card shrink-0">
- {perk.icon}
- </div>
- <div>
- <h3 className="text-2xl font-bold text-white">{perk.title}</h3>
- <p className="text-white/70 mt-2 text-base leading-relaxed">{perk.desc}</p>
- </div>
- </div>
- </div>
- </div>
- <div className="absolute left-1/2 -translate-x-1/2 w-8 h-8 bg-white/30 border border-border rounded-full z-10 shadow-lg hidden md:block" />
- <div className={`hidden md:block w-1/2 ${isLeft ? "order-1" : "order-3"}`} />
- </div>
- );
- })}
- </div>
- </div>
+  <div className="space-y-8">
+  {perks.map((perk, i) => {
+  const isLeft = i % 2 === 0;
+  return (
+  <div key={perk.title} className="flex flex-col md:flex-row items-center md:items-start relative group">
+  <div className={`w-full md:w-1/2 ${isLeft ? "md:pl-8 order-2" : "md:pr-8 order-2 md:order-1"}`}>
+  <div className="bg-white border border-border rounded-lg p-6 shadow-card">
+  <div className="flex items-center gap-4">
+  <div className="w-10 h-10 bg-primary-soft border border-primary-border text-primary rounded-md flex items-center justify-center text-xl shrink-0">
+  {perk.icon}
+  </div>
+  <div>
+  <h3 className="text-lg font-semibold text-ink">{perk.title}</h3>
+  <p className="text-text-secondary mt-1 text-body-sm leading-relaxed">{perk.desc}</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div className="absolute left-1/2 -translate-x-1/2 w-2.5 h-2.5 bg-white border-2 border-primary rounded-full z-10 hidden md:block mt-6" />
+  <div className={`hidden md:block w-1/2 ${isLeft ? "order-1" : "order-3"}`} />
+  </div>
+  );
+  })}
+  </div>
+  </div>
 
- <div className="mt-24 text-center">
- <a href="#faqs" className="inline-block bg-white text-primary px-8 py-4 rounded-xl text-lg font-semibold hover:bg-primary hover:text-white transition-transform hover:scale-105 shadow-lg">
- Explore commonly asked questions →
- </a>
- </div>
+  <div className="mt-12 text-center">
+  <a href="#faqs" className="inline-block bg-white text-primary border border-border font-semibold px-6 py-3 rounded-md hover:bg-surface-muted transition">
+  Explore commonly asked questions →
+  </a>
+  </div>
  </div>
  </section>
 
@@ -161,38 +161,38 @@ export function CareersPage() {
  </p>
  </div>
 
- <div className="max-w-3xl mx-auto space-y-4">
- {careersFaqs.map((faq, i) => (
- <div key={i} className="bg-white border border-border rounded-lg overflow-hidden">
- <button
- onClick={() => setOpenFaq(openFaq === i ? null : i)}
- className="w-full flex justify-between items-center px-6 py-4 text-left transition duration-300 hover:bg-white/5"
- >
- <h3 className="text-lg font-semibold text-white">{faq.question}</h3>
- <ChevronDown
- size={20}
- className={`text-primary transition-transform duration-300 shrink-0 ml-4 ${openFaq === i ? "rotate-180" : ""}`}
- />
- </button>
- <div
- className={`px-6 transition-all duration-300 overflow-hidden ${
- openFaq === i ? "pb-4 max-h-[500px] opacity-100" : "max-h-0 opacity-0"
- }`}
- >
- <p className="text-white/70 leading-relaxed">{faq.answer}</p>
- </div>
- </div>
- ))}
- </div>
+  <div className="max-w-3xl mx-auto space-y-3">
+  {careersFaqs.map((faq, i) => (
+  <div key={i} className="bg-white border border-border rounded-lg overflow-hidden">
+  <button
+  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+  className="w-full flex justify-between items-center px-6 py-4 text-left transition-colors hover:bg-surface-muted"
+  >
+  <h3 className="text-body font-semibold text-ink pr-4">{faq.question}</h3>
+  <ChevronDown
+  size={20}
+  className={`text-text-muted transition-transform duration-300 shrink-0 ${openFaq === i ? "rotate-180" : ""}`}
+  />
+  </button>
+  <div
+  className={`px-6 transition-all duration-300 overflow-hidden border-t border-border ${
+  openFaq === i ? "py-4 max-h-[500px] opacity-100" : "max-h-0 opacity-0 border-transparent"
+  }`}
+  >
+  <p className="text-text-secondary leading-relaxed text-body-sm">{faq.answer}</p>
+  </div>
+  </div>
+  ))}
+  </div>
 
- <div className="mt-16 text-center">
- <p className="text-white/70 text-body-lg mb-6">
- Don't see a role but think you'd be a good fit? We'd still love to hear from you.
- </p>
- <a href="/contact" className="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-100 transition duration-300">
- Get in Touch
- </a>
- </div>
+  <div className="mt-12 text-center border-t border-ink-light pt-10">
+  <p className="text-white/70 text-body mb-6">
+  Don't see a role but think you'd be a good fit? We'd still love to hear from you.
+  </p>
+  <a href="/contact" className="inline-block bg-white text-primary border border-border font-semibold px-6 py-3 rounded-md hover:bg-surface-muted transition">
+  Get in Touch
+  </a>
+  </div>
  </div>
  </section>
  </>

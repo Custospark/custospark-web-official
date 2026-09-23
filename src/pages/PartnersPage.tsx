@@ -6,7 +6,7 @@ export function PartnersPage() {
  <>
  <section className="py-20 bg-ink text-white">
  <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
- <Handshake size={48} className="mx-auto mb-4 text-yellow-300" />
+  <Handshake size={48} className="mx-auto mb-4 text-white/60" />
  <h1 className="font-heading text-h1 text-white mb-4">Partner with Custospark</h1>
  <p className="text-white/70 text-body-lg max-w-3xl mx-auto">
  Join us in shaping the future of technology in Africa. Whether you're an investor, technology partner, or strategic collaborator, we're excited to explore how we can create impact together.
@@ -44,14 +44,14 @@ export function PartnersPage() {
  Interested in partnering with Custospark? Reach out to our partnerships team and let's start a conversation.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
- <a href="mailto:partners@custospark.com" className="inline-flex items-center gap-2 bg-white text-primary font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition shadow-md">
- <Mail size={20} />
- partners@custospark.com
- </a>
- <a href={`tel:${COMPANY.SUPPORT_PHONE.replace(/\s/g, "")}`} className="inline-flex items-center gap-2 bg-white border border-border text-white font-semibold px-6 py-3 rounded-lg hover:bg-white transition shadow-md">
- <Phone size={20} />
- {COMPANY.SUPPORT_PHONE}
- </a>
+  <a href="mailto:partners@custospark.com" className="inline-flex items-center gap-2 bg-white text-primary border border-border font-semibold px-6 py-3 rounded-md hover:bg-surface-muted transition">
+  <Mail size={20} />
+  partners@custospark.com
+  </a>
+  <a href={`tel:${COMPANY.SUPPORT_PHONE.replace(/\s/g, "")}`} className="inline-flex items-center gap-2 bg-white border border-border text-ink font-semibold px-6 py-3 rounded-md hover:bg-surface-muted transition">
+  <Phone size={20} className="text-primary" />
+  {COMPANY.SUPPORT_PHONE}
+  </a>
  </div>
  </div>
  </section>

@@ -163,7 +163,7 @@ export function AboutPage() {
  <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10" style={{ perspective: "1200px" }}>
  <div className="text-center mb-12">
  <h2 className="font-heading text-h1 text-white tracking-tight">
- Our Core Values at <span className="text-green-300">Custospark</span>
+ Our Core Values at <span className="text-white">Custospark</span>
  </h2>
  </div>
  <div className="text-center mb-12">
@@ -183,12 +183,12 @@ export function AboutPage() {
  }}
  >
  <div
- className=" hover:scale-110 transition-all duration-300 text-center"
+ className="  transition-all duration-300 text-center"
  style={{ animationDelay: `${(parseInt(v.number) - 1) * 0.2}s` }}
  >
  <div className="value-number glow-ring mb-3" data-number={v.number} />
  <h3 className="text-xl md:text-2xl font-semibold mb-1">{v.title}</h3>
- <p className="text-sm md:text-base text-gray-200">{v.desc}</p>
+ <p className="text-sm md:text-base text-text-secondary">{v.desc}</p>
  </div>
  </div>
  ))}
@@ -201,25 +201,25 @@ export function AboutPage() {
  <div className="max-w-5xl mx-auto px-4 relative z-10 text-center">
  <div className="mb-10">
  <h2 className="text-3xl font-bold tracking-tight">
- Our Core Values at <span className="text-green-300">Custospark</span>
+ Our Core Values at <span className="text-white">Custospark</span>
  </h2>
  </div>
  <div className="grid grid-cols-2 gap-6 justify-items-center">
  {mobileValuesData.slice(0, 6).map((v, i) => (
  <div
  key={v.number}
- className="bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 text-center"
+ className="bg-white border border-border p-4 rounded-lg shadow-card text-center"
  style={{ animationDelay: `${i * 0.2}s` }}
  >
  <div className="value-number glow-ring mb-2" data-number={v.number} />
  <h3 className="text-lg font-semibold mb-1">{v.title}</h3>
- <p className="text-xs text-gray-200">{v.desc}</p>
+ <p className="text-xs text-text-secondary">{v.desc}</p>
  </div>
  ))}
- <div className="bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 col-span-2 text-center" style={{ animationDelay: "1.2s" }}>
+ <div className="bg-white p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 col-span-2 text-center" style={{ animationDelay: "1.2s" }}>
  <div className="value-number glow-ring mb-2" data-number="7" />
  <h3 className="text-lg font-semibold mb-1">COLLABORATION</h3>
- <p className="text-xs text-gray-200">Shared success.</p>
+ <p className="text-xs text-text-secondary">Shared success.</p>
  </div>
  </div>
  </div>
@@ -237,7 +237,7 @@ export function AboutPage() {
  <img src="/profiles/oscar.png" alt="Oscar Opiyo" className="rounded-full w-48 h-48 object-cover shadow-card" />
  <p className="text-xl font-semibold text-white">Oscar Opiyo</p>
  <p className="text-lg text-white/70">Founder & CEO of Custospark</p>
- <a href="mailto:oscar@custospark.com" className="text-primary hover:text-blue-500">oscar@custospark.com</a>
+ <a href="mailto:oscar@custospark.com" className="text-primary hover:text-primary-hover">oscar@custospark.com</a>
  </div>
  <div>
  <p className="text-lg text-white/70 leading-relaxed">
@@ -281,7 +281,7 @@ export function AboutPage() {
  <p className="text-xl font-semibold">{member.number}. {member.name}</p>
  <img src={member.img} alt={`Photo of ${member.name}`} className="rounded-full w-48 h-48 object-cover shadow-card" />
  <p className="text-lg text-white/70">{member.role}</p>
- {member.email && <a href={`mailto:${member.email}`} className="text-primary hover:text-blue-500">{member.email}</a>}
+ {member.email && <a href={`mailto:${member.email}`} className="text-primary hover:text-primary-hover">{member.email}</a>}
  </div>
  <div className="mt-8 text-white/70 leading-relaxed max-w-2xl mx-auto text-center">
  {member.bio}
@@ -293,7 +293,7 @@ export function AboutPage() {
  {/* CTA */}
  <div className="text-center mt-16">
  <h3 className="text-2xl font-bold mb-4">Think you'd be a great fit?</h3>
- <a href="/careers" className="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded shadow hover:bg-blue-100 transition">
+ <a href="/careers" className="inline-block bg-white text-primary font-semibold px-6 py-3 rounded shadow hover:bg-surface-muted transition">
  Check for Open Roles
  </a>
  </div>
@@ -322,10 +322,10 @@ export function AboutPage() {
  <p className="text-lg text-white/70 leading-relaxed" dangerouslySetInnerHTML={{ __html: event.text }} />
  </div>
  <div className={`flex-shrink-0 relative flex ${isLeft ? "md:justify-start" : "md:justify-end"} justify-center my-4 md:my-0`}>
- <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-lg">
- <event.icon className="text-blue-500" size={28} />
+ <div className="w-16 h-16 rounded-full bg-white border border-border flex items-center justify-center shadow-card">
+  <event.icon className="text-primary" size={28} />
  </div>
- <span className="absolute -bottom-1 -right-1 bg-blue-500 text-white rounded-full w-6 h-6 text-xs flex items-center justify-center">
+ <span className="absolute -bottom-1 -right-1 bg-primary text-white rounded-full w-6 h-6 text-xs flex items-center justify-center">
  {i + 1}
  </span>
  </div>
@@ -345,10 +345,10 @@ export function AboutPage() {
  Meet Custocare — our healthcare platform. And Custosell — our retail POS. Both built by the same team that tells this story.
  </p>
  <div className="flex flex-col sm:flex-row gap-4 justify-center">
- <a href="/products" className="inline-block bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-blue-100 transition shadow-md">
+ <a href="/products" className="inline-block bg-white text-primary font-semibold px-6 py-3 rounded-lg hover:bg-surface-muted transition shadow-md">
  View Our Products
  </a>
- <a href="/contact" className="inline-block border border-white/30 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white transition">
+ <a href="/contact" className="inline-block border border-ink-light text-white font-semibold px-6 py-3 rounded-lg hover:bg-surface-muted transition">
  Contact Us
  </a>
  </div>

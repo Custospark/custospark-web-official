@@ -68,40 +68,40 @@ export function ContactPage() {
  </p>
  </div>
 
- <div className="max-w-lg mx-auto">
- <div className="bg-white p-8 rounded-2xl shadow-card text-white space-y-4">
- <div className="text-center">
- <p className="text-2xl font-semibold mb-2 flex items-center justify-center gap-3">
- <Phone size={24} />{COMPANY.SUPPORT_PHONE}
- </p>
- <div className="space-y-2 text-sm">
- <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-primary" /><span className="text-white/50 mr-1">General:</span>info@custospark.com</p>
- <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-primary" /><span className="text-white/50 mr-1">Partners:</span>partners@custospark.com</p>
- <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-primary" /><span className="text-white/50 mr-1">Teams:</span>teams@custospark.com</p>
- </div>
- <p className="mt-3 text-sm flex items-center justify-center gap-2">
- <MapPin size={14} className="text-red-400" />{COMPANY.HQ}
- </p>
- <p className="mt-6 text-xs italic text-gray-300">
- For Custosell support, visit custosell.com. For Custocare, visit custocare.custospark.com.
- </p>
+  <div className="max-w-lg mx-auto">
+  <div className="bg-white p-8 rounded-lg border border-border shadow-card space-y-4">
+  <div className="text-center">
+  <p className="text-2xl font-semibold text-ink mb-2 flex items-center justify-center gap-3">
+  <Phone size={20} className="text-primary" />{COMPANY.SUPPORT_PHONE}
+  </p>
+  <div className="space-y-2 text-sm text-text-secondary">
+  <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-primary" /><span className="text-text-muted mr-1">General:</span>info@custospark.com</p>
+  <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-primary" /><span className="text-text-muted mr-1">Partners:</span>partners@custospark.com</p>
+  <p className="flex items-center justify-center gap-2"><Mail size={14} className="text-primary" /><span className="text-text-muted mr-1">Teams:</span>teams@custospark.com</p>
+  </div>
+  <p className="mt-3 text-sm text-text-secondary flex items-center justify-center gap-2">
+  <MapPin size={14} className="text-primary" />{COMPANY.HQ}
+  </p>
+  <p className="mt-6 text-xs italic text-text-muted">
+  For Custosell support, visit custosell.com. For Custocare, visit custocare.custospark.com.
+  </p>
 
- <hr className="my-5 border-border" />
- <p className="text-sm font-semibold mb-4">Follow Us</p>
- <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
- <a href="https://wa.me/256756697871" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 hover:text-green-400 transition-colors" aria-label="WhatsApp"><FaWhatsapp className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight text-white/70 font-semibold">WhatsApp</span></a>
- <a href="https://www.facebook.com/custospark" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 hover:text-primary transition-colors" aria-label="Facebook"><FaFacebook className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight text-white/70 font-semibold">Facebook</span></a>
- <a href="https://www.youtube.com/@Custospark" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 hover:text-red-400 transition-colors" aria-label="YouTube"><FaYoutube className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight text-white/70 font-semibold">YouTube</span></a>
- <a href="https://www.tiktok.com/@Custospark" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 hover:text-pink-400 transition-colors" aria-label="TikTok"><FaTiktok className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight text-white/70 font-semibold">TikTok</span></a>
- <a href="https://www.instagram.com/Custospark" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 hover:text-pink-500 transition-colors" aria-label="Instagram"><FaInstagram className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight text-white/70 font-semibold">Instagram</span></a>
- <a href="https://x.com/Custospark" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 hover:text-white transition-colors" aria-label="X"><FaXTwitter className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight text-white/70 font-semibold">X</span></a>
- <a href="https://www.linkedin.com/company/custospark" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 hover:text-blue-500 transition-colors" aria-label="LinkedIn"><FaLinkedin className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight text-white/70 font-semibold">LinkedIn</span></a>
- </div>
- </div>
- </div>
- </div>
- </div>
- </section>
+  <hr className="my-5 border-border" />
+  <p className="text-sm font-semibold text-ink mb-4">Follow Us</p>
+  <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
+  <a href="https://wa.me/256756697871" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-text-secondary hover:text-primary transition-colors" aria-label="WhatsApp"><FaWhatsapp className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight font-semibold">WhatsApp</span></a>
+  <a href="https://www.facebook.com/custospark" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-text-secondary hover:text-primary transition-colors" aria-label="Facebook"><FaFacebook className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight font-semibold">Facebook</span></a>
+  <a href="https://www.youtube.com/@Custospark" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-text-secondary hover:text-primary transition-colors" aria-label="YouTube"><FaYoutube className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight font-semibold">YouTube</span></a>
+  <a href="https://www.tiktok.com/@Custospark" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-text-secondary hover:text-primary transition-colors" aria-label="TikTok"><FaTiktok className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight font-semibold">TikTok</span></a>
+  <a href="https://www.instagram.com/Custospark" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-text-secondary hover:text-primary transition-colors" aria-label="Instagram"><FaInstagram className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight font-semibold">Instagram</span></a>
+  <a href="https://x.com/Custospark" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-text-secondary hover:text-ink transition-colors" aria-label="X"><FaXTwitter className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight font-semibold">X</span></a>
+  <a href="https://www.linkedin.com/company/custospark" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-1 text-text-secondary hover:text-primary transition-colors" aria-label="LinkedIn"><FaLinkedin className="text-xl sm:text-2xl" /><span className="text-[10px] sm:text-[11px] leading-tight font-semibold">LinkedIn</span></a>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
 
  {/* Location Section */}
  <section id="location" className="py-16 bg-ink text-white relative overflow-hidden">
@@ -111,20 +111,20 @@ export function ContactPage() {
  </h2>
 
  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
- <div>
- <p className="text-lg text-white/70 leading-relaxed bg-white/5 p-4 rounded-lg shadow-card hover:shadow-card transition duration-300">
- <Map size={16} className="inline mr-2" />
- We're headquartered in <strong>Kampala, Uganda</strong>, at the heart of Africa's burgeoning tech scene. As a strategic hub, we're positioned to tap into the immense growth potential of the African market—one of the most dynamic and untapped regions globally.
- </p>
- <p className="text-lg text-white/70 leading-relaxed mt-6 bg-white/5 p-4 rounded-lg shadow-card hover:shadow-card transition duration-300">
- <Users size={16} className="inline mr-2" />
- Custospark operates as a <strong>remote-first</strong> company with a global, diverse team. We are leveraging cutting-edge technology and global collaboration to scale rapidly and meet our clients' needs worldwide.
- </p>
- <p className="text-lg text-white/70 leading-relaxed mt-6 font-semibold bg-white/5 p-4 rounded-lg shadow-card hover:shadow-card transition duration-300">
- <Globe size={16} className="inline mr-2" />
- Whether you're an investor looking to partner with a fast-growing company or a collaborator seeking innovative tech solutions, <strong>Custospark is here for you</strong>. Let's join forces to make a global impact.
- </p>
- </div>
+  <div className="space-y-4">
+  <p className="text-body text-white/70 leading-relaxed border border-ink-light rounded-lg p-4">
+  <Map size={16} className="inline mr-2 text-white/50" />
+  We're headquartered in <strong className="text-white">Kampala, Uganda</strong>, at the heart of Africa's burgeoning tech scene. As a strategic hub, we're positioned to tap into the immense growth potential of the African market—one of the most dynamic and untapped regions globally.
+  </p>
+  <p className="text-body text-white/70 leading-relaxed border border-ink-light rounded-lg p-4">
+  <Users size={16} className="inline mr-2 text-white/50" />
+  Custospark operates as a <strong className="text-white">remote-first</strong> company with a global, diverse team. We are leveraging cutting-edge technology and global collaboration to scale rapidly and meet our clients' needs worldwide.
+  </p>
+  <p className="text-body text-white/70 leading-relaxed font-semibold border border-ink-light rounded-lg p-4">
+  <Globe size={16} className="inline mr-2 text-white/50" />
+  Whether you're an investor looking to partner with a fast-growing company or a collaborator seeking innovative tech solutions, <strong className="text-white">Custospark is here for you</strong>. Let's join forces to make a global impact.
+  </p>
+  </div>
  <div className="relative">
  <div ref={mapRef} style={{ height: "450px", borderRadius: "12px", boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.3)" }} />
  </div>
@@ -152,20 +152,20 @@ export function ContactPage() {
  <div key={i} className="bg-white rounded-lg shadow-md overflow-hidden">
  <button
  onClick={() => setOpenFaq(openFaq === i ? null : i)}
- className="w-full flex justify-between items-center px-6 py-4 text-left focus:outline-none focus:ring focus:ring-blue-300 transition duration-300 hover:bg-blue-100"
+ className="w-full flex justify-between items-center px-6 py-4 text-left focus:outline-none focus:ring focus:ring-blue-300 transition duration-300 hover:bg-surface-muted"
  >
- <h3 className="text-lg font-semibold text-gray-800">{faq.question}</h3>
+ <h3 className="text-lg font-semibold text-ink">{faq.question}</h3>
  <ChevronDown
  size={20}
- className={`text-gray-600 transition-transform duration-300 ${openFaq === i ? "rotate-180" : ""}`}
+ className={`text-text-secondary transition-transform duration-300 ${openFaq === i ? "rotate-180" : ""}`}
  />
  </button>
  <div
- className={`px-6 py-4 border-t border-gray-200 transition-all duration-300 overflow-hidden ${
+ className={`px-6 py-4 border-t border-border transition-all duration-300 overflow-hidden ${
  openFaq === i ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
  }`}
  >
- <p className="text-gray-700">{faq.answer}</p>
+ <p className="text-text-secondary">{faq.answer}</p>
  </div>
  </div>
  ))}

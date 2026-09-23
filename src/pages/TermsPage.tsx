@@ -104,17 +104,17 @@ export function TermsPage() {
  <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
  {/* Hero */}
  <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-14">
- <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold border bg-blue-50 border-blue-200 text-blue-700 mb-5">
+ <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold border bg-blue-50 border-blue-200 text-primary mb-5">
  <FileText className="w-3.5 h-3.5" />
  Terms of Service
  </span>
- <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
+ <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-ink mb-4">
  How Our Platform{" "}
  <span className="text-primary">
  Works for You
  </span>
  </h1>
- <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+ <p className="text-lg text-text-secondary max-w-3xl mx-auto">
  These Terms explain your rights and responsibilities when using any service or platform provided by Custospark Company Ltd.
  </p>
  </motion.div>
@@ -124,7 +124,7 @@ export function TermsPage() {
  initial={{ opacity: 0 }}
  animate={{ opacity: 1 }}
  transition={{ delay: 0.1 }}
- className="rounded-2xl border-2 border-gray-200 bg-white/80 p-6 mb-14 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center"
+ className="rounded-lg border border-border bg-white p-6 mb-14 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center"
  >
  {[
  { icon: Lock, title: "Your Data is Yours", desc: "You own your content. We just help you manage it." },
@@ -135,7 +135,7 @@ export function TermsPage() {
  <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center mx-auto mb-3">
  <item.icon className="w-5 h-5 text-white" />
  </div>
- <h3 className="font-bold text-sm text-gray-900 mb-1">{item.title}</h3>
+ <h3 className="font-bold text-sm text-ink mb-1">{item.title}</h3>
  <p className="text-xs text-gray-500">{item.desc}</p>
  </div>
  ))}
@@ -149,19 +149,19 @@ export function TermsPage() {
  initial={{ opacity: 0, y: 20 }}
  animate={{ opacity: 1, y: 0 }}
  transition={{ delay: 0.05 * i }}
- className="rounded-2xl border-2 border-gray-200 bg-white/80 p-6 sm:p-8"
+ className="rounded-lg border border-border bg-white p-6 sm:p-8"
  >
  <div className="flex items-start gap-4 mb-4">
- <div className="w-11 h-11 rounded-xl bg-primary flex items-center justify-center shrink-0 shadow-md">
+ <div className="w-11 h-11 rounded-lg bg-primary flex items-center justify-center shrink-0 shadow-md">
  <section.icon className="w-5 h-5 text-white" />
  </div>
- <h2 className="text-xl font-bold text-gray-900">{section.title}</h2>
+ <h2 className="text-xl font-bold text-ink">{section.title}</h2>
  </div>
  <ul className="space-y-2 ml-1">
  {section.items.map((item) => (
  <li key={item} className="flex items-start gap-2.5">
  <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 shrink-0" />
- <span className="text-base text-gray-700">{item}</span>
+ <span className="text-base text-text-secondary">{item}</span>
  </li>
  ))}
  </ul>
