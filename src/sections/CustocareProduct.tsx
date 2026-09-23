@@ -77,21 +77,21 @@ export function CustocareProduct() {
  </p>
  </div>
 
- <div className="space-y-12">
- {features.map((feat, i) => (
- <div key={feat.title} className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-  <div className={i % 2 === 0 ? "" : "lg:order-2"}>
-  <div className="rounded-lg overflow-hidden border border-border bg-white p-1.5 shadow-card-hover">
-  <img src={feat.img} alt={feat.title} className="w-full h-auto rounded-md border border-border/50" />
+  <div className="space-y-12">
+  {features.map((feat, i) => (
+  <div key={feat.title} className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+   <div className={i % 2 === 0 ? "" : "lg:order-2"}>
+   <div className="rounded-lg overflow-hidden border border-border bg-white p-1.5 shadow-card-hover">
+   <img src={feat.img} alt={feat.title} className="w-full h-auto rounded-md border border-border/50" />
+   </div>
+   </div>
+  <div className={i % 2 === 0 ? "lg:order-1" : ""}>
+  <h5 className="font-heading text-h4 text-ink mb-3">{feat.title}</h5>
+  <p className="text-text-secondary text-body leading-relaxed">{feat.desc}</p>
   </div>
   </div>
- <div className={i % 2 === 0 ? "lg:order-1" : ""}>
- <h5 className="font-heading text-h4 text-ink mb-3">{feat.title}</h5>
- <p className="text-text-secondary text-body leading-relaxed">{feat.desc}</p>
- </div>
- </div>
- ))}
- </div>
+  ))}
+  </div>
 
  {/* CTA */}
  <div className="text-center mt-12">

@@ -13,10 +13,10 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 export function ServicesSection() {
- return (
- <section id="services" className="py-section bg-surface-muted border-y border-border">
- <div className="max-w-7xl mx-auto px-4 md:px-8">
- <div className="text-center max-w-3xl mx-auto mb-12">
+  return (
+  <section id="services" className="pt-6 pb-12 bg-surface-muted border-y border-border">
+  <div className="max-w-7xl mx-auto px-4 md:px-8">
+  <div className="text-center max-w-3xl mx-auto mb-8">
  <p className="text-caption font-semibold tracking-[0.12em] uppercase text-primary mb-3">
  Custom Software
  </p>

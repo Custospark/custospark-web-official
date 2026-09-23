@@ -1,6 +1,6 @@
 import { Button } from "@/components/Button";
 import {
- ArrowRight, LayoutDashboard, ShoppingCart, Compass, Package, Kanban,
+  ArrowRight, LayoutDashboard, ShoppingCart, Compass, Package, Kanban,
  FileText, BookOpen, LineChart, IdCard, FolderKanban, Files, Users,
 } from "lucide-react";
 import custosellLogo from "../shared/images/custosell/custosell-logo.png";
