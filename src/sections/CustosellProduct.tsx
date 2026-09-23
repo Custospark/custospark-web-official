@@ -117,11 +117,11 @@ export function CustosellProduct() {
  const Icon = feat.icon;
  return (
  <div key={feat.title} className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
- <div className={i % 2 === 0 ? "" : "lg:order-2"}>
- <div className="rounded-lg overflow-hidden border border-border shadow-card">
- <img src={feat.img} alt={feat.title} className="w-full h-auto" />
- </div>
- </div>
+  <div className={i % 2 === 0 ? "" : "lg:order-2"}>
+  <div className="rounded-lg overflow-hidden border border-border bg-white p-1.5 shadow-card-hover">
+  <img src={feat.img} alt={feat.title} className="w-full h-auto rounded-md border border-border/50" />
+  </div>
+  </div>
  <div className={i % 2 === 0 ? "lg:order-1" : ""}>
  <div className="w-10 h-10 rounded-md bg-primary-soft text-primary flex items-center justify-center mb-3 border border-primary-border">
  <Icon size={20} />
