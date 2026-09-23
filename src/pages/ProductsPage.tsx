@@ -12,9 +12,9 @@ export function ProductsPage() {
  <h1 className="font-heading text-h1 text-white mb-4">
  Built by Custospark
  </h1>
- <p className="text-white/70 text-body-lg">
- Two products. Two industries. One standard of quality.
- </p>
+  <p className="text-white/70 text-body-lg">
+  Three products. One standard of quality.
+  </p>
  </div>
  </div>
  </section>

@@ -10,7 +10,7 @@ export function ProductsBridgeSection() {
   Built by Custospark
   </h2>
   <p className="text-text-secondary text-body-lg leading-relaxed">
-  We are happy to walk you through our products. Two purpose-built solutions. One company behind both - Custospark.
+  We are happy to walk you through our products. Three purpose-built solutions. One company behind all - Custospark.
   </p>
   </div>
   </div>
