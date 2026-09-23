@@ -246,7 +246,7 @@ export function AboutPage() {
   <img src="/profiles/grace.jpg" alt="Dr Kamulegeya Grace Bugembe" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
   <div>
   <p className="text-lg font-semibold text-white">Dr. Kamulegeya Grace Bugembe</p>
-  <p className="text-sm font-medium tracking-wide uppercase text-primary">Research Advisor, Makerere University</p>
+  <p className="text-sm font-semibold tracking-wide uppercase text-ink bg-white px-3 py-1 rounded-full border border-border">Research Advisor, Makerere University</p>
   <p className="text-sm text-white/60">PhD Software Engineering | Founding President, ProSEIT</p>
   </div>
   </div>
@@ -263,9 +263,9 @@ export function AboutPage() {
   <img src="/profiles/new_profile.png" alt="Oscar Opiyo" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
   <div>
   <p className="text-lg font-semibold text-white">Oscar Opiyo</p>
-  <p className="text-sm font-medium tracking-wide uppercase text-primary">Founder & CEO | AI & Technology Corporate Strategist</p>
+  <p className="text-sm font-semibold tracking-wide uppercase text-ink bg-white px-3 py-1 rounded-full border border-border">Founder & CEO | AI & Technology Corporate Strategist</p>
   </div>
-  <a href="mailto:oscar@custospark.com" className="text-sm text-primary hover:text-white">oscar@custospark.com</a>
+  <a href="mailto:oscar@custospark.com" className="text-sm text-white hover:text-white/80 underline underline-offset-4">oscar@custospark.com</a>
   </div>
   <div>
   <p className="text-body text-white/70 leading-relaxed">
@@ -280,7 +280,7 @@ export function AboutPage() {
   <img src="/profiles/christine.jpg" alt="Christine" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
   <div>
   <p className="text-lg font-semibold text-white">Namatove Christine Maria</p>
-  <p className="text-sm font-medium tracking-wide uppercase text-primary">Co-Founder & CTO</p>
+  <p className="text-sm font-semibold tracking-wide uppercase text-ink bg-white px-3 py-1 rounded-full border border-border">Co-Founder & CTO</p>
   </div>
   </div>
   <div>
@@ -320,8 +320,8 @@ export function AboutPage() {
   {initials}
   </div>
   )}
-  <p className="text-body-sm font-medium tracking-wide uppercase text-primary bg-white/10 border border-white/10 rounded-full px-3 py-1">{member.role}</p>
-  {member.email && <a href={`mailto:${member.email}`} className="text-primary hover:text-primary-hover text-body-sm">{member.email}</a>}
+  <p className="text-body-sm font-semibold tracking-wide uppercase text-ink bg-white px-3 py-1 rounded-full border border-border">{member.role}</p>
+  {member.email && <a href={`mailto:${member.email}`} className="text-white hover:text-white/80 underline underline-offset-4 text-body-sm">{member.email}</a>}
   </div>
   <div className="mt-6 text-white/70 leading-relaxed max-w-2xl mx-auto text-center text-body-sm">
   {member.bio}
