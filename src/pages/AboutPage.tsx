@@ -48,46 +48,46 @@ const timelineData = [
 const teamData = [
   {
   number: "1",
-  name: "Dr. Kamulegeya Grace Bugembe (PhD)",
+  name: "Dr. Kamulegeya Grace Bugembe",
   img: "/profiles/grace.jpg",
-  role: "Research Advisor - Software Engineering Researcher & Solutions Architect, Makerere University",
-  bio: "Software engineering researcher, solutions architect and academic at Makerere University with 16+ years spanning teaching, empirical research, curriculum development, software architecture and technology innovation. PhD investigated software start-ups in emerging ecosystems, producing empirical work on start-up patterns, metrics and innovation hubs in Uganda and Kenya. PI on Mak-RIF COVID-19 Critical Care Resources, Co-PI on InnoMak (ICT innovations marketplace), and Project Lead on a World Bank-supported PSFU/GROW skills-training grant (~UGX 1B) at YMCA Comprehensive Institute. Founding Executive President of ProSEIT, leads PESIC - a university-industry pipeline for precision engineering, skilling, innovation and commercialization - and chairs the Technology Sector of the Uganda Manufacturers Association. Current agenda: Procurement-Ready Software Productization Metrics (PRSPM) and AI-enabled industrial digital twins, translating rigorous research into deployable, locally appropriate systems.",
+  role: "AI & Technology Corporate Strategist",
+  bio: "PhD Software Engineering, Makerere University - 16+ years in research, teaching and architecture. Helps governments, ministries, companies and institutions leverage AI and technology to cut costs, grow profits and improve efficiency. Founding President, ProSEIT; leads PESIC; chairs UMA Technology Sector.",
   },
   {
   number: "2",
   name: "Alice Mukabera",
   img: "/profiles/alice.jpg",
   role: "Software Engineer",
-  bio: "Alice is a skilled software engineer with a deep understanding of full-stack development. She contributes significantly to Custospark's engineering efforts, helping build scalable products under our brands.",
+  bio: "Full-stack engineer building scalable products across Custospark's portfolio.",
   },
   {
   number: "3",
   name: "Ogwal Richard",
   img: "/profiles/richard.jpg",
   role: "Software Engineer",
-  bio: "Richard is a versatile developer who thrives in both frontend and backend. At Custospark, he ensures our platforms remain reliable, clean, and scalable through his deep focus on quality code and efficiency.",
+  bio: "Versatile developer focused on reliable, clean and scalable platforms.",
   },
   {
   number: "4",
   name: "Oscar Opiyo",
   img: "/profiles/oscar.png",
-  role: "Founder, CEO & Software Engineer",
+  role: "Founder & CEO",
   email: "oscar@custospark.com",
-  bio: "Oscar is the visionary founder of Custospark and the brains behind Custosell. A tech entrepreneur and software engineer, he's driven by innovation, AI, and solving real-world problems across industries.",
+  bio: "Founder of Custospark and builder of Custosell - focused on practical software that solves real business problems.",
   },
   {
   number: "5",
   name: "Namatove Christine Maria",
   img: "/profiles/christine.jpg",
-  role: "Co-Founder, CTO & Software Engineer",
-  bio: "Christine leads technology at Custospark as CTO. With her system architecture expertise, she ensures our products deliver performance, reliability, and cutting-edge user experiences.",
+  role: "Co-Founder & CTO",
+  bio: "Leads engineering and product - architecture, performance and user experience.",
   },
   {
   number: "6",
   name: "Angom Joyce Rita",
   img: "/profiles/joyce.png",
   role: "Software Engineer",
-  bio: "Joyce is an innovative full-stack developer passionate about scalable design. At Custospark, she contributes to our growth with clean code and customer-focused solutions.",
+  bio: "Full-stack developer - clean code, scalable design, customer-focused solutions.",
   },
 ];
 
@@ -232,48 +232,68 @@ export function AboutPage() {
  </div>
  </section>
 
- {/* Founders */}
- <section className="py-16 bg-ink text-white">
- <div className="max-w-7xl mx-auto px-4 md:px-8">
- <h2 className="font-heading text-h1 text-white mb-6 text-center">Our Founders</h2>
- <hr className="border-t-2 border-white mb-8" />
+  {/* Founders - Dr Grace as founding advisor for credibility */}
+  <section className="py-16 bg-ink text-white">
+  <div className="max-w-7xl mx-auto px-4 md:px-8">
+  <p className="text-caption font-semibold tracking-[0.12em] uppercase text-white/60 text-center mb-3">Leadership</p>
+  <h2 className="font-heading text-h1 text-white mb-3 text-center">Our Founders</h2>
+  <p className="text-white/60 text-body text-center max-w-2xl mx-auto mb-10">Research-led, product-driven - combining academic rigour with shipping software.</p>
+  <hr className="border-t border-ink-light mb-10" />
 
- {/* Founder 1: Oscar */}
- <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
- <div className="flex flex-col items-center text-center space-y-6">
- <img src="/profiles/oscar.png" alt="Oscar Opiyo" className="rounded-full w-48 h-48 object-cover shadow-card" />
- <p className="text-xl font-semibold text-white">Oscar Opiyo</p>
- <p className="text-lg text-white/70">Founder & CEO of Custospark</p>
- <a href="mailto:oscar@custospark.com" className="text-primary hover:text-primary-hover">oscar@custospark.com</a>
- </div>
- <div>
- <p className="text-lg text-white/70 leading-relaxed">
- Custospark was founded by Oscar Opiyo, a visionary technologist and entrepreneur with a passion for building impactful digital solutions. With a strong foundation in scalable systems, modern software development, and innovative business strategies, Oscar has dedicated himself to creating technology that addresses real-world challenges and drives meaningful change.
- </p>
- <p className="text-lg text-white/70 leading-relaxed mt-6">
- As the Founder and CEO of Custospark, Oscar leads with clarity, ambition, and a deep commitment to excellence. His mission is to position Custospark at the forefront of inclusive and sustainable digital transformation-developing solutions that empower businesses, communities, and industries. Under his leadership, Custospark is more than a company-it's a movement aimed at shaping a more innovative and connected future. Oscar is actively engaging with partners and stakeholders to expand the company's reach and accelerate its global impact.
- </p>
- </div>
- </div>
+  {/* Founder: Dr Grace - lead for credibility */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mb-12">
+  <div className="flex flex-col items-center text-center space-y-4">
+  <img src="/profiles/grace.jpg" alt="Dr Kamulegeya Grace Bugembe" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
+  <div>
+  <p className="text-lg font-semibold text-white">Dr. Kamulegeya Grace Bugembe</p>
+  <p className="text-sm font-medium tracking-wide uppercase text-primary">AI & Technology Corporate Strategist</p>
+  <p className="text-sm text-white/60">PhD, Makerere University | Research Advisor</p>
+  </div>
+  </div>
+  <div>
+  <p className="text-body text-white/70 leading-relaxed">
+  PhD Software Engineering, Makerere University - 16+ years in research, teaching and architecture. Helps governments, ministries, companies and institutions leverage AI and technology to cut costs, grow profits and improve efficiency.
+  </p>
+  <p className="text-body-sm text-white/60 leading-relaxed mt-4">
+  Founding President, ProSEIT; leads PESIC university-industry pipeline; chairs UMA Technology Sector. Previously PI Mak-RIF COVID-19, Co-PI InnoMak, and lead on World Bank PSFU/GROW grant (~UGX 1B).
+  </p>
+  </div>
+  </div>
 
- {/* Founder 2: Christine */}
- <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
- <div className="flex flex-col items-center text-center space-y-6">
- <img src="/profiles/christine.jpg" alt="Christine" className="rounded-full w-48 h-48 object-cover shadow-card" />
- <p className="text-xl font-semibold text-white">Christine</p>
- <p className="text-lg text-white/70">Co-Founder & CTO of Custospark</p>
- </div>
- <div>
- <p className="text-lg text-white/70 leading-relaxed">
- Christine is a co-founder of Custospark, with a strong background in software engineering and a deep commitment to solving real-world challenges through technology. Her expertise spans system architecture, backend development, and building high-performance solutions that scale with business needs.
- </p>
- <p className="text-lg text-white/70 leading-relaxed mt-6">
- As the CTO of Custospark, Christine drives the technical vision of the company, leading product development and engineering efforts with precision and purpose. Her work reflects a passion for innovation and a focus on delivering scalable, secure, and user-centric technologies. Christine's leadership is instrumental in shaping Custospark's journey toward becoming a trusted force in global tech innovation.
- </p>
- </div>
- </div>
- </div>
- </section>
+  {/* Founder 2: Oscar */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+  <div className="flex flex-col items-center text-center space-y-4">
+  <img src="/profiles/oscar.png" alt="Oscar Opiyo" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
+  <div>
+  <p className="text-lg font-semibold text-white">Oscar Opiyo</p>
+  <p className="text-sm font-medium tracking-wide uppercase text-primary">Founder & CEO</p>
+  </div>
+  <a href="mailto:oscar@custospark.com" className="text-sm text-primary hover:text-white">oscar@custospark.com</a>
+  </div>
+  <div>
+  <p className="text-body text-white/70 leading-relaxed">
+  Builder of Custosell and Custospark - focused on practical software that solves real business problems, from retail to healthcare, online and offline.
+  </p>
+  </div>
+  </div>
+
+  {/* Founder 3: Christine */}
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-10">
+  <div className="flex flex-col items-center text-center space-y-4">
+  <img src="/profiles/christine.jpg" alt="Christine" className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
+  <div>
+  <p className="text-lg font-semibold text-white">Namatove Christine Maria</p>
+  <p className="text-sm font-medium tracking-wide uppercase text-primary">Co-Founder & CTO</p>
+  </div>
+  </div>
+  <div>
+  <p className="text-body text-white/70 leading-relaxed">
+  Leads engineering and product - system architecture, performance and user experience. Ensures products are scalable, secure and a joy to use.
+  </p>
+  </div>
+  </div>
+  </div>
+  </section>
 
   {/* Team - Dr Grace leads for credibility */}
   <section className="py-16 bg-ink text-white">
