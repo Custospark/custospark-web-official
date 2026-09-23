@@ -46,42 +46,49 @@ const timelineData = [
 ];
 
 const teamData = [
- {
- number: "1",
- name: "Alice Mukabera",
- img: "/profiles/alice.jpg",
- role: "Software Engineer",
- bio: "Alice is a skilled software engineer with a deep understanding of full-stack development. She contributes significantly to Custospark's engineering efforts, helping build scalable products under our brands.",
- },
- {
- number: "2",
- name: "Ogwal Richard",
- img: "/profiles/richard.jpg",
- role: "Software Engineer",
- bio: "Richard is a versatile developer who thrives in both frontend and backend. At Custospark, he ensures our platforms remain reliable, clean, and scalable through his deep focus on quality code and efficiency.",
- },
- {
- number: "3",
- name: "Oscar Opiyo",
- img: "/profiles/oscar.png",
- role: "Founder, CEO & Software Engineer",
- email: "oscar@custospark.com",
- bio: "Oscar is the visionary founder of Custospark and the brains behind Custosell. A tech entrepreneur and software engineer, he's driven by innovation, AI, and solving real-world problems across industries.",
- },
- {
- number: "4",
- name: "Namatove Christine Maria",
- img: "/profiles/christine.jpg",
- role: "Co-Founder, CTO & Software Engineer",
- bio: "Christine leads technology at Custospark as CTO. With her system architecture expertise, she ensures our products deliver performance, reliability, and cutting-edge user experiences.",
- },
- {
- number: "5",
- name: "Angom Joyce Rita",
- img: "/profiles/joyce.png",
- role: "Software Engineer",
- bio: "Joyce is an innovative full-stack developer passionate about scalable design. At Custospark, she contributes to our growth with clean code and customer-focused solutions.",
- },
+  {
+  number: "1",
+  name: "Dr. Kamulegeya Grace Bugembe (PhD)",
+  img: "/profiles/grace.jpg",
+  role: "Research Advisor - Software Engineering Researcher & Solutions Architect, Makerere University",
+  bio: "Software engineering researcher, solutions architect and academic at Makerere University with 16+ years spanning teaching, empirical research, curriculum development, software architecture and technology innovation. PhD investigated software start-ups in emerging ecosystems, producing empirical work on start-up patterns, metrics and innovation hubs in Uganda and Kenya. PI on Mak-RIF COVID-19 Critical Care Resources, Co-PI on InnoMak (ICT innovations marketplace), and Project Lead on a World Bank-supported PSFU/GROW skills-training grant (~UGX 1B) at YMCA Comprehensive Institute. Founding Executive President of ProSEIT, leads PESIC - a university-industry pipeline for precision engineering, skilling, innovation and commercialization - and chairs the Technology Sector of the Uganda Manufacturers Association. Current agenda: Procurement-Ready Software Productization Metrics (PRSPM) and AI-enabled industrial digital twins, translating rigorous research into deployable, locally appropriate systems.",
+  },
+  {
+  number: "2",
+  name: "Alice Mukabera",
+  img: "/profiles/alice.jpg",
+  role: "Software Engineer",
+  bio: "Alice is a skilled software engineer with a deep understanding of full-stack development. She contributes significantly to Custospark's engineering efforts, helping build scalable products under our brands.",
+  },
+  {
+  number: "3",
+  name: "Ogwal Richard",
+  img: "/profiles/richard.jpg",
+  role: "Software Engineer",
+  bio: "Richard is a versatile developer who thrives in both frontend and backend. At Custospark, he ensures our platforms remain reliable, clean, and scalable through his deep focus on quality code and efficiency.",
+  },
+  {
+  number: "4",
+  name: "Oscar Opiyo",
+  img: "/profiles/oscar.png",
+  role: "Founder, CEO & Software Engineer",
+  email: "oscar@custospark.com",
+  bio: "Oscar is the visionary founder of Custospark and the brains behind Custosell. A tech entrepreneur and software engineer, he's driven by innovation, AI, and solving real-world problems across industries.",
+  },
+  {
+  number: "5",
+  name: "Namatove Christine Maria",
+  img: "/profiles/christine.jpg",
+  role: "Co-Founder, CTO & Software Engineer",
+  bio: "Christine leads technology at Custospark as CTO. With her system architecture expertise, she ensures our products deliver performance, reliability, and cutting-edge user experiences.",
+  },
+  {
+  number: "6",
+  name: "Angom Joyce Rita",
+  img: "/profiles/joyce.png",
+  role: "Software Engineer",
+  bio: "Joyce is an innovative full-stack developer passionate about scalable design. At Custospark, she contributes to our growth with clean code and customer-focused solutions.",
+  },
 ];
 
 const valuesData = [
@@ -268,27 +275,44 @@ export function AboutPage() {
  </div>
  </section>
 
- {/* Team */}
- <section className="py-16 bg-ink text-white">
- <div className="max-w-7xl mx-auto px-4 md:px-8">
- <h2 className="font-heading text-h1 text-white mb-6 text-center">Our Current Technical Team</h2>
- <hr className="border-t-2 border-white mb-8" />
+  {/* Team - Dr Grace leads for credibility */}
+  <section className="py-16 bg-ink text-white">
+  <div className="max-w-7xl mx-auto px-4 md:px-8">
+  <p className="text-caption font-semibold tracking-[0.12em] uppercase text-white/60 text-center mb-3">People Behind Custospark</p>
+  <h2 className="font-heading text-h1 text-white mb-3 text-center">Leadership, Research & Team</h2>
+  <p className="text-white/60 text-body text-center max-w-2xl mx-auto mb-8 leading-relaxed">Research-led, product-focused - advisors and builders who combine academic rigour with shipping software used every day.</p>
+  <hr className="border-t border-ink-light mb-8" />
 
- <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
- {teamData.map((member) => (
- <div key={member.number}>
- <div className="flex flex-col items-center text-center space-y-6">
- <p className="text-xl font-semibold">{member.number}. {member.name}</p>
- <img src={member.img} alt={`Photo of ${member.name}`} className="rounded-full w-48 h-48 object-cover shadow-card" />
- <p className="text-lg text-white/70">{member.role}</p>
- {member.email && <a href={`mailto:${member.email}`} className="text-primary hover:text-primary-hover">{member.email}</a>}
- </div>
- <div className="mt-8 text-white/70 leading-relaxed max-w-2xl mx-auto text-center">
- {member.bio}
- </div>
- </div>
- ))}
- </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+  {teamData.map((member) => {
+  const initials = member.name
+  .split(" ")
+  .filter((p) => p.length > 0 && !p.startsWith("(") && p !== "Dr." && !p.includes("PhD"))
+  .map((p) => p[0])
+  .join("")
+  .slice(0, 2)
+  .toUpperCase();
+  return (
+  <div key={member.number}>
+  <div className="flex flex-col items-center text-center space-y-4">
+  <p className="text-xl font-semibold">{member.number}. {member.name}</p>
+  {member.img ? (
+  <img src={member.img} alt={`Photo of ${member.name}`} className="rounded-full w-48 h-48 object-cover shadow-card border border-ink-light" />
+  ) : (
+  <div className="w-48 h-48 rounded-full bg-white text-ink flex items-center justify-center text-4xl font-bold shadow-card border border-border">
+  {initials}
+  </div>
+  )}
+  <p className="text-body-sm font-medium tracking-wide uppercase text-primary bg-white/10 border border-white/10 rounded-full px-3 py-1">{member.role}</p>
+  {member.email && <a href={`mailto:${member.email}`} className="text-primary hover:text-primary-hover text-body-sm">{member.email}</a>}
+  </div>
+  <div className="mt-6 text-white/70 leading-relaxed max-w-2xl mx-auto text-center text-body-sm">
+  {member.bio}
+  </div>
+  </div>
+  );
+  })}
+  </div>
 
  {/* CTA */}
  <div className="text-center mt-16">
