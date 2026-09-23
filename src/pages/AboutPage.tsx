@@ -139,7 +139,7 @@ export function AboutPage() {
   </div>
   <div>
   <p className="text-body text-white/70 leading-relaxed">
-  Founder of Custospark. AI & Technology Corporate Strategist who helps governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency - turning strategy into shipped software.
+  Founder of Custospark, leading strategic vision for Custospark. AI & Technology Corporate Strategist who helps governments, ministries, companies and institutions leverage AI and technology to reduce operational costs, increase profits and improve efficiency - turning strategy into shipped software.
   </p>
   </div>
   </div>
@@ -156,6 +156,25 @@ export function AboutPage() {
   <div>
   <p className="text-body text-white/70 leading-relaxed">
   Leads engineering and product - setting architecture, upholding performance and crafting user experiences that are secure, scalable and genuinely enjoyable to use. Drives the technical vision from prototype to production.
+  </p>
+  </div>
+  </div>
+
+
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-10">
+  <div className="flex flex-col items-center text-center space-y-4">
+  <img src="/profiles/dorcus.jpg" alt="Arigye Dorcus" className="rounded-full w-48 h-48 object-cover object-top shadow-card border border-ink-light" />
+  <div>
+  <p className="text-lg font-semibold text-white">Arigye Dorcus</p>
+  <p className="text-sm font-semibold tracking-wide uppercase text-ink bg-white px-3 py-1 rounded-full border border-border">Marketing & Sales Manager</p>
+  </div>
+  </div>
+  <div>
+  <p className="text-body text-white/70 leading-relaxed">
+  Marketing & Sales Manager driving go-to-market, brand and revenue growth across entire Custospark products. Leads customer acquisition, partnerships and sales enablement - turning product value into market traction and lasting customer relationships.
+  </p>
+  <p className="text-body-sm text-white/60 leading-relaxed mt-3">
+  Focused on data-driven marketing, consultative selling and customer success - building brands that resonate and sales systems that scale with the business.
   </p>
   </div>
   </div>
